@@ -1,0 +1,2404 @@
+Starting DMA mem to mem transfer
+SDRAM init value 1
+Address of a: 80010000 c: 80010000 b: 80040000 d:00021000	 Fencing? 
+	 DMA_CCR3 value: 00006adf
+	 Waiting for DMA interrupt ISR value: 00000700
+	 Clearing Interrupt Flags
+
+ Ram Write Data @ [0x80010000] : 0x000000cc; Ram Read Data[0x80040000]: 0x000000cc
+ Ram Write Data @ [0x80010004] : 0x00000033; Ram Read Data[0x80040004]: 0x00000033
+ Ram Write Data @ [0x80010008] : 0x000000cc; Ram Read Data[0x80040008]: 0x000000cc
+ Ram Write Data @ [0x8001000c] : 0x00000033; Ram Read Data[0x8004000c]: 0x00000033
+ Ram Write Data @ [0x80010010] : 0x000000cc; Ram Read Data[0x80040010]: 0x000000cc
+ Ram Write Data @ [0x80010014] : 0x00000033; Ram Read Data[0x80040014]: 0x00000033
+ Ram Write Data @ [0x80010018] : 0x000000cc; Ram Read Data[0x80040018]: 0x000000cc
+ Ram Write Data @ [0x8001001c] : 0x00000033; Ram Read Data[0x8004001c]: 0x00000033
+ Ram Write Data @ [0x80010020] : 0x000000cc; Ram Read Data[0x80040020]: 0x000000cc
+ Ram Write Data @ [0x80010024] : 0x00000033; Ram Read Data[0x80040024]: 0x00000033
+ Ram Write Data @ [0x80010028] : 0x000000cc; Ram Read Data[0x80040028]: 0x000000cc
+ Ram Write Data @ [0x8001002c] : 0x00000033; Ram Read Data[0x8004002c]: 0x00000033
+ Ram Write Data @ [0x80010030] : 0x000000cc; Ram Read Data[0x80040030]: 0x000000cc
+ Ram Write Data @ [0x80010034] : 0x00000033; Ram Read Data[0x80040034]: 0x00000033
+ Ram Write Data @ [0x80010038] : 0x000000cc; Ram Read Data[0x80040038]: 0x000000cc
+ Ram Write Data @ [0x8001003c] : 0x00000033; Ram Read Data[0x8004003c]: 0x00000033
+ Ram Write Data @ [0x80010040] : 0x000000cc; Ram Read Data[0x80040040]: 0x000000cc
+ Ram Write Data @ [0x80010044] : 0x00000033; Ram Read Data[0x80040044]: 0x00000033
+ Ram Write Data @ [0x80010048] : 0x000000cc; Ram Read Data[0x80040048]: 0x000000cc
+ Ram Write Data @ [0x8001004c] : 0x00000033; Ram Read Data[0x8004004c]: 0x00000033
+ Ram Write Data @ [0x80010050] : 0x000000cc; Ram Read Data[0x80040050]: 0x000000cc
+ Ram Write Data @ [0x80010054] : 0x00000033; Ram Read Data[0x80040054]: 0x00000033
+ Ram Write Data @ [0x80010058] : 0x000000cc; Ram Read Data[0x80040058]: 0x000000cc
+ Ram Write Data @ [0x8001005c] : 0x00000033; Ram Read Data[0x8004005c]: 0x00000033
+ Ram Write Data @ [0x80010060] : 0x000000cc; Ram Read Data[0x80040060]: 0x000000cc
+ Ram Write Data @ [0x80010064] : 0x00000033; Ram Read Data[0x80040064]: 0x00000033
+ Ram Write Data @ [0x80010068] : 0x000000cc; Ram Read Data[0x80040068]: 0x000000cc
+ Ram Write Data @ [0x8001006c] : 0x00000033; Ram Read Data[0x8004006c]: 0x00000033
+ Ram Write Data @ [0x80010070] : 0x000000cc; Ram Read Data[0x80040070]: 0x000000cc
+ Ram Write Data @ [0x80010074] : 0x00000033; Ram Read Data[0x80040074]: 0x00000033
+ Ram Write Data @ [0x80010078] : 0x000000cc; Ram Read Data[0x80040078]: 0x000000cc
+ Ram Write Data @ [0x8001007c] : 0x00000033; Ram Read Data[0x8004007c]: 0x00000033
+ Ram Write Data @ [0x80010080] : 0x000000cc; Ram Read Data[0x80040080]: 0x000000cc
+ Ram Write Data @ [0x80010084] : 0x00000033; Ram Read Data[0x80040084]: 0x00000033
+ Ram Write Data @ [0x80010088] : 0x000000cc; Ram Read Data[0x80040088]: 0x000000cc
+ Ram Write Data @ [0x8001008c] : 0x00000033; Ram Read Data[0x8004008c]: 0x00000033
+ Ram Write Data @ [0x80010090] : 0x000000cc; Ram Read Data[0x80040090]: 0x000000cc
+ Ram Write Data @ [0x80010094] : 0x00000033; Ram Read Data[0x80040094]: 0x00000033
+ Ram Write Data @ [0x80010098] : 0x000000cc; Ram Read Data[0x80040098]: 0x000000cc
+ Ram Write Data @ [0x8001009c] : 0x00000033; Ram Read Data[0x8004009c]: 0x00000033
+ Ram Write Data @ [0x800100a0] : 0x000000cc; Ram Read Data[0x800400a0]: 0x000000cc
+ Ram Write Data @ [0x800100a4] : 0x00000033; Ram Read Data[0x800400a4]: 0x00000033
+ Ram Write Data @ [0x800100a8] : 0x000000cc; Ram Read Data[0x800400a8]: 0x000000cc
+ Ram Write Data @ [0x800100ac] : 0x00000033; Ram Read Data[0x800400ac]: 0x00000033
+ Ram Write Data @ [0x800100b0] : 0x000000cc; Ram Read Data[0x800400b0]: 0x000000cc
+ Ram Write Data @ [0x800100b4] : 0x00000033; Ram Read Data[0x800400b4]: 0x00000033
+ Ram Write Data @ [0x800100b8] : 0x000000cc; Ram Read Data[0x800400b8]: 0x000000cc
+ Ram Write Data @ [0x800100bc] : 0x00000033; Ram Read Data[0x800400bc]: 0x00000033
+ Ram Write Data @ [0x800100c0] : 0x000000cc; Ram Read Data[0x800400c0]: 0x000000cc
+ Ram Write Data @ [0x800100c4] : 0x00000033; Ram Read Data[0x800400c4]: 0x00000033
+ Ram Write Data @ [0x800100c8] : 0x000000cc; Ram Read Data[0x800400c8]: 0x000000cc
+ Ram Write Data @ [0x800100cc] : 0x00000033; Ram Read Data[0x800400cc]: 0x00000033
+ Ram Write Data @ [0x800100d0] : 0x000000cc; Ram Read Data[0x800400d0]: 0x000000cc
+ Ram Write Data @ [0x800100d4] : 0x00000033; Ram Read Data[0x800400d4]: 0x00000033
+ Ram Write Data @ [0x800100d8] : 0x000000cc; Ram Read Data[0x800400d8]: 0x000000cc
+ Ram Write Data @ [0x800100dc] : 0x00000033; Ram Read Data[0x800400dc]: 0x00000033
+ Ram Write Data @ [0x800100e0] : 0x000000cc; Ram Read Data[0x800400e0]: 0x000000cc
+ Ram Write Data @ [0x800100e4] : 0x00000033; Ram Read Data[0x800400e4]: 0x00000033
+ Ram Write Data @ [0x800100e8] : 0x000000cc; Ram Read Data[0x800400e8]: 0x000000cc
+ Ram Write Data @ [0x800100ec] : 0x00000033; Ram Read Data[0x800400ec]: 0x00000033
+ Ram Write Data @ [0x800100f0] : 0x000000cc; Ram Read Data[0x800400f0]: 0x000000cc
+ Ram Write Data @ [0x800100f4] : 0x00000033; Ram Read Data[0x800400f4]: 0x00000033
+ Ram Write Data @ [0x800100f8] : 0x000000cc; Ram Read Data[0x800400f8]: 0x000000cc
+ Ram Write Data @ [0x800100fc] : 0x00000033; Ram Read Data[0x800400fc]: 0x00000033
+ Ram Write Data @ [0x80010100] : 0x000000cc; Ram Read Data[0x80040100]: 0x000000cc
+ Ram Write Data @ [0x80010104] : 0x00000033; Ram Read Data[0x80040104]: 0x00000033
+ Ram Write Data @ [0x80010108] : 0x000000cc; Ram Read Data[0x80040108]: 0x000000cc
+ Ram Write Data @ [0x8001010c] : 0x00000033; Ram Read Data[0x8004010c]: 0x00000033
+ Ram Write Data @ [0x80010110] : 0x000000cc; Ram Read Data[0x80040110]: 0x000000cc
+ Ram Write Data @ [0x80010114] : 0x00000033; Ram Read Data[0x80040114]: 0x00000033
+ Ram Write Data @ [0x80010118] : 0x000000cc; Ram Read Data[0x80040118]: 0x000000cc
+ Ram Write Data @ [0x8001011c] : 0x00000033; Ram Read Data[0x8004011c]: 0x00000033
+ Ram Write Data @ [0x80010120] : 0x000000cc; Ram Read Data[0x80040120]: 0x000000cc
+ Ram Write Data @ [0x80010124] : 0x00000033; Ram Read Data[0x80040124]: 0x00000033
+ Ram Write Data @ [0x80010128] : 0x000000cc; Ram Read Data[0x80040128]: 0x000000cc
+ Ram Write Data @ [0x8001012c] : 0x00000033; Ram Read Data[0x8004012c]: 0x00000033
+ Ram Write Data @ [0x80010130] : 0x000000cc; Ram Read Data[0x80040130]: 0x000000cc
+ Ram Write Data @ [0x80010134] : 0x00000033; Ram Read Data[0x80040134]: 0x00000033
+ Ram Write Data @ [0x80010138] : 0x000000cc; Ram Read Data[0x80040138]: 0x000000cc
+ Ram Write Data @ [0x8001013c] : 0x00000033; Ram Read Data[0x8004013c]: 0x00000033
+ Ram Write Data @ [0x80010140] : 0x000000cc; Ram Read Data[0x80040140]: 0x000000cc
+ Ram Write Data @ [0x80010144] : 0x00000033; Ram Read Data[0x80040144]: 0x00000033
+ Ram Write Data @ [0x80010148] : 0x000000cc; Ram Read Data[0x80040148]: 0x000000cc
+ Ram Write Data @ [0x8001014c] : 0x00000033; Ram Read Data[0x8004014c]: 0x00000033
+ Ram Write Data @ [0x80010150] : 0x000000cc; Ram Read Data[0x80040150]: 0x000000cc
+ Ram Write Data @ [0x80010154] : 0x00000033; Ram Read Data[0x80040154]: 0x00000033
+ Ram Write Data @ [0x80010158] : 0x000000cc; Ram Read Data[0x80040158]: 0x000000cc
+ Ram Write Data @ [0x8001015c] : 0x00000033; Ram Read Data[0x8004015c]: 0x00000033
+ Ram Write Data @ [0x80010160] : 0x000000cc; Ram Read Data[0x80040160]: 0x000000cc
+ Ram Write Data @ [0x80010164] : 0x00000033; Ram Read Data[0x80040164]: 0x00000033
+ Ram Write Data @ [0x80010168] : 0x000000cc; Ram Read Data[0x80040168]: 0x000000cc
+ Ram Write Data @ [0x8001016c] : 0x00000033; Ram Read Data[0x8004016c]: 0x00000033
+ Ram Write Data @ [0x80010170] : 0x000000cc; Ram Read Data[0x80040170]: 0x000000cc
+ Ram Write Data @ [0x80010174] : 0x00000033; Ram Read Data[0x80040174]: 0x00000033
+ Ram Write Data @ [0x80010178] : 0x000000cc; Ram Read Data[0x80040178]: 0x000000cc
+ Ram Write Data @ [0x8001017c] : 0x00000033; Ram Read Data[0x8004017c]: 0x00000033
+ Ram Write Data @ [0x80010180] : 0x000000cc; Ram Read Data[0x80040180]: 0x000000cc
+ Ram Write Data @ [0x80010184] : 0x00000033; Ram Read Data[0x80040184]: 0x00000033
+ Ram Write Data @ [0x80010188] : 0x000000cc; Ram Read Data[0x80040188]: 0x000000cc
+ Ram Write Data @ [0x8001018c] : 0x00000033; Ram Read Data[0x8004018c]: 0x00000033
+ Ram Write Data @ [0x80010190] : 0x000000cc; Ram Read Data[0x80040190]: 0x000000cc
+ Ram Write Data @ [0x80010194] : 0x00000033; Ram Read Data[0x80040194]: 0x00000033
+ Ram Write Data @ [0x80010198] : 0x000000cc; Ram Read Data[0x80040198]: 0x000000cc
+ Ram Write Data @ [0x8001019c] : 0x00000033; Ram Read Data[0x8004019c]: 0x00000033
+ Ram Write Data @ [0x800101a0] : 0x000000cc; Ram Read Data[0x800401a0]: 0x000000cc
+ Ram Write Data @ [0x800101a4] : 0x00000033; Ram Read Data[0x800401a4]: 0x00000033
+ Ram Write Data @ [0x800101a8] : 0x000000cc; Ram Read Data[0x800401a8]: 0x000000cc
+ Ram Write Data @ [0x800101ac] : 0x00000033; Ram Read Data[0x800401ac]: 0x00000033
+ Ram Write Data @ [0x800101b0] : 0x000000cc; Ram Read Data[0x800401b0]: 0x000000cc
+ Ram Write Data @ [0x800101b4] : 0x00000033; Ram Read Data[0x800401b4]: 0x00000033
+ Ram Write Data @ [0x800101b8] : 0x000000cc; Ram Read Data[0x800401b8]: 0x000000cc
+ Ram Write Data @ [0x800101bc] : 0x00000033; Ram Read Data[0x800401bc]: 0x00000033
+ Ram Write Data @ [0x800101c0] : 0x000000cc; Ram Read Data[0x800401c0]: 0x000000cc
+ Ram Write Data @ [0x800101c4] : 0x00000033; Ram Read Data[0x800401c4]: 0x00000033
+ Ram Write Data @ [0x800101c8] : 0x000000cc; Ram Read Data[0x800401c8]: 0x000000cc
+ Ram Write Data @ [0x800101cc] : 0x00000033; Ram Read Data[0x800401cc]: 0x00000033
+ Ram Write Data @ [0x800101d0] : 0x000000cc; Ram Read Data[0x800401d0]: 0x000000cc
+ Ram Write Data @ [0x800101d4] : 0x00000033; Ram Read Data[0x800401d4]: 0x00000033
+ Ram Write Data @ [0x800101d8] : 0x000000cc; Ram Read Data[0x800401d8]: 0x000000cc
+ Ram Write Data @ [0x800101dc] : 0x00000033; Ram Read Data[0x800401dc]: 0x00000033
+ Ram Write Data @ [0x800101e0] : 0x000000cc; Ram Read Data[0x800401e0]: 0x000000cc
+ Ram Write Data @ [0x800101e4] : 0x00000033; Ram Read Data[0x800401e4]: 0x00000033
+ Ram Write Data @ [0x800101e8] : 0x000000cc; Ram Read Data[0x800401e8]: 0x000000cc
+ Ram Write Data @ [0x800101ec] : 0x00000033; Ram Read Data[0x800401ec]: 0x00000033
+ Ram Write Data @ [0x800101f0] : 0x000000cc; Ram Read Data[0x800401f0]: 0x000000c0	DMA has gone wrong somewhere in copying a: 000000cc to b: 000000c0 i:124 burst: 
+	 Burst Value: 0 seems to pass
+	 Cleared 
+	 DMA copy from BRAM to TCM seems to work for all bursts
+ = 71192
+ = 71200
+
+
+
+
+
+Starting DMA mem to mem transfer
+SDRAM init value 1
+Address of a: 80010000 c: 80010000 b: 80040000 d:00021000	 Fencing? 
+	 DMA_CCR3 value: 00006adf
+	 Waiting for DMA interrupt ISR value: 00000700
+	 Clearing Interrupt Flags
+
+ Ram Write Data @ [0x80010000] : 0x00000000; Ram Read Data[0x80040000]: 0x00000000
+ Ram Write Data @ [0x80010004] : 0x00000001; Ram Read Data[0x80040004]: 0x00000001
+ Ram Write Data @ [0x80010008] : 0x00000002; Ram Read Data[0x80040008]: 0x00000002
+ Ram Write Data @ [0x8001000c] : 0x00000003; Ram Read Data[0x8004000c]: 0x00000003
+ Ram Write Data @ [0x80010010] : 0x00000004; Ram Read Data[0x80040010]: 0x00000004
+ Ram Write Data @ [0x80010014] : 0x00000005; Ram Read Data[0x80040014]: 0x00000005
+ Ram Write Data @ [0x80010018] : 0x00000006; Ram Read Data[0x80040018]: 0x00000006
+ Ram Write Data @ [0x8001001c] : 0x00000007; Ram Read Data[0x8004001c]: 0x00000007
+ Ram Write Data @ [0x80010020] : 0x00000008; Ram Read Data[0x80040020]: 0x00000008
+ Ram Write Data @ [0x80010024] : 0x00000009; Ram Read Data[0x80040024]: 0x00000009
+ Ram Write Data @ [0x80010028] : 0x0000000a; Ram Read Data[0x80040028]: 0x0000000a
+ Ram Write Data @ [0x8001002c] : 0x0000000b; Ram Read Data[0x8004002c]: 0x0000000b
+ Ram Write Data @ [0x80010030] : 0x0000000c; Ram Read Data[0x80040030]: 0x0000000c
+ Ram Write Data @ [0x80010034] : 0x0000000d; Ram Read Data[0x80040034]: 0x0000000d
+ Ram Write Data @ [0x80010038] : 0x0000000e; Ram Read Data[0x80040038]: 0x0000000e
+ Ram Write Data @ [0x8001003c] : 0x0000000f; Ram Read Data[0x8004003c]: 0x0000000f
+ Ram Write Data @ [0x80010040] : 0x00000010; Ram Read Data[0x80040040]: 0x00000010
+ Ram Write Data @ [0x80010044] : 0x00000011; Ram Read Data[0x80040044]: 0x00000011
+ Ram Write Data @ [0x80010048] : 0x00000012; Ram Read Data[0x80040048]: 0x00000012
+ Ram Write Data @ [0x8001004c] : 0x00000013; Ram Read Data[0x8004004c]: 0x00000013
+ Ram Write Data @ [0x80010050] : 0x00000014; Ram Read Data[0x80040050]: 0x00000014
+ Ram Write Data @ [0x80010054] : 0x00000015; Ram Read Data[0x80040054]: 0x00000014
+	DMA has gone wrong somewhere in copying a: 00000015 to b: 00000014 i:21 burst: 
+
+ Ram Write Data @ [0x80010058] : 0x00000016; Ram Read Data[0x80040058]: 0x00000016
+ Ram Write Data @ [0x8001005c] : 0x00000017; Ram Read Data[0x8004005c]: 0x00000017
+ Ram Write Data @ [0x80010060] : 0x00000018; Ram Read Data[0x80040060]: 0x00000018
+ Ram Write Data @ [0x80010064] : 0x00000019; Ram Read Data[0x80040064]: 0x00000019
+ Ram Write Data @ [0x80010068] : 0x0000001a; Ram Read Data[0x80040068]: 0x0000001a
+ Ram Write Data @ [0x8001006c] : 0x0000001b; Ram Read Data[0x8004006c]: 0x0000001b
+ Ram Write Data @ [0x80010070] : 0x0000001c; Ram Read Data[0x80040070]: 0x0000001c
+ Ram Write Data @ [0x80010074] : 0x0000001d; Ram Read Data[0x80040074]: 0x0000001d
+ Ram Write Data @ [0x80010078] : 0x0000001e; Ram Read Data[0x80040078]: 0x00000016
+	DMA has gone wrong somewhere in copying a: 0000001e to b: 00000016 i:30 burst: 
+
+ Ram Write Data @ [0x8001007c] : 0x0000001f; Ram Read Data[0x8004007c]: 0x0000001f
+ Ram Write Data @ [0x80010080] : 0x00000020; Ram Read Data[0x80040080]: 0x00000020
+ Ram Write Data @ [0x80010084] : 0x00000021; Ram Read Data[0x80040084]: 0x00000021
+ Ram Write Data @ [0x80010088] : 0x00000022; Ram Read Data[0x80040088]: 0x00000022
+ Ram Write Data @ [0x8001008c] : 0x00000023; Ram Read Data[0x8004008c]: 0x00000023
+ Ram Write Data @ [0x80010090] : 0x00000024; Ram Read Data[0x80040090]: 0x00000024
+ Ram Write Data @ [0x80010094] : 0x00000025; Ram Read Data[0x80040094]: 0x00000024
+	DMA has gone wrong somewhere in copying a: 00000025 to b: 00000024 i:37 burst: 
+
+ Ram Write Data @ [0x80010098] : 0x00000026; Ram Read Data[0x80040098]: 0x00000026
+ Ram Write Data @ [0x8001009c] : 0x00000027; Ram Read Data[0x8004009c]: 0x00000027
+ Ram Write Data @ [0x800100a0] : 0x00000028; Ram Read Data[0x800400a0]: 0x00000028
+ Ram Write Data @ [0x800100a4] : 0x00000029; Ram Read Data[0x800400a4]: 0x00000029
+ Ram Write Data @ [0x800100a8] : 0x0000002a; Ram Read Data[0x800400a8]: 0x0000002a
+ Ram Write Data @ [0x800100ac] : 0x0000002b; Ram Read Data[0x800400ac]: 0x0000002b
+ Ram Write Data @ [0x800100b0] : 0x0000002c; Ram Read Data[0x800400b0]: 0x0000002c
+ Ram Write Data @ [0x800100b4] : 0x0000002d; Ram Read Data[0x800400b4]: 0x0000002c
+	DMA has gone wrong somewhere in copying a: 0000002d to b: 0000002c i:45 burst: 
+
+ Ram Write Data @ [0x800100b8] : 0x0000002e; Ram Read Data[0x800400b8]: 0x00000026
+	DMA has gone wrong somewhere in copying a: 0000002e to b: 00000026 i:46 burst: 
+
+ Ram Write Data @ [0x800100bc] : 0x0000002f; Ram Read Data[0x800400bc]: 0x0000002f
+ Ram Write Data @ [0x800100c0] : 0x00000030; Ram Read Data[0x800400c0]: 0x00000030
+ Ram Write Data @ [0x800100c4] : 0x00000031; Ram Read Data[0x800400c4]: 0x00000031
+ Ram Write Data @ [0x800100c8] : 0x00000032; Ram Read Data[0x800400c8]: 0x00000032
+ Ram Write Data @ [0x800100cc] : 0x00000033; Ram Read Data[0x800400cc]: 0x00000033
+ Ram Write Data @ [0x800100d0] : 0x00000034; Ram Read Data[0x800400d0]: 0x00000034
+ Ram Write Data @ [0x800100d4] : 0x00000035; Ram Read Data[0x800400d4]: 0x00000034
+	DMA has gone wrong somewhere in copying a: 00000035 to b: 00000034 i:53 burst: 
+
+ Ram Write Data @ [0x800100d8] : 0x00000036; Ram Read Data[0x800400d8]: 0x00000036
+ Ram Write Data @ [0x800100dc] : 0x00000037; Ram Read Data[0x800400dc]: 0x00000037
+ Ram Write Data @ [0x800100e0] : 0x00000038; Ram Read Data[0x800400e0]: 0x00000038
+ Ram Write Data @ [0x800100e4] : 0x00000039; Ram Read Data[0x800400e4]: 0x00000039
+ Ram Write Data @ [0x800100e8] : 0x0000003a; Ram Read Data[0x800400e8]: 0x0000003a
+ Ram Write Data @ [0x800100ec] : 0x0000003b; Ram Read Data[0x800400ec]: 0x0000003b
+ Ram Write Data @ [0x800100f0] : 0x0000003c; Ram Read Data[0x800400f0]: 0x0000003c
+ Ram Write Data @ [0x800100f4] : 0x0000003d; Ram Read Data[0x800400f4]: 0x0000003d
+ Ram Write Data @ [0x800100f8] : 0x0000003e; Ram Read Data[0x800400f8]: 0x00000036
+	DMA has gone wrong somewhere in copying a: 0000003e to b: 00000036 i:62 burst: 
+
+ Ram Write Data @ [0x800100fc] : 0x0000003f; Ram Read Data[0x800400fc]: 0x0000003f
+ Ram Write Data @ [0x80010100] : 0x00000040; Ram Read Data[0x80040100]: 0x00000040
+ Ram Write Data @ [0x80010104] : 0x00000041; Ram Read Data[0x80040104]: 0x00000041
+ Ram Write Data @ [0x80010108] : 0x00000042; Ram Read Data[0x80040108]: 0x00000042
+ Ram Write Data @ [0x8001010c] : 0x00000043; Ram Read Data[0x8004010c]: 0x00000043
+ Ram Write Data @ [0x80010110] : 0x00000044; Ram Read Data[0x80040110]: 0x00000044
+ Ram Write Data @ [0x80010114] : 0x00000045; Ram Read Data[0x80040114]: 0x00000044
+	DMA has gone wrong somewhere in copying a: 00000045 to b: 00000044 i:69 burst: 
+
+ Ram Write Data @ [0x80010118] : 0x00000046; Ram Read Data[0x80040118]: 0x00000046
+ Ram Write Data @ [0x8001011c] : 0x00000047; Ram Read Data[0x8004011c]: 0x00000047
+ Ram Write Data @ [0x80010120] : 0x00000048; Ram Read Data[0x80040120]: 0x00000048
+ Ram Write Data @ [0x80010124] : 0x00000049; Ram Read Data[0x80040124]: 0x00000049
+ Ram Write Data @ [0x80010128] : 0x0000004a; Ram Read Data[0x80040128]: 0x0000004a
+ Ram Write Data @ [0x8001012c] : 0x0000004b; Ram Read Data[0x8004012c]: 0x0000004b
+ Ram Write Data @ [0x80010130] : 0x0000004c; Ram Read Data[0x80040130]: 0x0000004c
+ Ram Write Data @ [0x80010134] : 0x0000004d; Ram Read Data[0x80040134]: 0x0000004d
+ Ram Write Data @ [0x80010138] : 0x0000004e; Ram Read Data[0x80040138]: 0x00000046
+	DMA has gone wrong somewhere in copying a: 0000004e to b: 00000046 i:78 burst: 
+
+ Ram Write Data @ [0x8001013c] : 0x0000004f; Ram Read Data[0x8004013c]: 0x0000004f
+ Ram Write Data @ [0x80010140] : 0x00000050; Ram Read Data[0x80040140]: 0x00000050
+ Ram Write Data @ [0x80010144] : 0x00000051; Ram Read Data[0x80040144]: 0x00000051
+ Ram Write Data @ [0x80010148] : 0x00000052; Ram Read Data[0x80040148]: 0x00000052
+ Ram Write Data @ [0x8001014c] : 0x00000053; Ram Read Data[0x8004014c]: 0x00000053
+ Ram Write Data @ [0x80010150] : 0x00000054; Ram Read Data[0x80040150]: 0x00000054
+ Ram Write Data @ [0x80010154] : 0x00000055; Ram Read Data[0x80040154]: 0x00000055
+ Ram Write Data @ [0x80010158] : 0x00000056; Ram Read Data[0x80040158]: 0x00000056
+ Ram Write Data @ [0x8001015c] : 0x00000057; Ram Read Data[0x8004015c]: 0x00000057
+ Ram Write Data @ [0x80010160] : 0x00000058; Ram Read Data[0x80040160]: 0x00000058
+ Ram Write Data @ [0x80010164] : 0x00000059; Ram Read Data[0x80040164]: 0x00000059
+ Ram Write Data @ [0x80010168] : 0x0000005a; Ram Read Data[0x80040168]: 0x0000005a
+ Ram Write Data @ [0x8001016c] : 0x0000005b; Ram Read Data[0x8004016c]: 0x0000005b
+ Ram Write Data @ [0x80010170] : 0x0000005c; Ram Read Data[0x80040170]: 0x0000005c
+ Ram Write Data @ [0x80010174] : 0x0000005d; Ram Read Data[0x80040174]: 0x0000005c
+	DMA has gone wrong somewhere in copying a: 0000005d to b: 0000005c i:93 burst: 
+
+ Ram Write Data @ [0x80010178] : 0x0000005e; Ram Read Data[0x80040178]: 0x00000052
+	DMA has gone wrong somewhere in copying a: 0000005e to b: 00000052 i:94 burst: 
+
+ Ram Write Data @ [0x8001017c] : 0x0000005f; Ram Read Data[0x8004017c]: 0x0000005f
+ Ram Write Data @ [0x80010180] : 0x00000060; Ram Read Data[0x80040180]: 0x00000060
+ Ram Write Data @ [0x80010184] : 0x00000061; Ram Read Data[0x80040184]: 0x00000061
+ Ram Write Data @ [0x80010188] : 0x00000062; Ram Read Data[0x80040188]: 0x00000062
+ Ram Write Data @ [0x8001018c] : 0x00000063; Ram Read Data[0x8004018c]: 0x00000063
+ Ram Write Data @ [0x80010190] : 0x00000064; Ram Read Data[0x80040190]: 0x00000064
+ Ram Write Data @ [0x80010194] : 0x00000065; Ram Read Data[0x80040194]: 0x00000064
+	DMA has gone wrong somewhere in copying a: 00000065 to b: 00000064 i:101 burst: 
+
+ Ram Write Data @ [0x80010198] : 0x00000066; Ram Read Data[0x80040198]: 0x00000066
+ Ram Write Data @ [0x8001019c] : 0x00000067; Ram Read Data[0x8004019c]: 0x00000067
+ Ram Write Data @ [0x800101a0] : 0x00000068; Ram Read Data[0x800401a0]: 0x00000068
+ Ram Write Data @ [0x800101a4] : 0x00000069; Ram Read Data[0x800401a4]: 0x00000069
+ Ram Write Data @ [0x800101a8] : 0x0000006a; Ram Read Data[0x800401a8]: 0x0000006a
+ Ram Write Data @ [0x800101ac] : 0x0000006b; Ram Read Data[0x800401ac]: 0x0000006b
+ Ram Write Data @ [0x800101b0] : 0x0000006c; Ram Read Data[0x800401b0]: 0x0000006c
+ Ram Write Data @ [0x800101b4] : 0x0000006d; Ram Read Data[0x800401b4]: 0x0000006c
+	DMA has gone wrong somewhere in copying a: 0000006d to b: 0000006c i:109 burst: 
+
+ Ram Write Data @ [0x800101b8] : 0x0000006e; Ram Read Data[0x800401b8]: 0x00000062
+	DMA has gone wrong somewhere in copying a: 0000006e to b: 00000062 i:110 burst: 
+
+ Ram Write Data @ [0x800101bc] : 0x0000006f; Ram Read Data[0x800401bc]: 0x0000006f
+ Ram Write Data @ [0x800101c0] : 0x00000070; Ram Read Data[0x800401c0]: 0x00000070
+ Ram Write Data @ [0x800101c4] : 0x00000071; Ram Read Data[0x800401c4]: 0x00000071
+ Ram Write Data @ [0x800101c8] : 0x00000072; Ram Read Data[0x800401c8]: 0x00000072
+ Ram Write Data @ [0x800101cc] : 0x00000073; Ram Read Data[0x800401cc]: 0x00000073
+ Ram Write Data @ [0x800101d0] : 0x00000074; Ram Read Data[0x800401d0]: 0x00000074
+ Ram Write Data @ [0x800101d4] : 0x00000075; Ram Read Data[0x800401d4]: 0x00000075
+ Ram Write Data @ [0x800101d8] : 0x00000076; Ram Read Data[0x800401d8]: 0x00000076
+ Ram Write Data @ [0x800101dc] : 0x00000077; Ram Read Data[0x800401dc]: 0x00000077
+ Ram Write Data @ [0x800101e0] : 0x00000078; Ram Read Data[0x800401e0]: 0x00000078
+ Ram Write Data @ [0x800101e4] : 0x00000079; Ram Read Data[0x800401e4]: 0x00000079
+ Ram Write Data @ [0x800101e8] : 0x0000007a; Ram Read Data[0x800401e8]: 0x0000007a
+ Ram Write Data @ [0x800101ec] : 0x0000007b; Ram Read Data[0x800401ec]: 0x0000007b
+ Ram Write Data @ [0x800101f0] : 0x0000007c; Ram Read Data[0x800401f0]: 0x00000078
+	DMA has gone wrong somewhere in copying a: 0000007c to b: 00000078 i:124 burst: 
+	 Burst Value: 0 seems to pass
+	 Cleared 
+	 DMA copy from BRAM to TCM seems to work for all bursts
+ = 71324
+ = 71328
+
+
+
+
+
+Starting DMA mem to mem transfer
+SDRAM init value 1
+Address of a: 80010000 c: 80010000 b: 80040000 d:00021000	 Fencing? 
+	 DMA_CCR3 value: 00006adf
+	 Waiting for DMA interrupt ISR value: 00000700
+	 Clearing Interrupt Flags
+
+ Ram Write Data @ [0x80010000] : 0x00000100; Ram Read Data[0x80040000]: 0x00000100
+ Ram Write Data @ [0x80010004] : 0x00000101; Ram Read Data[0x80040004]: 0x00000101
+ Ram Write Data @ [0x80010008] : 0x00000102; Ram Read Data[0x80040008]: 0x00000102
+ Ram Write Data @ [0x8001000c] : 0x00000103; Ram Read Data[0x8004000c]: 0x00000103
+ Ram Write Data @ [0x80010010] : 0x00000104; Ram Read Data[0x80040010]: 0x00000104
+ Ram Write Data @ [0x80010014] : 0x00000105; Ram Read Data[0x80040014]: 0x00000105
+ Ram Write Data @ [0x80010018] : 0x00000106; Ram Read Data[0x80040018]: 0x00000106
+ Ram Write Data @ [0x8001001c] : 0x00000107; Ram Read Data[0x8004001c]: 0x00000107
+ Ram Write Data @ [0x80010020] : 0x00000108; Ram Read Data[0x80040020]: 0x00000108
+ Ram Write Data @ [0x80010024] : 0x00000109; Ram Read Data[0x80040024]: 0x00000109
+ Ram Write Data @ [0x80010028] : 0x0000010a; Ram Read Data[0x80040028]: 0x0000010a
+ Ram Write Data @ [0x8001002c] : 0x0000010b; Ram Read Data[0x8004002c]: 0x0000010b
+ Ram Write Data @ [0x80010030] : 0x0000010c; Ram Read Data[0x80040030]: 0x0000010c
+ Ram Write Data @ [0x80010034] : 0x0000010d; Ram Read Data[0x80040034]: 0x0000010d
+ Ram Write Data @ [0x80010038] : 0x0000010e; Ram Read Data[0x80040038]: 0x0000010e
+ Ram Write Data @ [0x8001003c] : 0x0000010f; Ram Read Data[0x8004003c]: 0x0000010f
+ Ram Write Data @ [0x80010040] : 0x00000110; Ram Read Data[0x80040040]: 0x00000110
+ Ram Write Data @ [0x80010044] : 0x00000111; Ram Read Data[0x80040044]: 0x00000011
+	DMA has gone wrong somewhere in copying a: 00000111 to b: 00000011 i:17 burst: 
+
+ Ram Write Data @ [0x80010048] : 0x00000112; Ram Read Data[0x80040048]: 0x00000112
+ Ram Write Data @ [0x8001004c] : 0x00000113; Ram Read Data[0x8004004c]: 0x00000013
+	DMA has gone wrong somewhere in copying a: 00000113 to b: 00000013 i:19 burst: 
+
+ Ram Write Data @ [0x80010050] : 0x00000114; Ram Read Data[0x80040050]: 0x00000114
+ Ram Write Data @ [0x80010054] : 0x00000115; Ram Read Data[0x80040054]: 0x00000014
+	DMA has gone wrong somewhere in copying a: 00000115 to b: 00000014 i:21 burst: 
+
+ Ram Write Data @ [0x80010058] : 0x00000116; Ram Read Data[0x80040058]: 0x00000116
+ Ram Write Data @ [0x8001005c] : 0x00000117; Ram Read Data[0x8004005c]: 0x00000017
+	DMA has gone wrong somewhere in copying a: 00000117 to b: 00000017 i:23 burst: 
+
+ Ram Write Data @ [0x80010060] : 0x00000118; Ram Read Data[0x80040060]: 0x00000118
+ Ram Write Data @ [0x80010064] : 0x00000119; Ram Read Data[0x80040064]: 0x00000119
+ Ram Write Data @ [0x80010068] : 0x0000011a; Ram Read Data[0x80040068]: 0x0000011a
+ Ram Write Data @ [0x8001006c] : 0x0000011b; Ram Read Data[0x8004006c]: 0x0000011b
+ Ram Write Data @ [0x80010070] : 0x0000011c; Ram Read Data[0x80040070]: 0x0000011c
+ Ram Write Data @ [0x80010074] : 0x0000011d; Ram Read Data[0x80040074]: 0x0000011d
+ Ram Write Data @ [0x80010078] : 0x0000011e; Ram Read Data[0x80040078]: 0x00000116
+	DMA has gone wrong somewhere in copying a: 0000011e to b: 00000116 i:30 burst: 
+
+ Ram Write Data @ [0x8001007c] : 0x0000011f; Ram Read Data[0x8004007c]: 0x0000011f
+ Ram Write Data @ [0x80010080] : 0x00000120; Ram Read Data[0x80040080]: 0x00000120
+ Ram Write Data @ [0x80010084] : 0x00000121; Ram Read Data[0x80040084]: 0x00000121
+ Ram Write Data @ [0x80010088] : 0x00000122; Ram Read Data[0x80040088]: 0x00000122
+ Ram Write Data @ [0x8001008c] : 0x00000123; Ram Read Data[0x8004008c]: 0x00000123
+ Ram Write Data @ [0x80010090] : 0x00000124; Ram Read Data[0x80040090]: 0x00000124
+ Ram Write Data @ [0x80010094] : 0x00000125; Ram Read Data[0x80040094]: 0x00000124
+	DMA has gone wrong somewhere in copying a: 00000125 to b: 00000124 i:37 burst: 
+
+ Ram Write Data @ [0x80010098] : 0x00000126; Ram Read Data[0x80040098]: 0x00000126
+ Ram Write Data @ [0x8001009c] : 0x00000127; Ram Read Data[0x8004009c]: 0x00000127
+ Ram Write Data @ [0x800100a0] : 0x00000128; Ram Read Data[0x800400a0]: 0x00000128
+ Ram Write Data @ [0x800100a4] : 0x00000129; Ram Read Data[0x800400a4]: 0x00000129
+ Ram Write Data @ [0x800100a8] : 0x0000012a; Ram Read Data[0x800400a8]: 0x0000012a
+ Ram Write Data @ [0x800100ac] : 0x0000012b; Ram Read Data[0x800400ac]: 0x0000012b
+ Ram Write Data @ [0x800100b0] : 0x0000012c; Ram Read Data[0x800400b0]: 0x0000012c
+ Ram Write Data @ [0x800100b4] : 0x0000012d; Ram Read Data[0x800400b4]: 0x0000012c
+	DMA has gone wrong somewhere in copying a: 0000012d to b: 0000012c i:45 burst: 
+
+ Ram Write Data @ [0x800100b8] : 0x0000012e; Ram Read Data[0x800400b8]: 0x00000122
+	DMA has gone wrong somewhere in copying a: 0000012e to b: 00000122 i:46 burst: 
+
+ Ram Write Data @ [0x800100bc] : 0x0000012f; Ram Read Data[0x800400bc]: 0x0000012f
+ Ram Write Data @ [0x800100c0] : 0x00000130; Ram Read Data[0x800400c0]: 0x00000130
+ Ram Write Data @ [0x800100c4] : 0x00000131; Ram Read Data[0x800400c4]: 0x00000131
+ Ram Write Data @ [0x800100c8] : 0x00000132; Ram Read Data[0x800400c8]: 0x00000132
+ Ram Write Data @ [0x800100cc] : 0x00000133; Ram Read Data[0x800400cc]: 0x00000133
+ Ram Write Data @ [0x800100d0] : 0x00000134; Ram Read Data[0x800400d0]: 0x00000134
+ Ram Write Data @ [0x800100d4] : 0x00000135; Ram Read Data[0x800400d4]: 0x00000134
+	DMA has gone wrong somewhere in copying a: 00000135 to b: 00000134 i:53 burst: 
+
+ Ram Write Data @ [0x800100d8] : 0x00000136; Ram Read Data[0x800400d8]: 0x00000136
+ Ram Write Data @ [0x800100dc] : 0x00000137; Ram Read Data[0x800400dc]: 0x00000137
+ Ram Write Data @ [0x800100e0] : 0x00000138; Ram Read Data[0x800400e0]: 0x00000138
+ Ram Write Data @ [0x800100e4] : 0x00000139; Ram Read Data[0x800400e4]: 0x00000139
+ Ram Write Data @ [0x800100e8] : 0x0000013a; Ram Read Data[0x800400e8]: 0x0000013a
+ Ram Write Data @ [0x800100ec] : 0x0000013b; Ram Read Data[0x800400ec]: 0x0000013b
+ Ram Write Data @ [0x800100f0] : 0x0000013c; Ram Read Data[0x800400f0]: 0x0000013c
+ Ram Write Data @ [0x800100f4] : 0x0000013d; Ram Read Data[0x800400f4]: 0x0000013d
+ Ram Write Data @ [0x800100f8] : 0x0000013e; Ram Read Data[0x800400f8]: 0x00000132
+	DMA has gone wrong somewhere in copying a: 0000013e to b: 00000132 i:62 burst: 
+
+ Ram Write Data @ [0x800100fc] : 0x0000013f; Ram Read Data[0x800400fc]: 0x0000013f
+ Ram Write Data @ [0x80010100] : 0x00000140; Ram Read Data[0x80040100]: 0x00000140
+ Ram Write Data @ [0x80010104] : 0x00000141; Ram Read Data[0x80040104]: 0x00000041
+	DMA has gone wrong somewhere in copying a: 00000141 to b: 00000041 i:65 burst: 
+
+ Ram Write Data @ [0x80010108] : 0x00000142; Ram Read Data[0x80040108]: 0x00000142
+ Ram Write Data @ [0x8001010c] : 0x00000143; Ram Read Data[0x8004010c]: 0x00000043
+	DMA has gone wrong somewhere in copying a: 00000143 to b: 00000043 i:67 burst: 
+
+ Ram Write Data @ [0x80010110] : 0x00000144; Ram Read Data[0x80040110]: 0x00000144
+ Ram Write Data @ [0x80010114] : 0x00000145; Ram Read Data[0x80040114]: 0x00000044
+	DMA has gone wrong somewhere in copying a: 00000145 to b: 00000044 i:69 burst: 
+
+ Ram Write Data @ [0x80010118] : 0x00000146; Ram Read Data[0x80040118]: 0x00000146
+ Ram Write Data @ [0x8001011c] : 0x00000147; Ram Read Data[0x8004011c]: 0x00000047
+	DMA has gone wrong somewhere in copying a: 00000147 to b: 00000047 i:71 burst: 
+
+ Ram Write Data @ [0x80010120] : 0x00000148; Ram Read Data[0x80040120]: 0x00000148
+ Ram Write Data @ [0x80010124] : 0x00000149; Ram Read Data[0x80040124]: 0x00000149
+ Ram Write Data @ [0x80010128] : 0x0000014a; Ram Read Data[0x80040128]: 0x0000014a
+ Ram Write Data @ [0x8001012c] : 0x0000014b; Ram Read Data[0x8004012c]: 0x0000014b
+ Ram Write Data @ [0x80010130] : 0x0000014c; Ram Read Data[0x80040130]: 0x0000014c
+ Ram Write Data @ [0x80010134] : 0x0000014d; Ram Read Data[0x80040134]: 0x0000014c
+	DMA has gone wrong somewhere in copying a: 0000014d to b: 0000014c i:77 burst: 
+
+ Ram Write Data @ [0x80010138] : 0x0000014e; Ram Read Data[0x80040138]: 0x00000142
+	DMA has gone wrong somewhere in copying a: 0000014e to b: 00000142 i:78 burst: 
+
+ Ram Write Data @ [0x8001013c] : 0x0000014f; Ram Read Data[0x8004013c]: 0x0000014f
+ Ram Write Data @ [0x80010140] : 0x00000150; Ram Read Data[0x80040140]: 0x00000150
+ Ram Write Data @ [0x80010144] : 0x00000151; Ram Read Data[0x80040144]: 0x00000151
+ Ram Write Data @ [0x80010148] : 0x00000152; Ram Read Data[0x80040148]: 0x00000152
+ Ram Write Data @ [0x8001014c] : 0x00000153; Ram Read Data[0x8004014c]: 0x00000153
+ Ram Write Data @ [0x80010150] : 0x00000154; Ram Read Data[0x80040150]: 0x00000154
+ Ram Write Data @ [0x80010154] : 0x00000155; Ram Read Data[0x80040154]: 0x00000154
+	DMA has gone wrong somewhere in copying a: 00000155 to b: 00000154 i:85 burst: 
+
+ Ram Write Data @ [0x80010158] : 0x00000156; Ram Read Data[0x80040158]: 0x00000156
+ Ram Write Data @ [0x8001015c] : 0x00000157; Ram Read Data[0x8004015c]: 0x00000157
+ Ram Write Data @ [0x80010160] : 0x00000158; Ram Read Data[0x80040160]: 0x00000158
+ Ram Write Data @ [0x80010164] : 0x00000159; Ram Read Data[0x80040164]: 0x00000159
+ Ram Write Data @ [0x80010168] : 0x0000015a; Ram Read Data[0x80040168]: 0x0000015a
+ Ram Write Data @ [0x8001016c] : 0x0000015b; Ram Read Data[0x8004016c]: 0x0000015b
+ Ram Write Data @ [0x80010170] : 0x0000015c; Ram Read Data[0x80040170]: 0x0000015c
+ Ram Write Data @ [0x80010174] : 0x0000015d; Ram Read Data[0x80040174]: 0x0000015d
+ Ram Write Data @ [0x80010178] : 0x0000015e; Ram Read Data[0x80040178]: 0x00000156
+	DMA has gone wrong somewhere in copying a: 0000015e to b: 00000156 i:94 burst: 
+
+ Ram Write Data @ [0x8001017c] : 0x0000015f; Ram Read Data[0x8004017c]: 0x0000015f
+ Ram Write Data @ [0x80010180] : 0x00000160; Ram Read Data[0x80040180]: 0x00000160
+ Ram Write Data @ [0x80010184] : 0x00000161; Ram Read Data[0x80040184]: 0x00000161
+ Ram Write Data @ [0x80010188] : 0x00000162; Ram Read Data[0x80040188]: 0x00000162
+ Ram Write Data @ [0x8001018c] : 0x00000163; Ram Read Data[0x8004018c]: 0x00000163
+ Ram Write Data @ [0x80010190] : 0x00000164; Ram Read Data[0x80040190]: 0x00000164
+ Ram Write Data @ [0x80010194] : 0x00000165; Ram Read Data[0x80040194]: 0x00000164
+	DMA has gone wrong somewhere in copying a: 00000165 to b: 00000164 i:101 burst: 
+
+ Ram Write Data @ [0x80010198] : 0x00000166; Ram Read Data[0x80040198]: 0x00000166
+ Ram Write Data @ [0x8001019c] : 0x00000167; Ram Read Data[0x8004019c]: 0x00000167
+ Ram Write Data @ [0x800101a0] : 0x00000168; Ram Read Data[0x800401a0]: 0x00000168
+ Ram Write Data @ [0x800101a4] : 0x00000169; Ram Read Data[0x800401a4]: 0x00000169
+ Ram Write Data @ [0x800101a8] : 0x0000016a; Ram Read Data[0x800401a8]: 0x0000016a
+ Ram Write Data @ [0x800101ac] : 0x0000016b; Ram Read Data[0x800401ac]: 0x0000016b
+ Ram Write Data @ [0x800101b0] : 0x0000016c; Ram Read Data[0x800401b0]: 0x0000016c
+ Ram Write Data @ [0x800101b4] : 0x0000016d; Ram Read Data[0x800401b4]: 0x0000016c
+	DMA has gone wrong somewhere in copying a: 0000016d to b: 0000016c i:109 burst: 
+
+ Ram Write Data @ [0x800101b8] : 0x0000016e; Ram Read Data[0x800401b8]: 0x00000162
+	DMA has gone wrong somewhere in copying a: 0000016e to b: 00000162 i:110 burst: 
+
+ Ram Write Data @ [0x800101bc] : 0x0000016f; Ram Read Data[0x800401bc]: 0x0000016f
+ Ram Write Data @ [0x800101c0] : 0x00000170; Ram Read Data[0x800401c0]: 0x00000170
+ Ram Write Data @ [0x800101c4] : 0x00000171; Ram Read Data[0x800401c4]: 0x00000171
+ Ram Write Data @ [0x800101c8] : 0x00000172; Ram Read Data[0x800401c8]: 0x00000172
+ Ram Write Data @ [0x800101cc] : 0x00000173; Ram Read Data[0x800401cc]: 0x00000173
+ Ram Write Data @ [0x800101d0] : 0x00000174; Ram Read Data[0x800401d0]: 0x00000174
+ Ram Write Data @ [0x800101d4] : 0x00000175; Ram Read Data[0x800401d4]: 0x00000174
+	DMA has gone wrong somewhere in copying a: 00000175 to b: 00000174 i:117 burst: 
+
+ Ram Write Data @ [0x800101d8] : 0x00000176; Ram Read Data[0x800401d8]: 0x00000172
+	DMA has gone wrong somewhere in copying a: 00000176 to b: 00000172 i:118 burst: 
+
+ Ram Write Data @ [0x800101dc] : 0x00000177; Ram Read Data[0x800401dc]: 0x00000177
+ Ram Write Data @ [0x800101e0] : 0x00000178; Ram Read Data[0x800401e0]: 0x00000178
+ Ram Write Data @ [0x800101e4] : 0x00000179; Ram Read Data[0x800401e4]: 0x00000179
+ Ram Write Data @ [0x800101e8] : 0x0000017a; Ram Read Data[0x800401e8]: 0x0000017a
+ Ram Write Data @ [0x800101ec] : 0x0000017b; Ram Read Data[0x800401ec]: 0x0000017b
+ Ram Write Data @ [0x800101f0] : 0x0000017c; Ram Read Data[0x800401f0]: 0x0000017c	 Burst Value: 0 seems to pass
+	 Cleared 
+	 DMA copy from BRAM to TCM seems to work for all bursts
+ = 71328
+ = 71336
+
+
+
+
+
+
+Starting DMA mem to mem transfer
+SDRAM init value 1
+Address of a: 80010000 c: 80010000 b: 80040000 d:00021000	 Fencing? 
+	 DMA_CCR3 value: 00006adf
+	 Waiting for DMA interrupt ISR value: 00000700
+	 Clearing Interrupt Flags
+
+ Ram Write Data @ [0x80010000] : 0x00000200; Ram Read Data[0x80040000]: 0x00000200
+ Ram Write Data @ [0x80010004] : 0x00000201; Ram Read Data[0x80040004]: 0x00000201
+ Ram Write Data @ [0x80010008] : 0x00000202; Ram Read Data[0x80040008]: 0x00000202
+ Ram Write Data @ [0x8001000c] : 0x00000203; Ram Read Data[0x8004000c]: 0x00000203
+ Ram Write Data @ [0x80010010] : 0x00000204; Ram Read Data[0x80040010]: 0x00000204
+ Ram Write Data @ [0x80010014] : 0x00000205; Ram Read Data[0x80040014]: 0x00000205
+ Ram Write Data @ [0x80010018] : 0x00000206; Ram Read Data[0x80040018]: 0x00000206
+ Ram Write Data @ [0x8001001c] : 0x00000207; Ram Read Data[0x8004001c]: 0x00000207
+ Ram Write Data @ [0x80010020] : 0x00000208; Ram Read Data[0x80040020]: 0x00000208
+ Ram Write Data @ [0x80010024] : 0x00000209; Ram Read Data[0x80040024]: 0x00000209
+ Ram Write Data @ [0x80010028] : 0x0000020a; Ram Read Data[0x80040028]: 0x0000020a
+ Ram Write Data @ [0x8001002c] : 0x0000020b; Ram Read Data[0x8004002c]: 0x0000020b
+ Ram Write Data @ [0x80010030] : 0x0000020c; Ram Read Data[0x80040030]: 0x0000020c
+ Ram Write Data @ [0x80010034] : 0x0000020d; Ram Read Data[0x80040034]: 0x0000020d
+ Ram Write Data @ [0x80010038] : 0x0000020e; Ram Read Data[0x80040038]: 0x00000206
+	DMA has gone wrong somewhere in copying a: 0000020e to b: 00000206 i:14 burst: 
+
+ Ram Write Data @ [0x8001003c] : 0x0000020f; Ram Read Data[0x8004003c]: 0x0000020f
+ Ram Write Data @ [0x80010040] : 0x00000210; Ram Read Data[0x80040040]: 0x00000210
+ Ram Write Data @ [0x80010044] : 0x00000211; Ram Read Data[0x80040044]: 0x00000211
+ Ram Write Data @ [0x80010048] : 0x00000212; Ram Read Data[0x80040048]: 0x00000212
+ Ram Write Data @ [0x8001004c] : 0x00000213; Ram Read Data[0x8004004c]: 0x00000213
+ Ram Write Data @ [0x80010050] : 0x00000214; Ram Read Data[0x80040050]: 0x00000214
+ Ram Write Data @ [0x80010054] : 0x00000215; Ram Read Data[0x80040054]: 0x00000214
+	DMA has gone wrong somewhere in copying a: 00000215 to b: 00000214 i:21 burst: 
+
+ Ram Write Data @ [0x80010058] : 0x00000216; Ram Read Data[0x80040058]: 0x00000216
+ Ram Write Data @ [0x8001005c] : 0x00000217; Ram Read Data[0x8004005c]: 0x00000217
+ Ram Write Data @ [0x80010060] : 0x00000218; Ram Read Data[0x80040060]: 0x00000218
+ Ram Write Data @ [0x80010064] : 0x00000219; Ram Read Data[0x80040064]: 0x00000219
+ Ram Write Data @ [0x80010068] : 0x0000021a; Ram Read Data[0x80040068]: 0x0000021a
+ Ram Write Data @ [0x8001006c] : 0x0000021b; Ram Read Data[0x8004006c]: 0x0000021b
+ Ram Write Data @ [0x80010070] : 0x0000021c; Ram Read Data[0x80040070]: 0x0000021c
+ Ram Write Data @ [0x80010074] : 0x0000021d; Ram Read Data[0x80040074]: 0x0000021c
+	DMA has gone wrong somewhere in copying a: 0000021d to b: 0000021c i:29 burst: 
+
+ Ram Write Data @ [0x80010078] : 0x0000021e; Ram Read Data[0x80040078]: 0x00000212
+	DMA has gone wrong somewhere in copying a: 0000021e to b: 00000212 i:30 burst: 
+
+ Ram Write Data @ [0x8001007c] : 0x0000021f; Ram Read Data[0x8004007c]: 0x0000021f
+ Ram Write Data @ [0x80010080] : 0x00000220; Ram Read Data[0x80040080]: 0x00000220
+ Ram Write Data @ [0x80010084] : 0x00000221; Ram Read Data[0x80040084]: 0x00000221
+ Ram Write Data @ [0x80010088] : 0x00000222; Ram Read Data[0x80040088]: 0x00000222
+ Ram Write Data @ [0x8001008c] : 0x00000223; Ram Read Data[0x8004008c]: 0x00000223
+ Ram Write Data @ [0x80010090] : 0x00000224; Ram Read Data[0x80040090]: 0x00000224
+ Ram Write Data @ [0x80010094] : 0x00000225; Ram Read Data[0x80040094]: 0x00000224
+	DMA has gone wrong somewhere in copying a: 00000225 to b: 00000224 i:37 burst: 
+
+ Ram Write Data @ [0x80010098] : 0x00000226; Ram Read Data[0x80040098]: 0x00000226
+ Ram Write Data @ [0x8001009c] : 0x00000227; Ram Read Data[0x8004009c]: 0x00000227
+ Ram Write Data @ [0x800100a0] : 0x00000228; Ram Read Data[0x800400a0]: 0x00000228
+ Ram Write Data @ [0x800100a4] : 0x00000229; Ram Read Data[0x800400a4]: 0x00000229
+ Ram Write Data @ [0x800100a8] : 0x0000022a; Ram Read Data[0x800400a8]: 0x0000022a
+ Ram Write Data @ [0x800100ac] : 0x0000022b; Ram Read Data[0x800400ac]: 0x0000022b
+ Ram Write Data @ [0x800100b0] : 0x0000022c; Ram Read Data[0x800400b0]: 0x0000022c
+ Ram Write Data @ [0x800100b4] : 0x0000022d; Ram Read Data[0x800400b4]: 0x0000022d
+ Ram Write Data @ [0x800100b8] : 0x0000022e; Ram Read Data[0x800400b8]: 0x00000226
+	DMA has gone wrong somewhere in copying a: 0000022e to b: 00000226 i:46 burst: 
+
+ Ram Write Data @ [0x800100bc] : 0x0000022f; Ram Read Data[0x800400bc]: 0x0000022f
+ Ram Write Data @ [0x800100c0] : 0x00000230; Ram Read Data[0x800400c0]: 0x00000230
+ Ram Write Data @ [0x800100c4] : 0x00000231; Ram Read Data[0x800400c4]: 0x00000231
+ Ram Write Data @ [0x800100c8] : 0x00000232; Ram Read Data[0x800400c8]: 0x00000232
+ Ram Write Data @ [0x800100cc] : 0x00000233; Ram Read Data[0x800400cc]: 0x00000233
+ Ram Write Data @ [0x800100d0] : 0x00000234; Ram Read Data[0x800400d0]: 0x00000234
+ Ram Write Data @ [0x800100d4] : 0x00000235; Ram Read Data[0x800400d4]: 0x00000234
+	DMA has gone wrong somewhere in copying a: 00000235 to b: 00000234 i:53 burst: 
+
+ Ram Write Data @ [0x800100d8] : 0x00000236; Ram Read Data[0x800400d8]: 0x00000236
+ Ram Write Data @ [0x800100dc] : 0x00000237; Ram Read Data[0x800400dc]: 0x00000237
+ Ram Write Data @ [0x800100e0] : 0x00000238; Ram Read Data[0x800400e0]: 0x00000238
+ Ram Write Data @ [0x800100e4] : 0x00000239; Ram Read Data[0x800400e4]: 0x00000239
+ Ram Write Data @ [0x800100e8] : 0x0000023a; Ram Read Data[0x800400e8]: 0x0000023a
+ Ram Write Data @ [0x800100ec] : 0x0000023b; Ram Read Data[0x800400ec]: 0x0000023b
+ Ram Write Data @ [0x800100f0] : 0x0000023c; Ram Read Data[0x800400f0]: 0x0000023c
+ Ram Write Data @ [0x800100f4] : 0x0000023d; Ram Read Data[0x800400f4]: 0x0000023c
+	DMA has gone wrong somewhere in copying a: 0000023d to b: 0000023c i:61 burst: 
+
+ Ram Write Data @ [0x800100f8] : 0x0000023e; Ram Read Data[0x800400f8]: 0x00000232
+	DMA has gone wrong somewhere in copying a: 0000023e to b: 00000232 i:62 burst: 
+
+ Ram Write Data @ [0x800100fc] : 0x0000023f; Ram Read Data[0x800400fc]: 0x0000023f
+ Ram Write Data @ [0x80010100] : 0x00000240; Ram Read Data[0x80040100]: 0x00000240
+ Ram Write Data @ [0x80010104] : 0x00000241; Ram Read Data[0x80040104]: 0x00000241
+ Ram Write Data @ [0x80010108] : 0x00000242; Ram Read Data[0x80040108]: 0x00000242
+ Ram Write Data @ [0x8001010c] : 0x00000243; Ram Read Data[0x8004010c]: 0x00000243
+ Ram Write Data @ [0x80010110] : 0x00000244; Ram Read Data[0x80040110]: 0x00000244
+ Ram Write Data @ [0x80010114] : 0x00000245; Ram Read Data[0x80040114]: 0x00000244
+	DMA has gone wrong somewhere in copying a: 00000245 to b: 00000244 i:69 burst: 
+
+ Ram Write Data @ [0x80010118] : 0x00000246; Ram Read Data[0x80040118]: 0x00000246
+ Ram Write Data @ [0x8001011c] : 0x00000247; Ram Read Data[0x8004011c]: 0x00000247
+ Ram Write Data @ [0x80010120] : 0x00000248; Ram Read Data[0x80040120]: 0x00000248
+ Ram Write Data @ [0x80010124] : 0x00000249; Ram Read Data[0x80040124]: 0x00000249
+ Ram Write Data @ [0x80010128] : 0x0000024a; Ram Read Data[0x80040128]: 0x0000024a
+ Ram Write Data @ [0x8001012c] : 0x0000024b; Ram Read Data[0x8004012c]: 0x0000024b
+ Ram Write Data @ [0x80010130] : 0x0000024c; Ram Read Data[0x80040130]: 0x0000024c
+ Ram Write Data @ [0x80010134] : 0x0000024d; Ram Read Data[0x80040134]: 0x0000024d
+ Ram Write Data @ [0x80010138] : 0x0000024e; Ram Read Data[0x80040138]: 0x00000246
+	DMA has gone wrong somewhere in copying a: 0000024e to b: 00000246 i:78 burst: 
+
+ Ram Write Data @ [0x8001013c] : 0x0000024f; Ram Read Data[0x8004013c]: 0x0000024f
+ Ram Write Data @ [0x80010140] : 0x00000250; Ram Read Data[0x80040140]: 0x00000250
+ Ram Write Data @ [0x80010144] : 0x00000251; Ram Read Data[0x80040144]: 0x00000251
+ Ram Write Data @ [0x80010148] : 0x00000252; Ram Read Data[0x80040148]: 0x00000252
+ Ram Write Data @ [0x8001014c] : 0x00000253; Ram Read Data[0x8004014c]: 0x00000253
+ Ram Write Data @ [0x80010150] : 0x00000254; Ram Read Data[0x80040150]: 0x00000254
+ Ram Write Data @ [0x80010154] : 0x00000255; Ram Read Data[0x80040154]: 0x00000254
+	DMA has gone wrong somewhere in copying a: 00000255 to b: 00000254 i:85 burst: 
+
+ Ram Write Data @ [0x80010158] : 0x00000256; Ram Read Data[0x80040158]: 0x00000256
+ Ram Write Data @ [0x8001015c] : 0x00000257; Ram Read Data[0x8004015c]: 0x00000257
+ Ram Write Data @ [0x80010160] : 0x00000258; Ram Read Data[0x80040160]: 0x00000258
+ Ram Write Data @ [0x80010164] : 0x00000259; Ram Read Data[0x80040164]: 0x00000259
+ Ram Write Data @ [0x80010168] : 0x0000025a; Ram Read Data[0x80040168]: 0x0000025a
+ Ram Write Data @ [0x8001016c] : 0x0000025b; Ram Read Data[0x8004016c]: 0x0000025b
+ Ram Write Data @ [0x80010170] : 0x0000025c; Ram Read Data[0x80040170]: 0x0000025c
+ Ram Write Data @ [0x80010174] : 0x0000025d; Ram Read Data[0x80040174]: 0x0000025c
+	DMA has gone wrong somewhere in copying a: 0000025d to b: 0000025c i:93 burst: 
+
+ Ram Write Data @ [0x80010178] : 0x0000025e; Ram Read Data[0x80040178]: 0x00000252
+	DMA has gone wrong somewhere in copying a: 0000025e to b: 00000252 i:94 burst: 
+
+ Ram Write Data @ [0x8001017c] : 0x0000025f; Ram Read Data[0x8004017c]: 0x0000025f
+ Ram Write Data @ [0x80010180] : 0x00000260; Ram Read Data[0x80040180]: 0x00000260
+ Ram Write Data @ [0x80010184] : 0x00000261; Ram Read Data[0x80040184]: 0x00000261
+ Ram Write Data @ [0x80010188] : 0x00000262; Ram Read Data[0x80040188]: 0x00000262
+ Ram Write Data @ [0x8001018c] : 0x00000263; Ram Read Data[0x8004018c]: 0x00000263
+ Ram Write Data @ [0x80010190] : 0x00000264; Ram Read Data[0x80040190]: 0x00000264
+ Ram Write Data @ [0x80010194] : 0x00000265; Ram Read Data[0x80040194]: 0x00000264
+	DMA has gone wrong somewhere in copying a: 00000265 to b: 00000264 i:101 burst: 
+
+ Ram Write Data @ [0x80010198] : 0x00000266; Ram Read Data[0x80040198]: 0x00000266
+ Ram Write Data @ [0x8001019c] : 0x00000267; Ram Read Data[0x8004019c]: 0x00000267
+ Ram Write Data @ [0x800101a0] : 0x00000268; Ram Read Data[0x800401a0]: 0x00000268
+ Ram Write Data @ [0x800101a4] : 0x00000269; Ram Read Data[0x800401a4]: 0x00000269
+ Ram Write Data @ [0x800101a8] : 0x0000026a; Ram Read Data[0x800401a8]: 0x0000026a
+ Ram Write Data @ [0x800101ac] : 0x0000026b; Ram Read Data[0x800401ac]: 0x0000026b
+ Ram Write Data @ [0x800101b0] : 0x0000026c; Ram Read Data[0x800401b0]: 0x0000026c
+ Ram Write Data @ [0x800101b4] : 0x0000026d; Ram Read Data[0x800401b4]: 0x0000026c
+	DMA has gone wrong somewhere in copying a: 0000026d to b: 0000026c i:109 burst: 
+
+ Ram Write Data @ [0x800101b8] : 0x0000026e; Ram Read Data[0x800401b8]: 0x00000262
+	DMA has gone wrong somewhere in copying a: 0000026e to b: 00000262 i:110 burst: 
+
+ Ram Write Data @ [0x800101bc] : 0x0000026f; Ram Read Data[0x800401bc]: 0x0000026f
+ Ram Write Data @ [0x800101c0] : 0x00000270; Ram Read Data[0x800401c0]: 0x00000270
+ Ram Write Data @ [0x800101c4] : 0x00000271; Ram Read Data[0x800401c4]: 0x00000271
+ Ram Write Data @ [0x800101c8] : 0x00000272; Ram Read Data[0x800401c8]: 0x00000272
+ Ram Write Data @ [0x800101cc] : 0x00000273; Ram Read Data[0x800401cc]: 0x00000273
+ Ram Write Data @ [0x800101d0] : 0x00000274; Ram Read Data[0x800401d0]: 0x00000274
+ Ram Write Data @ [0x800101d4] : 0x00000275; Ram Read Data[0x800401d4]: 0x00000274
+	DMA has gone wrong somewhere in copying a: 00000275 to b: 00000274 i:117 burst: 
+
+ Ram Write Data @ [0x800101d8] : 0x00000276; Ram Read Data[0x800401d8]: 0x00000276
+ Ram Write Data @ [0x800101dc] : 0x00000277; Ram Read Data[0x800401dc]: 0x00000277
+ Ram Write Data @ [0x800101e0] : 0x00000278; Ram Read Data[0x800401e0]: 0x00000278
+ Ram Write Data @ [0x800101e4] : 0x00000279; Ram Read Data[0x800401e4]: 0x00000279
+ Ram Write Data @ [0x800101e8] : 0x0000027a; Ram Read Data[0x800401e8]: 0x0000027a
+ Ram Write Data @ [0x800101ec] : 0x0000027b; Ram Read Data[0x800401ec]: 0x0000027b
+ Ram Write Data @ [0x800101f0] : 0x0000027c; Ram Read Data[0x800401f0]: 0x0000027c	 Burst Value: 0 seems to pass
+	 Cleared 
+	 DMA copy from BRAM to TCM seems to work for all bursts
+ = 71328
+ = 71336
+
+
+
+
+
+Starting DMA mem to mem transfer
+SDRAM init value 1
+Address of a: 80010000 c: 80010000 b: 80040000 d:00021000	 Fencing? 
+	 DMA_CCR3 value: 00006adf
+	 Waiting for DMA interrupt ISR value: 00000700
+	 Clearing Interrupt Flags
+
+ Ram Write Data @ [0x80010000] : 0x00000300; Ram Read Data[0x80040000]: 0x00000300
+ Ram Write Data @ [0x80010004] : 0x00000301; Ram Read Data[0x80040004]: 0x00000201
+	DMA has gone wrong somewhere in copying a: 00000301 to b: 00000201 i:1 burst: 
+
+ Ram Write Data @ [0x80010008] : 0x00000302; Ram Read Data[0x80040008]: 0x00000302
+ Ram Write Data @ [0x8001000c] : 0x00000303; Ram Read Data[0x8004000c]: 0x00000203
+	DMA has gone wrong somewhere in copying a: 00000303 to b: 00000203 i:3 burst: 
+
+ Ram Write Data @ [0x80010010] : 0x00000304; Ram Read Data[0x80040010]: 0x00000304
+ Ram Write Data @ [0x80010014] : 0x00000305; Ram Read Data[0x80040014]: 0x00000204
+	DMA has gone wrong somewhere in copying a: 00000305 to b: 00000204 i:5 burst: 
+
+ Ram Write Data @ [0x80010018] : 0x00000306; Ram Read Data[0x80040018]: 0x00000306
+ Ram Write Data @ [0x8001001c] : 0x00000307; Ram Read Data[0x8004001c]: 0x00000207
+	DMA has gone wrong somewhere in copying a: 00000307 to b: 00000207 i:7 burst: 
+
+ Ram Write Data @ [0x80010020] : 0x00000308; Ram Read Data[0x80040020]: 0x00000308
+ Ram Write Data @ [0x80010024] : 0x00000309; Ram Read Data[0x80040024]: 0x00000309
+ Ram Write Data @ [0x80010028] : 0x0000030a; Ram Read Data[0x80040028]: 0x0000030a
+ Ram Write Data @ [0x8001002c] : 0x0000030b; Ram Read Data[0x8004002c]: 0x0000030b
+ Ram Write Data @ [0x80010030] : 0x0000030c; Ram Read Data[0x80040030]: 0x0000030c
+ Ram Write Data @ [0x80010034] : 0x0000030d; Ram Read Data[0x80040034]: 0x0000030c
+	DMA has gone wrong somewhere in copying a: 0000030d to b: 0000030c i:13 burst: 
+
+ Ram Write Data @ [0x80010038] : 0x0000030e; Ram Read Data[0x80040038]: 0x00000306
+	DMA has gone wrong somewhere in copying a: 0000030e to b: 00000306 i:14 burst: 
+
+ Ram Write Data @ [0x8001003c] : 0x0000030f; Ram Read Data[0x8004003c]: 0x0000030f
+ Ram Write Data @ [0x80010040] : 0x00000310; Ram Read Data[0x80040040]: 0x00000310
+ Ram Write Data @ [0x80010044] : 0x00000311; Ram Read Data[0x80040044]: 0x00000311
+ Ram Write Data @ [0x80010048] : 0x00000312; Ram Read Data[0x80040048]: 0x00000312
+ Ram Write Data @ [0x8001004c] : 0x00000313; Ram Read Data[0x8004004c]: 0x00000313
+ Ram Write Data @ [0x80010050] : 0x00000314; Ram Read Data[0x80040050]: 0x00000314
+ Ram Write Data @ [0x80010054] : 0x00000315; Ram Read Data[0x80040054]: 0x00000314
+	DMA has gone wrong somewhere in copying a: 00000315 to b: 00000314 i:21 burst: 
+
+ Ram Write Data @ [0x80010058] : 0x00000316; Ram Read Data[0x80040058]: 0x00000316
+ Ram Write Data @ [0x8001005c] : 0x00000317; Ram Read Data[0x8004005c]: 0x00000317
+ Ram Write Data @ [0x80010060] : 0x00000318; Ram Read Data[0x80040060]: 0x00000318
+ Ram Write Data @ [0x80010064] : 0x00000319; Ram Read Data[0x80040064]: 0x00000319
+ Ram Write Data @ [0x80010068] : 0x0000031a; Ram Read Data[0x80040068]: 0x0000031a
+ Ram Write Data @ [0x8001006c] : 0x0000031b; Ram Read Data[0x8004006c]: 0x0000031b
+ Ram Write Data @ [0x80010070] : 0x0000031c; Ram Read Data[0x80040070]: 0x0000031c
+ Ram Write Data @ [0x80010074] : 0x0000031d; Ram Read Data[0x80040074]: 0x0000031c
+	DMA has gone wrong somewhere in copying a: 0000031d to b: 0000031c i:29 burst: 
+
+ Ram Write Data @ [0x80010078] : 0x0000031e; Ram Read Data[0x80040078]: 0x00000312
+	DMA has gone wrong somewhere in copying a: 0000031e to b: 00000312 i:30 burst: 
+
+ Ram Write Data @ [0x8001007c] : 0x0000031f; Ram Read Data[0x8004007c]: 0x0000031f
+ Ram Write Data @ [0x80010080] : 0x00000320; Ram Read Data[0x80040080]: 0x00000320
+ Ram Write Data @ [0x80010084] : 0x00000321; Ram Read Data[0x80040084]: 0x00000321
+ Ram Write Data @ [0x80010088] : 0x00000322; Ram Read Data[0x80040088]: 0x00000322
+ Ram Write Data @ [0x8001008c] : 0x00000323; Ram Read Data[0x8004008c]: 0x00000323
+ Ram Write Data @ [0x80010090] : 0x00000324; Ram Read Data[0x80040090]: 0x00000324
+ Ram Write Data @ [0x80010094] : 0x00000325; Ram Read Data[0x80040094]: 0x00000324
+	DMA has gone wrong somewhere in copying a: 00000325 to b: 00000324 i:37 burst: 
+
+ Ram Write Data @ [0x80010098] : 0x00000326; Ram Read Data[0x80040098]: 0x00000326
+ Ram Write Data @ [0x8001009c] : 0x00000327; Ram Read Data[0x8004009c]: 0x00000327
+ Ram Write Data @ [0x800100a0] : 0x00000328; Ram Read Data[0x800400a0]: 0x00000328
+ Ram Write Data @ [0x800100a4] : 0x00000329; Ram Read Data[0x800400a4]: 0x00000329
+ Ram Write Data @ [0x800100a8] : 0x0000032a; Ram Read Data[0x800400a8]: 0x0000032a
+ Ram Write Data @ [0x800100ac] : 0x0000032b; Ram Read Data[0x800400ac]: 0x0000032b
+ Ram Write Data @ [0x800100b0] : 0x0000032c; Ram Read Data[0x800400b0]: 0x0000032c
+ Ram Write Data @ [0x800100b4] : 0x0000032d; Ram Read Data[0x800400b4]: 0x0000032d
+ Ram Write Data @ [0x800100b8] : 0x0000032e; Ram Read Data[0x800400b8]: 0x00000326
+	DMA has gone wrong somewhere in copying a: 0000032e to b: 00000326 i:46 burst: 
+
+ Ram Write Data @ [0x800100bc] : 0x0000032f; Ram Read Data[0x800400bc]: 0x0000032f
+ Ram Write Data @ [0x800100c0] : 0x00000330; Ram Read Data[0x800400c0]: 0x00000330
+ Ram Write Data @ [0x800100c4] : 0x00000331; Ram Read Data[0x800400c4]: 0x00000331
+ Ram Write Data @ [0x800100c8] : 0x00000332; Ram Read Data[0x800400c8]: 0x00000332
+ Ram Write Data @ [0x800100cc] : 0x00000333; Ram Read Data[0x800400cc]: 0x00000333
+ Ram Write Data @ [0x800100d0] : 0x00000334; Ram Read Data[0x800400d0]: 0x00000334
+ Ram Write Data @ [0x800100d4] : 0x00000335; Ram Read Data[0x800400d4]: 0x00000334
+	DMA has gone wrong somewhere in copying a: 00000335 to b: 00000334 i:53 burst: 
+
+ Ram Write Data @ [0x800100d8] : 0x00000336; Ram Read Data[0x800400d8]: 0x00000332
+	DMA has gone wrong somewhere in copying a: 00000336 to b: 00000332 i:54 burst: 
+
+ Ram Write Data @ [0x800100dc] : 0x00000337; Ram Read Data[0x800400dc]: 0x00000337
+ Ram Write Data @ [0x800100e0] : 0x00000338; Ram Read Data[0x800400e0]: 0x00000130
+	DMA has gone wrong somewhere in copying a: 00000338 to b: 00000130 i:56 burst: 
+
+ Ram Write Data @ [0x800100e4] : 0x00000339; Ram Read Data[0x800400e4]: 0x00000339
+ Ram Write Data @ [0x800100e8] : 0x0000033a; Ram Read Data[0x800400e8]: 0x0000013a
+	DMA has gone wrong somewhere in copying a: 0000033a to b: 0000013a i:58 burst: 
+
+ Ram Write Data @ [0x800100ec] : 0x0000033b; Ram Read Data[0x800400ec]: 0x0000033b
+ Ram Write Data @ [0x800100f0] : 0x0000033c; Ram Read Data[0x800400f0]: 0x0000013c
+	DMA has gone wrong somewhere in copying a: 0000033c to b: 0000013c i:60 burst: 
+
+ Ram Write Data @ [0x800100f4] : 0x0000033d; Ram Read Data[0x800400f4]: 0x0000033c
+	DMA has gone wrong somewhere in copying a: 0000033d to b: 0000033c i:61 burst: 
+
+ Ram Write Data @ [0x800100f8] : 0x0000033e; Ram Read Data[0x800400f8]: 0x00000132
+	DMA has gone wrong somewhere in copying a: 0000033e to b: 00000132 i:62 burst: 
+
+ Ram Write Data @ [0x800100fc] : 0x0000033f; Ram Read Data[0x800400fc]: 0x0000033f
+ Ram Write Data @ [0x80010100] : 0x00000340; Ram Read Data[0x80040100]: 0x00000340
+ Ram Write Data @ [0x80010104] : 0x00000341; Ram Read Data[0x80040104]: 0x00000341
+ Ram Write Data @ [0x80010108] : 0x00000342; Ram Read Data[0x80040108]: 0x00000342
+ Ram Write Data @ [0x8001010c] : 0x00000343; Ram Read Data[0x8004010c]: 0x00000343
+ Ram Write Data @ [0x80010110] : 0x00000344; Ram Read Data[0x80040110]: 0x00000344
+ Ram Write Data @ [0x80010114] : 0x00000345; Ram Read Data[0x80040114]: 0x00000344
+	DMA has gone wrong somewhere in copying a: 00000345 to b: 00000344 i:69 burst: 
+
+ Ram Write Data @ [0x80010118] : 0x00000346; Ram Read Data[0x80040118]: 0x00000346
+ Ram Write Data @ [0x8001011c] : 0x00000347; Ram Read Data[0x8004011c]: 0x00000347
+ Ram Write Data @ [0x80010120] : 0x00000348; Ram Read Data[0x80040120]: 0x00000348
+ Ram Write Data @ [0x80010124] : 0x00000349; Ram Read Data[0x80040124]: 0x00000349
+ Ram Write Data @ [0x80010128] : 0x0000034a; Ram Read Data[0x80040128]: 0x0000034a
+ Ram Write Data @ [0x8001012c] : 0x0000034b; Ram Read Data[0x8004012c]: 0x0000034b
+ Ram Write Data @ [0x80010130] : 0x0000034c; Ram Read Data[0x80040130]: 0x0000034c
+ Ram Write Data @ [0x80010134] : 0x0000034d; Ram Read Data[0x80040134]: 0x0000034c
+	DMA has gone wrong somewhere in copying a: 0000034d to b: 0000034c i:77 burst: 
+
+ Ram Write Data @ [0x80010138] : 0x0000034e; Ram Read Data[0x80040138]: 0x00000342
+	DMA has gone wrong somewhere in copying a: 0000034e to b: 00000342 i:78 burst: 
+
+ Ram Write Data @ [0x8001013c] : 0x0000034f; Ram Read Data[0x8004013c]: 0x0000034f
+ Ram Write Data @ [0x80010140] : 0x00000350; Ram Read Data[0x80040140]: 0x00000350
+ Ram Write Data @ [0x80010144] : 0x00000351; Ram Read Data[0x80040144]: 0x00000351
+ Ram Write Data @ [0x80010148] : 0x00000352; Ram Read Data[0x80040148]: 0x00000352
+ Ram Write Data @ [0x8001014c] : 0x00000353; Ram Read Data[0x8004014c]: 0x00000353
+ Ram Write Data @ [0x80010150] : 0x00000354; Ram Read Data[0x80040150]: 0x00000354
+ Ram Write Data @ [0x80010154] : 0x00000355; Ram Read Data[0x80040154]: 0x00000354
+	DMA has gone wrong somewhere in copying a: 00000355 to b: 00000354 i:85 burst: 
+
+ Ram Write Data @ [0x80010158] : 0x00000356; Ram Read Data[0x80040158]: 0x00000352
+	DMA has gone wrong somewhere in copying a: 00000356 to b: 00000352 i:86 burst: 
+
+ Ram Write Data @ [0x8001015c] : 0x00000357; Ram Read Data[0x8004015c]: 0x00000357
+ Ram Write Data @ [0x80010160] : 0x00000358; Ram Read Data[0x80040160]: 0x00000150
+	DMA has gone wrong somewhere in copying a: 00000358 to b: 00000150 i:88 burst: 
+
+ Ram Write Data @ [0x80010164] : 0x00000359; Ram Read Data[0x80040164]: 0x00000359
+ Ram Write Data @ [0x80010168] : 0x0000035a; Ram Read Data[0x80040168]: 0x0000015a
+	DMA has gone wrong somewhere in copying a: 0000035a to b: 0000015a i:90 burst: 
+
+ Ram Write Data @ [0x8001016c] : 0x0000035b; Ram Read Data[0x8004016c]: 0x0000035b
+ Ram Write Data @ [0x80010170] : 0x0000035c; Ram Read Data[0x80040170]: 0x0000015c
+	DMA has gone wrong somewhere in copying a: 0000035c to b: 0000015c i:92 burst: 
+
+ Ram Write Data @ [0x80010174] : 0x0000035d; Ram Read Data[0x80040174]: 0x0000035c
+	DMA has gone wrong somewhere in copying a: 0000035d to b: 0000035c i:93 burst: 
+
+ Ram Write Data @ [0x80010178] : 0x0000035e; Ram Read Data[0x80040178]: 0x00000152
+	DMA has gone wrong somewhere in copying a: 0000035e to b: 00000152 i:94 burst: 
+
+ Ram Write Data @ [0x8001017c] : 0x0000035f; Ram Read Data[0x8004017c]: 0x0000035f
+ Ram Write Data @ [0x80010180] : 0x00000360; Ram Read Data[0x80040180]: 0x00000360
+ Ram Write Data @ [0x80010184] : 0x00000361; Ram Read Data[0x80040184]: 0x00000361
+ Ram Write Data @ [0x80010188] : 0x00000362; Ram Read Data[0x80040188]: 0x00000362
+ Ram Write Data @ [0x8001018c] : 0x00000363; Ram Read Data[0x8004018c]: 0x00000363
+ Ram Write Data @ [0x80010190] : 0x00000364; Ram Read Data[0x80040190]: 0x00000364
+ Ram Write Data @ [0x80010194] : 0x00000365; Ram Read Data[0x80040194]: 0x00000364
+	DMA has gone wrong somewhere in copying a: 00000365 to b: 00000364 i:101 burst: 
+
+ Ram Write Data @ [0x80010198] : 0x00000366; Ram Read Data[0x80040198]: 0x00000362
+	DMA has gone wrong somewhere in copying a: 00000366 to b: 00000362 i:102 burst: 
+
+ Ram Write Data @ [0x8001019c] : 0x00000367; Ram Read Data[0x8004019c]: 0x00000367
+ Ram Write Data @ [0x800101a0] : 0x00000368; Ram Read Data[0x800401a0]: 0x00000368
+ Ram Write Data @ [0x800101a4] : 0x00000369; Ram Read Data[0x800401a4]: 0x00000369
+ Ram Write Data @ [0x800101a8] : 0x0000036a; Ram Read Data[0x800401a8]: 0x0000036a
+ Ram Write Data @ [0x800101ac] : 0x0000036b; Ram Read Data[0x800401ac]: 0x0000036b
+ Ram Write Data @ [0x800101b0] : 0x0000036c; Ram Read Data[0x800401b0]: 0x0000036c
+ Ram Write Data @ [0x800101b4] : 0x0000036d; Ram Read Data[0x800401b4]: 0x0000036c
+	DMA has gone wrong somewhere in copying a: 0000036d to b: 0000036c i:109 burst: 
+
+ Ram Write Data @ [0x800101b8] : 0x0000036e; Ram Read Data[0x800401b8]: 0x00000362
+	DMA has gone wrong somewhere in copying a: 0000036e to b: 00000362 i:110 burst: 
+
+ Ram Write Data @ [0x800101bc] : 0x0000036f; Ram Read Data[0x800401bc]: 0x0000036f
+ Ram Write Data @ [0x800101c0] : 0x00000370; Ram Read Data[0x800401c0]: 0x00000170
+	DMA has gone wrong somewhere in copying a: 00000370 to b: 00000170 i:112 burst: 
+
+ Ram Write Data @ [0x800101c4] : 0x00000371; Ram Read Data[0x800401c4]: 0x00000371
+ Ram Write Data @ [0x800101c8] : 0x00000372; Ram Read Data[0x800401c8]: 0x00000172
+	DMA has gone wrong somewhere in copying a: 00000372 to b: 00000172 i:114 burst: 
+
+ Ram Write Data @ [0x800101cc] : 0x00000373; Ram Read Data[0x800401cc]: 0x00000373
+ Ram Write Data @ [0x800101d0] : 0x00000374; Ram Read Data[0x800401d0]: 0x00000174
+	DMA has gone wrong somewhere in copying a: 00000374 to b: 00000174 i:116 burst: 
+
+ Ram Write Data @ [0x800101d4] : 0x00000375; Ram Read Data[0x800401d4]: 0x00000374
+	DMA has gone wrong somewhere in copying a: 00000375 to b: 00000374 i:117 burst: 
+
+ Ram Write Data @ [0x800101d8] : 0x00000376; Ram Read Data[0x800401d8]: 0x00000172
+	DMA has gone wrong somewhere in copying a: 00000376 to b: 00000172 i:118 burst: 
+
+ Ram Write Data @ [0x800101dc] : 0x00000377; Ram Read Data[0x800401dc]: 0x00000377
+ Ram Write Data @ [0x800101e0] : 0x00000378; Ram Read Data[0x800401e0]: 0x00000140
+	DMA has gone wrong somewhere in copying a: 00000378 to b: 00000140 i:120 burst: 
+
+ Ram Write Data @ [0x800101e4] : 0x00000379; Ram Read Data[0x800401e4]: 0x00000379
+ Ram Write Data @ [0x800101e8] : 0x0000037a; Ram Read Data[0x800401e8]: 0x0000017a
+	DMA has gone wrong somewhere in copying a: 0000037a to b: 0000017a i:122 burst: 
+
+ Ram Write Data @ [0x800101ec] : 0x0000037b; Ram Read Data[0x800401ec]: 0x0000037b
+ Ram Write Data @ [0x800101f0] : 0x0000037c; Ram Read Data[0x800401f0]: 0x00000178
+	DMA has gone wrong somewhere in copying a: 0000037c to b: 00000178 i:124 burst: 
+	 Burst Value: 0 seems to pass
+	 Cleared 
+	 DMA copy from BRAM to TCM seems to work for all bursts
+ = 71328
+ = 71336
+
+
+
+
+Starting DMA mem to mem transfer
+SDRAM init value 1
+Address of a: 80010000 c: 80010000 b: 80040000 d:00021000	 Fencing? 
+	 DMA_CCR3 value: 00006adf
+	 Waiting for DMA interrupt ISR value: 00000700
+	 Clearing Interrupt Flags
+
+ Ram Write Data @ [0x80010000] : 0x00000378; Ram Read Data[0x80040000]: 0x00000378
+ Ram Write Data @ [0x80010004] : 0x00000378; Ram Read Data[0x80040004]: 0x00000378
+ Ram Write Data @ [0x80010008] : 0x00000378; Ram Read Data[0x80040008]: 0x00000378
+ Ram Write Data @ [0x8001000c] : 0x00000378; Ram Read Data[0x8004000c]: 0x00000378
+ Ram Write Data @ [0x80010010] : 0x00000378; Ram Read Data[0x80040010]: 0x00000378
+ Ram Write Data @ [0x80010014] : 0x00000378; Ram Read Data[0x80040014]: 0x00000378
+ Ram Write Data @ [0x80010018] : 0x00000378; Ram Read Data[0x80040018]: 0x00000378
+ Ram Write Data @ [0x8001001c] : 0x00000378; Ram Read Data[0x8004001c]: 0x00000378
+ Ram Write Data @ [0x80010020] : 0x00000378; Ram Read Data[0x80040020]: 0x00000378
+ Ram Write Data @ [0x80010024] : 0x00000378; Ram Read Data[0x80040024]: 0x00000378
+ Ram Write Data @ [0x80010028] : 0x00000378; Ram Read Data[0x80040028]: 0x00000378
+ Ram Write Data @ [0x8001002c] : 0x00000378; Ram Read Data[0x8004002c]: 0x00000378
+ Ram Write Data @ [0x80010030] : 0x00000378; Ram Read Data[0x80040030]: 0x00000378
+ Ram Write Data @ [0x80010034] : 0x00000378; Ram Read Data[0x80040034]: 0x00000378
+ Ram Write Data @ [0x80010038] : 0x00000378; Ram Read Data[0x80040038]: 0x00000378
+ Ram Write Data @ [0x8001003c] : 0x00000378; Ram Read Data[0x8004003c]: 0x00000378
+ Ram Write Data @ [0x80010040] : 0x00000378; Ram Read Data[0x80040040]: 0x00000378
+ Ram Write Data @ [0x80010044] : 0x00000378; Ram Read Data[0x80040044]: 0x00000378
+ Ram Write Data @ [0x80010048] : 0x00000378; Ram Read Data[0x80040048]: 0x00000378
+ Ram Write Data @ [0x8001004c] : 0x00000378; Ram Read Data[0x8004004c]: 0x00000378
+ Ram Write Data @ [0x80010050] : 0x00000378; Ram Read Data[0x80040050]: 0x00000378
+ Ram Write Data @ [0x80010054] : 0x00000378; Ram Read Data[0x80040054]: 0x00000378
+ Ram Write Data @ [0x80010058] : 0x00000378; Ram Read Data[0x80040058]: 0x00000378
+ Ram Write Data @ [0x8001005c] : 0x00000378; Ram Read Data[0x8004005c]: 0x00000378
+ Ram Write Data @ [0x80010060] : 0x00000378; Ram Read Data[0x80040060]: 0x00000378
+ Ram Write Data @ [0x80010064] : 0x00000378; Ram Read Data[0x80040064]: 0x00000378
+ Ram Write Data @ [0x80010068] : 0x00000378; Ram Read Data[0x80040068]: 0x00000378
+ Ram Write Data @ [0x8001006c] : 0x00000378; Ram Read Data[0x8004006c]: 0x00000378
+ Ram Write Data @ [0x80010070] : 0x00000378; Ram Read Data[0x80040070]: 0x00000378
+ Ram Write Data @ [0x80010074] : 0x00000378; Ram Read Data[0x80040074]: 0x00000378
+ Ram Write Data @ [0x80010078] : 0x00000378; Ram Read Data[0x80040078]: 0x00000378
+ Ram Write Data @ [0x8001007c] : 0x00000378; Ram Read Data[0x8004007c]: 0x00000378
+ Ram Write Data @ [0x80010080] : 0x00000378; Ram Read Data[0x80040080]: 0x00000378
+ Ram Write Data @ [0x80010084] : 0x00000378; Ram Read Data[0x80040084]: 0x00000378
+ Ram Write Data @ [0x80010088] : 0x00000378; Ram Read Data[0x80040088]: 0x00000378
+ Ram Write Data @ [0x8001008c] : 0x00000378; Ram Read Data[0x8004008c]: 0x00000378
+ Ram Write Data @ [0x80010090] : 0x00000378; Ram Read Data[0x80040090]: 0x00000378
+ Ram Write Data @ [0x80010094] : 0x00000378; Ram Read Data[0x80040094]: 0x00000378
+ Ram Write Data @ [0x80010098] : 0x00000378; Ram Read Data[0x80040098]: 0x00000378
+ Ram Write Data @ [0x8001009c] : 0x00000378; Ram Read Data[0x8004009c]: 0x00000378
+ Ram Write Data @ [0x800100a0] : 0x00000378; Ram Read Data[0x800400a0]: 0x00000378
+ Ram Write Data @ [0x800100a4] : 0x00000378; Ram Read Data[0x800400a4]: 0x00000378
+ Ram Write Data @ [0x800100a8] : 0x00000378; Ram Read Data[0x800400a8]: 0x00000378
+ Ram Write Data @ [0x800100ac] : 0x00000378; Ram Read Data[0x800400ac]: 0x00000378
+ Ram Write Data @ [0x800100b0] : 0x00000378; Ram Read Data[0x800400b0]: 0x00000378
+ Ram Write Data @ [0x800100b4] : 0x00000378; Ram Read Data[0x800400b4]: 0x00000378
+ Ram Write Data @ [0x800100b8] : 0x00000378; Ram Read Data[0x800400b8]: 0x00000378
+ Ram Write Data @ [0x800100bc] : 0x00000378; Ram Read Data[0x800400bc]: 0x00000378
+ Ram Write Data @ [0x800100c0] : 0x00000378; Ram Read Data[0x800400c0]: 0x00000378
+ Ram Write Data @ [0x800100c4] : 0x00000378; Ram Read Data[0x800400c4]: 0x00000378
+ Ram Write Data @ [0x800100c8] : 0x00000378; Ram Read Data[0x800400c8]: 0x00000378
+ Ram Write Data @ [0x800100cc] : 0x00000378; Ram Read Data[0x800400cc]: 0x00000378
+ Ram Write Data @ [0x800100d0] : 0x00000378; Ram Read Data[0x800400d0]: 0x00000378
+ Ram Write Data @ [0x800100d4] : 0x00000378; Ram Read Data[0x800400d4]: 0x00000378
+ Ram Write Data @ [0x800100d8] : 0x00000378; Ram Read Data[0x800400d8]: 0x00000378
+ Ram Write Data @ [0x800100dc] : 0x00000378; Ram Read Data[0x800400dc]: 0x00000378
+ Ram Write Data @ [0x800100e0] : 0x00000378; Ram Read Data[0x800400e0]: 0x00000378
+ Ram Write Data @ [0x800100e4] : 0x00000378; Ram Read Data[0x800400e4]: 0x00000378
+ Ram Write Data @ [0x800100e8] : 0x00000378; Ram Read Data[0x800400e8]: 0x00000378
+ Ram Write Data @ [0x800100ec] : 0x00000378; Ram Read Data[0x800400ec]: 0x00000378
+ Ram Write Data @ [0x800100f0] : 0x00000378; Ram Read Data[0x800400f0]: 0x00000378
+ Ram Write Data @ [0x800100f4] : 0x00000378; Ram Read Data[0x800400f4]: 0x00000378
+ Ram Write Data @ [0x800100f8] : 0x00000378; Ram Read Data[0x800400f8]: 0x00000378
+ Ram Write Data @ [0x800100fc] : 0x00000378; Ram Read Data[0x800400fc]: 0x00000378
+ Ram Write Data @ [0x80010100] : 0x00000378; Ram Read Data[0x80040100]: 0x00000378
+ Ram Write Data @ [0x80010104] : 0x00000378; Ram Read Data[0x80040104]: 0x00000378
+ Ram Write Data @ [0x80010108] : 0x00000378; Ram Read Data[0x80040108]: 0x00000378
+ Ram Write Data @ [0x8001010c] : 0x00000378; Ram Read Data[0x8004010c]: 0x00000378
+ Ram Write Data @ [0x80010110] : 0x00000378; Ram Read Data[0x80040110]: 0x00000378
+ Ram Write Data @ [0x80010114] : 0x00000378; Ram Read Data[0x80040114]: 0x00000378
+ Ram Write Data @ [0x80010118] : 0x00000378; Ram Read Data[0x80040118]: 0x00000378
+ Ram Write Data @ [0x8001011c] : 0x00000378; Ram Read Data[0x8004011c]: 0x00000378
+ Ram Write Data @ [0x80010120] : 0x00000378; Ram Read Data[0x80040120]: 0x00000378
+ Ram Write Data @ [0x80010124] : 0x00000378; Ram Read Data[0x80040124]: 0x00000378
+ Ram Write Data @ [0x80010128] : 0x00000378; Ram Read Data[0x80040128]: 0x00000378
+ Ram Write Data @ [0x8001012c] : 0x00000378; Ram Read Data[0x8004012c]: 0x00000378
+ Ram Write Data @ [0x80010130] : 0x00000378; Ram Read Data[0x80040130]: 0x00000378
+ Ram Write Data @ [0x80010134] : 0x00000378; Ram Read Data[0x80040134]: 0x00000378
+ Ram Write Data @ [0x80010138] : 0x00000378; Ram Read Data[0x80040138]: 0x00000378
+ Ram Write Data @ [0x8001013c] : 0x00000378; Ram Read Data[0x8004013c]: 0x00000378
+ Ram Write Data @ [0x80010140] : 0x00000378; Ram Read Data[0x80040140]: 0x00000378
+ Ram Write Data @ [0x80010144] : 0x00000378; Ram Read Data[0x80040144]: 0x00000378
+ Ram Write Data @ [0x80010148] : 0x00000378; Ram Read Data[0x80040148]: 0x00000378
+ Ram Write Data @ [0x8001014c] : 0x00000378; Ram Read Data[0x8004014c]: 0x00000378
+ Ram Write Data @ [0x80010150] : 0x00000378; Ram Read Data[0x80040150]: 0x00000378
+ Ram Write Data @ [0x80010154] : 0x00000378; Ram Read Data[0x80040154]: 0x00000378
+ Ram Write Data @ [0x80010158] : 0x00000378; Ram Read Data[0x80040158]: 0x00000378
+ Ram Write Data @ [0x8001015c] : 0x00000378; Ram Read Data[0x8004015c]: 0x00000378
+ Ram Write Data @ [0x80010160] : 0x00000378; Ram Read Data[0x80040160]: 0x00000378
+ Ram Write Data @ [0x80010164] : 0x00000378; Ram Read Data[0x80040164]: 0x00000378
+ Ram Write Data @ [0x80010168] : 0x00000378; Ram Read Data[0x80040168]: 0x00000378
+ Ram Write Data @ [0x8001016c] : 0x00000378; Ram Read Data[0x8004016c]: 0x00000378
+ Ram Write Data @ [0x80010170] : 0x00000378; Ram Read Data[0x80040170]: 0x00000378
+ Ram Write Data @ [0x80010174] : 0x00000378; Ram Read Data[0x80040174]: 0x00000378
+ Ram Write Data @ [0x80010178] : 0x00000378; Ram Read Data[0x80040178]: 0x00000378
+ Ram Write Data @ [0x8001017c] : 0x00000378; Ram Read Data[0x8004017c]: 0x00000378
+ Ram Write Data @ [0x80010180] : 0x00000378; Ram Read Data[0x80040180]: 0x00000378
+ Ram Write Data @ [0x80010184] : 0x00000378; Ram Read Data[0x80040184]: 0x00000378
+ Ram Write Data @ [0x80010188] : 0x00000378; Ram Read Data[0x80040188]: 0x00000378
+ Ram Write Data @ [0x8001018c] : 0x00000378; Ram Read Data[0x8004018c]: 0x00000378
+ Ram Write Data @ [0x80010190] : 0x00000378; Ram Read Data[0x80040190]: 0x00000378
+ Ram Write Data @ [0x80010194] : 0x00000378; Ram Read Data[0x80040194]: 0x00000378
+ Ram Write Data @ [0x80010198] : 0x00000378; Ram Read Data[0x80040198]: 0x00000378
+ Ram Write Data @ [0x8001019c] : 0x00000378; Ram Read Data[0x8004019c]: 0x00000378
+ Ram Write Data @ [0x800101a0] : 0x00000378; Ram Read Data[0x800401a0]: 0x00000378
+ Ram Write Data @ [0x800101a4] : 0x00000378; Ram Read Data[0x800401a4]: 0x00000378
+ Ram Write Data @ [0x800101a8] : 0x00000378; Ram Read Data[0x800401a8]: 0x00000378
+ Ram Write Data @ [0x800101ac] : 0x00000378; Ram Read Data[0x800401ac]: 0x00000378
+ Ram Write Data @ [0x800101b0] : 0x00000378; Ram Read Data[0x800401b0]: 0x00000378
+ Ram Write Data @ [0x800101b4] : 0x00000378; Ram Read Data[0x800401b4]: 0x00000378
+ Ram Write Data @ [0x800101b8] : 0x00000378; Ram Read Data[0x800401b8]: 0x00000378
+ Ram Write Data @ [0x800101bc] : 0x00000378; Ram Read Data[0x800401bc]: 0x00000378
+ Ram Write Data @ [0x800101c0] : 0x00000378; Ram Read Data[0x800401c0]: 0x00000378
+ Ram Write Data @ [0x800101c4] : 0x00000378; Ram Read Data[0x800401c4]: 0x00000378
+ Ram Write Data @ [0x800101c8] : 0x00000378; Ram Read Data[0x800401c8]: 0x00000378
+ Ram Write Data @ [0x800101cc] : 0x00000378; Ram Read Data[0x800401cc]: 0x00000378
+ Ram Write Data @ [0x800101d0] : 0x00000378; Ram Read Data[0x800401d0]: 0x00000378
+ Ram Write Data @ [0x800101d4] : 0x00000378; Ram Read Data[0x800401d4]: 0x00000378
+ Ram Write Data @ [0x800101d8] : 0x00000378; Ram Read Data[0x800401d8]: 0x00000378
+ Ram Write Data @ [0x800101dc] : 0x00000378; Ram Read Data[0x800401dc]: 0x00000378
+ Ram Write Data @ [0x800101e0] : 0x00000378; Ram Read Data[0x800401e0]: 0x00000378
+ Ram Write Data @ [0x800101e4] : 0x00000378; Ram Read Data[0x800401e4]: 0x00000378
+ Ram Write Data @ [0x800101e8] : 0x00000378; Ram Read Data[0x800401e8]: 0x00000378
+ Ram Write Data @ [0x800101ec] : 0x00000378; Ram Read Data[0x800401ec]: 0x00000378
+ Ram Write Data @ [0x800101f0] : 0x00000378; Ram Read Data[0x800401f0]: 0x00000330
+	DMA has gone wrong somewhere in copying a: 00000378 to b: 00000330 i:124 burst: 
+	 Burst Value: 0 seems to pass
+	 Cleared 
+	 DMA copy from BRAM to TCM seems to work for all bursts
+ = 71336
+ = 71344
+
+
+
+Starting DMA mem to mem transfer
+SDRAM init value 1
+Address of a: 80010000 c: 80010000 b: 80040000 d:00021000	 Fencing? 
+	 DMA_CCR3 value: 00006adf
+	 Waiting for DMA interrupt ISR value: 00000700
+	 Clearing Interrupt Flags
+
+ Ram Write Data @ [0x80010000] : 0x00000377; Ram Read Data[0x80040000]: 0x00000377
+ Ram Write Data @ [0x80010004] : 0x00000378; Ram Read Data[0x80040004]: 0x00000378
+ Ram Write Data @ [0x80010008] : 0x00000377; Ram Read Data[0x80040008]: 0x00000377
+ Ram Write Data @ [0x8001000c] : 0x00000378; Ram Read Data[0x8004000c]: 0x00000378
+ Ram Write Data @ [0x80010010] : 0x00000377; Ram Read Data[0x80040010]: 0x00000377
+ Ram Write Data @ [0x80010014] : 0x00000378; Ram Read Data[0x80040014]: 0x00000378
+ Ram Write Data @ [0x80010018] : 0x00000377; Ram Read Data[0x80040018]: 0x00000377
+ Ram Write Data @ [0x8001001c] : 0x00000378; Ram Read Data[0x8004001c]: 0x00000378
+ Ram Write Data @ [0x80010020] : 0x00000377; Ram Read Data[0x80040020]: 0x00000377
+ Ram Write Data @ [0x80010024] : 0x00000378; Ram Read Data[0x80040024]: 0x00000378
+ Ram Write Data @ [0x80010028] : 0x00000377; Ram Read Data[0x80040028]: 0x00000377
+ Ram Write Data @ [0x8001002c] : 0x00000378; Ram Read Data[0x8004002c]: 0x00000378
+ Ram Write Data @ [0x80010030] : 0x00000377; Ram Read Data[0x80040030]: 0x00000377
+ Ram Write Data @ [0x80010034] : 0x00000378; Ram Read Data[0x80040034]: 0x00000378
+ Ram Write Data @ [0x80010038] : 0x00000377; Ram Read Data[0x80040038]: 0x00000377
+ Ram Write Data @ [0x8001003c] : 0x00000378; Ram Read Data[0x8004003c]: 0x00000378
+ Ram Write Data @ [0x80010040] : 0x00000377; Ram Read Data[0x80040040]: 0x00000377
+ Ram Write Data @ [0x80010044] : 0x00000378; Ram Read Data[0x80040044]: 0x00000378
+ Ram Write Data @ [0x80010048] : 0x00000377; Ram Read Data[0x80040048]: 0x00000377
+ Ram Write Data @ [0x8001004c] : 0x00000378; Ram Read Data[0x8004004c]: 0x00000378
+ Ram Write Data @ [0x80010050] : 0x00000377; Ram Read Data[0x80040050]: 0x00000377
+ Ram Write Data @ [0x80010054] : 0x00000378; Ram Read Data[0x80040054]: 0x00000378
+ Ram Write Data @ [0x80010058] : 0x00000377; Ram Read Data[0x80040058]: 0x00000377
+ Ram Write Data @ [0x8001005c] : 0x00000378; Ram Read Data[0x8004005c]: 0x00000378
+ Ram Write Data @ [0x80010060] : 0x00000377; Ram Read Data[0x80040060]: 0x00000377
+ Ram Write Data @ [0x80010064] : 0x00000378; Ram Read Data[0x80040064]: 0x00000378
+ Ram Write Data @ [0x80010068] : 0x00000377; Ram Read Data[0x80040068]: 0x00000377
+ Ram Write Data @ [0x8001006c] : 0x00000378; Ram Read Data[0x8004006c]: 0x00000378
+ Ram Write Data @ [0x80010070] : 0x00000377; Ram Read Data[0x80040070]: 0x00000377
+ Ram Write Data @ [0x80010074] : 0x00000378; Ram Read Data[0x80040074]: 0x00000378
+ Ram Write Data @ [0x80010078] : 0x00000377; Ram Read Data[0x80040078]: 0x00000377
+ Ram Write Data @ [0x8001007c] : 0x00000378; Ram Read Data[0x8004007c]: 0x00000378
+ Ram Write Data @ [0x80010080] : 0x00000377; Ram Read Data[0x80040080]: 0x00000377
+ Ram Write Data @ [0x80010084] : 0x00000378; Ram Read Data[0x80040084]: 0x00000378
+ Ram Write Data @ [0x80010088] : 0x00000377; Ram Read Data[0x80040088]: 0x00000377
+ Ram Write Data @ [0x8001008c] : 0x00000378; Ram Read Data[0x8004008c]: 0x00000378
+ Ram Write Data @ [0x80010090] : 0x00000377; Ram Read Data[0x80040090]: 0x00000377
+ Ram Write Data @ [0x80010094] : 0x00000378; Ram Read Data[0x80040094]: 0x00000378
+ Ram Write Data @ [0x80010098] : 0x00000377; Ram Read Data[0x80040098]: 0x00000377
+ Ram Write Data @ [0x8001009c] : 0x00000378; Ram Read Data[0x8004009c]: 0x00000378
+ Ram Write Data @ [0x800100a0] : 0x00000377; Ram Read Data[0x800400a0]: 0x00000377
+ Ram Write Data @ [0x800100a4] : 0x00000378; Ram Read Data[0x800400a4]: 0x00000378
+ Ram Write Data @ [0x800100a8] : 0x00000377; Ram Read Data[0x800400a8]: 0x00000377
+ Ram Write Data @ [0x800100ac] : 0x00000378; Ram Read Data[0x800400ac]: 0x00000378
+ Ram Write Data @ [0x800100b0] : 0x00000377; Ram Read Data[0x800400b0]: 0x00000377
+ Ram Write Data @ [0x800100b4] : 0x00000378; Ram Read Data[0x800400b4]: 0x00000378
+ Ram Write Data @ [0x800100b8] : 0x00000377; Ram Read Data[0x800400b8]: 0x00000377
+ Ram Write Data @ [0x800100bc] : 0x00000378; Ram Read Data[0x800400bc]: 0x00000378
+ Ram Write Data @ [0x800100c0] : 0x00000377; Ram Read Data[0x800400c0]: 0x00000377
+ Ram Write Data @ [0x800100c4] : 0x00000378; Ram Read Data[0x800400c4]: 0x00000378
+ Ram Write Data @ [0x800100c8] : 0x00000377; Ram Read Data[0x800400c8]: 0x00000377
+ Ram Write Data @ [0x800100cc] : 0x00000378; Ram Read Data[0x800400cc]: 0x00000378
+ Ram Write Data @ [0x800100d0] : 0x00000377; Ram Read Data[0x800400d0]: 0x00000377
+ Ram Write Data @ [0x800100d4] : 0x00000378; Ram Read Data[0x800400d4]: 0x00000378
+ Ram Write Data @ [0x800100d8] : 0x00000377; Ram Read Data[0x800400d8]: 0x00000377
+ Ram Write Data @ [0x800100dc] : 0x00000378; Ram Read Data[0x800400dc]: 0x00000378
+ Ram Write Data @ [0x800100e0] : 0x00000377; Ram Read Data[0x800400e0]: 0x00000377
+ Ram Write Data @ [0x800100e4] : 0x00000378; Ram Read Data[0x800400e4]: 0x00000378
+ Ram Write Data @ [0x800100e8] : 0x00000377; Ram Read Data[0x800400e8]: 0x00000377
+ Ram Write Data @ [0x800100ec] : 0x00000378; Ram Read Data[0x800400ec]: 0x00000378
+ Ram Write Data @ [0x800100f0] : 0x00000377; Ram Read Data[0x800400f0]: 0x00000377
+ Ram Write Data @ [0x800100f4] : 0x00000378; Ram Read Data[0x800400f4]: 0x00000378
+ Ram Write Data @ [0x800100f8] : 0x00000377; Ram Read Data[0x800400f8]: 0x00000377
+ Ram Write Data @ [0x800100fc] : 0x00000378; Ram Read Data[0x800400fc]: 0x00000378
+ Ram Write Data @ [0x80010100] : 0x00000377; Ram Read Data[0x80040100]: 0x00000377
+ Ram Write Data @ [0x80010104] : 0x00000378; Ram Read Data[0x80040104]: 0x00000378
+ Ram Write Data @ [0x80010108] : 0x00000377; Ram Read Data[0x80040108]: 0x00000377
+ Ram Write Data @ [0x8001010c] : 0x00000378; Ram Read Data[0x8004010c]: 0x00000378
+ Ram Write Data @ [0x80010110] : 0x00000377; Ram Read Data[0x80040110]: 0x00000377
+ Ram Write Data @ [0x80010114] : 0x00000378; Ram Read Data[0x80040114]: 0x00000378
+ Ram Write Data @ [0x80010118] : 0x00000377; Ram Read Data[0x80040118]: 0x00000377
+ Ram Write Data @ [0x8001011c] : 0x00000378; Ram Read Data[0x8004011c]: 0x00000378
+ Ram Write Data @ [0x80010120] : 0x00000377; Ram Read Data[0x80040120]: 0x00000377
+ Ram Write Data @ [0x80010124] : 0x00000378; Ram Read Data[0x80040124]: 0x00000378
+ Ram Write Data @ [0x80010128] : 0x00000377; Ram Read Data[0x80040128]: 0x00000377
+ Ram Write Data @ [0x8001012c] : 0x00000378; Ram Read Data[0x8004012c]: 0x00000378
+ Ram Write Data @ [0x80010130] : 0x00000377; Ram Read Data[0x80040130]: 0x00000377
+ Ram Write Data @ [0x80010134] : 0x00000378; Ram Read Data[0x80040134]: 0x00000378
+ Ram Write Data @ [0x80010138] : 0x00000377; Ram Read Data[0x80040138]: 0x00000377
+ Ram Write Data @ [0x8001013c] : 0x00000378; Ram Read Data[0x8004013c]: 0x00000378
+ Ram Write Data @ [0x80010140] : 0x00000377; Ram Read Data[0x80040140]: 0x00000377
+ Ram Write Data @ [0x80010144] : 0x00000378; Ram Read Data[0x80040144]: 0x00000378
+ Ram Write Data @ [0x80010148] : 0x00000377; Ram Read Data[0x80040148]: 0x00000377
+ Ram Write Data @ [0x8001014c] : 0x00000378; Ram Read Data[0x8004014c]: 0x00000378
+ Ram Write Data @ [0x80010150] : 0x00000377; Ram Read Data[0x80040150]: 0x00000377
+ Ram Write Data @ [0x80010154] : 0x00000378; Ram Read Data[0x80040154]: 0x00000378
+ Ram Write Data @ [0x80010158] : 0x00000377; Ram Read Data[0x80040158]: 0x00000377
+ Ram Write Data @ [0x8001015c] : 0x00000378; Ram Read Data[0x8004015c]: 0x00000378
+ Ram Write Data @ [0x80010160] : 0x00000377; Ram Read Data[0x80040160]: 0x00000377
+ Ram Write Data @ [0x80010164] : 0x00000378; Ram Read Data[0x80040164]: 0x00000378
+ Ram Write Data @ [0x80010168] : 0x00000377; Ram Read Data[0x80040168]: 0x00000377
+ Ram Write Data @ [0x8001016c] : 0x00000378; Ram Read Data[0x8004016c]: 0x00000378
+ Ram Write Data @ [0x80010170] : 0x00000377; Ram Read Data[0x80040170]: 0x00000377
+ Ram Write Data @ [0x80010174] : 0x00000378; Ram Read Data[0x80040174]: 0x00000378
+ Ram Write Data @ [0x80010178] : 0x00000377; Ram Read Data[0x80040178]: 0x00000377
+ Ram Write Data @ [0x8001017c] : 0x00000378; Ram Read Data[0x8004017c]: 0x00000378
+ Ram Write Data @ [0x80010180] : 0x00000377; Ram Read Data[0x80040180]: 0x00000377
+ Ram Write Data @ [0x80010184] : 0x00000378; Ram Read Data[0x80040184]: 0x00000378
+ Ram Write Data @ [0x80010188] : 0x00000377; Ram Read Data[0x80040188]: 0x00000377
+ Ram Write Data @ [0x8001018c] : 0x00000378; Ram Read Data[0x8004018c]: 0x00000378
+ Ram Write Data @ [0x80010190] : 0x00000377; Ram Read Data[0x80040190]: 0x00000377
+ Ram Write Data @ [0x80010194] : 0x00000378; Ram Read Data[0x80040194]: 0x00000378
+ Ram Write Data @ [0x80010198] : 0x00000377; Ram Read Data[0x80040198]: 0x00000377
+ Ram Write Data @ [0x8001019c] : 0x00000378; Ram Read Data[0x8004019c]: 0x00000378
+ Ram Write Data @ [0x800101a0] : 0x00000377; Ram Read Data[0x800401a0]: 0x00000377
+ Ram Write Data @ [0x800101a4] : 0x00000378; Ram Read Data[0x800401a4]: 0x00000378
+ Ram Write Data @ [0x800101a8] : 0x00000377; Ram Read Data[0x800401a8]: 0x00000377
+ Ram Write Data @ [0x800101ac] : 0x00000378; Ram Read Data[0x800401ac]: 0x00000378
+ Ram Write Data @ [0x800101b0] : 0x00000377; Ram Read Data[0x800401b0]: 0x00000377
+ Ram Write Data @ [0x800101b4] : 0x00000378; Ram Read Data[0x800401b4]: 0x00000378
+ Ram Write Data @ [0x800101b8] : 0x00000377; Ram Read Data[0x800401b8]: 0x00000377
+ Ram Write Data @ [0x800101bc] : 0x00000378; Ram Read Data[0x800401bc]: 0x00000378
+ Ram Write Data @ [0x800101c0] : 0x00000377; Ram Read Data[0x800401c0]: 0x00000377
+ Ram Write Data @ [0x800101c4] : 0x00000378; Ram Read Data[0x800401c4]: 0x00000378
+ Ram Write Data @ [0x800101c8] : 0x00000377; Ram Read Data[0x800401c8]: 0x00000377
+ Ram Write Data @ [0x800101cc] : 0x00000378; Ram Read Data[0x800401cc]: 0x00000378
+ Ram Write Data @ [0x800101d0] : 0x00000377; Ram Read Data[0x800401d0]: 0x00000377
+ Ram Write Data @ [0x800101d4] : 0x00000378; Ram Read Data[0x800401d4]: 0x00000378
+ Ram Write Data @ [0x800101d8] : 0x00000377; Ram Read Data[0x800401d8]: 0x00000377
+ Ram Write Data @ [0x800101dc] : 0x00000378; Ram Read Data[0x800401dc]: 0x00000378
+ Ram Write Data @ [0x800101e0] : 0x00000377; Ram Read Data[0x800401e0]: 0x00000377
+ Ram Write Data @ [0x800101e4] : 0x00000378; Ram Read Data[0x800401e4]: 0x00000378
+ Ram Write Data @ [0x800101e8] : 0x00000377; Ram Read Data[0x800401e8]: 0x00000377
+ Ram Write Data @ [0x800101ec] : 0x00000378; Ram Read Data[0x800401ec]: 0x00000378
+ Ram Write Data @ [0x800101f0] : 0x00000377; Ram Read Data[0x800401f0]: 0x00000371
+	DMA has gone wrong somewhere in copying a: 00000377 to b: 00000371 i:124 burst: 
+	 Burst Value: 0 seems to pass
+	 Cleared 
+	 DMA copy from BRAM to TCM seems to work for all bursts
+ = 71200
+ = 71204
+
+
+
+
+
+
+Starting DMA mem to mem transfer
+SDRAM init value 1
+Address of a: 80010000 c: 80010000 b: 80040000 d:00021000	 Fencing? 
+	 DMA_CCR3 value: 00006adf
+	 Waiting for DMA interrupt ISR value: 00000700
+	 Clearing Interrupt Flags
+
+ Ram Write Data @ [0x80010000] : 0x00000378; Ram Read Data[0x80040000]: 0x00000350
+	DMA has gone wrong somewhere in copying a: 00000378 to b: 00000350 i:0 burst: 
+
+ Ram Write Data @ [0x80010004] : 0x00000379; Ram Read Data[0x80040004]: 0x00000379
+ Ram Write Data @ [0x80010008] : 0x0000037a; Ram Read Data[0x80040008]: 0x0000037a
+ Ram Write Data @ [0x8001000c] : 0x0000037b; Ram Read Data[0x8004000c]: 0x0000037b
+ Ram Write Data @ [0x80010010] : 0x0000037c; Ram Read Data[0x80040010]: 0x0000037c
+ Ram Write Data @ [0x80010014] : 0x0000037d; Ram Read Data[0x80040014]: 0x0000037c
+	DMA has gone wrong somewhere in copying a: 0000037d to b: 0000037c i:5 burst: 
+
+ Ram Write Data @ [0x80010018] : 0x0000037e; Ram Read Data[0x80040018]: 0x00000372
+	DMA has gone wrong somewhere in copying a: 0000037e to b: 00000372 i:6 burst: 
+
+ Ram Write Data @ [0x8001001c] : 0x0000037f; Ram Read Data[0x8004001c]: 0x00000347
+	DMA has gone wrong somewhere in copying a: 0000037f to b: 00000347 i:7 burst: 
+
+ Ram Write Data @ [0x80010020] : 0x00000380; Ram Read Data[0x80040020]: 0x00000380
+ Ram Write Data @ [0x80010024] : 0x00000381; Ram Read Data[0x80040024]: 0x00000381
+ Ram Write Data @ [0x80010028] : 0x00000382; Ram Read Data[0x80040028]: 0x00000382
+ Ram Write Data @ [0x8001002c] : 0x00000383; Ram Read Data[0x8004002c]: 0x00000383
+ Ram Write Data @ [0x80010030] : 0x00000384; Ram Read Data[0x80040030]: 0x00000384
+ Ram Write Data @ [0x80010034] : 0x00000385; Ram Read Data[0x80040034]: 0x00000384
+	DMA has gone wrong somewhere in copying a: 00000385 to b: 00000384 i:13 burst: 
+
+ Ram Write Data @ [0x80010038] : 0x00000386; Ram Read Data[0x80040038]: 0x00000386
+ Ram Write Data @ [0x8001003c] : 0x00000387; Ram Read Data[0x8004003c]: 0x00000387
+ Ram Write Data @ [0x80010040] : 0x00000388; Ram Read Data[0x80040040]: 0x00000388
+ Ram Write Data @ [0x80010044] : 0x00000389; Ram Read Data[0x80040044]: 0x00000389
+ Ram Write Data @ [0x80010048] : 0x0000038a; Ram Read Data[0x80040048]: 0x0000038a
+ Ram Write Data @ [0x8001004c] : 0x0000038b; Ram Read Data[0x8004004c]: 0x0000038b
+ Ram Write Data @ [0x80010050] : 0x0000038c; Ram Read Data[0x80040050]: 0x0000038c
+ Ram Write Data @ [0x80010054] : 0x0000038d; Ram Read Data[0x80040054]: 0x0000038d
+ Ram Write Data @ [0x80010058] : 0x0000038e; Ram Read Data[0x80040058]: 0x00000386
+	DMA has gone wrong somewhere in copying a: 0000038e to b: 00000386 i:22 burst: 
+
+ Ram Write Data @ [0x8001005c] : 0x0000038f; Ram Read Data[0x8004005c]: 0x0000038f
+ Ram Write Data @ [0x80010060] : 0x00000390; Ram Read Data[0x80040060]: 0x00000390
+ Ram Write Data @ [0x80010064] : 0x00000391; Ram Read Data[0x80040064]: 0x00000391
+ Ram Write Data @ [0x80010068] : 0x00000392; Ram Read Data[0x80040068]: 0x00000392
+ Ram Write Data @ [0x8001006c] : 0x00000393; Ram Read Data[0x8004006c]: 0x00000393
+ Ram Write Data @ [0x80010070] : 0x00000394; Ram Read Data[0x80040070]: 0x00000394
+ Ram Write Data @ [0x80010074] : 0x00000395; Ram Read Data[0x80040074]: 0x00000394
+	DMA has gone wrong somewhere in copying a: 00000395 to b: 00000394 i:29 burst: 
+
+ Ram Write Data @ [0x80010078] : 0x00000396; Ram Read Data[0x80040078]: 0x00000392
+	DMA has gone wrong somewhere in copying a: 00000396 to b: 00000392 i:30 burst: 
+
+ Ram Write Data @ [0x8001007c] : 0x00000397; Ram Read Data[0x8004007c]: 0x00000397
+ Ram Write Data @ [0x80010080] : 0x00000398; Ram Read Data[0x80040080]: 0x00000198
+	DMA has gone wrong somewhere in copying a: 00000398 to b: 00000198 i:32 burst: 
+
+ Ram Write Data @ [0x80010084] : 0x00000399; Ram Read Data[0x80040084]: 0x00000399
+ Ram Write Data @ [0x80010088] : 0x0000039a; Ram Read Data[0x80040088]: 0x0000019a
+	DMA has gone wrong somewhere in copying a: 0000039a to b: 0000019a i:34 burst: 
+
+ Ram Write Data @ [0x8001008c] : 0x0000039b; Ram Read Data[0x8004008c]: 0x0000039b
+ Ram Write Data @ [0x80010090] : 0x0000039c; Ram Read Data[0x80040090]: 0x0000019c
+	DMA has gone wrong somewhere in copying a: 0000039c to b: 0000019c i:36 burst: 
+
+ Ram Write Data @ [0x80010094] : 0x0000039d; Ram Read Data[0x80040094]: 0x0000039c
+	DMA has gone wrong somewhere in copying a: 0000039d to b: 0000039c i:37 burst: 
+
+ Ram Write Data @ [0x80010098] : 0x0000039e; Ram Read Data[0x80040098]: 0x00000192
+	DMA has gone wrong somewhere in copying a: 0000039e to b: 00000192 i:38 burst: 
+
+ Ram Write Data @ [0x8001009c] : 0x0000039f; Ram Read Data[0x8004009c]: 0x0000039f
+ Ram Write Data @ [0x800100a0] : 0x000003a0; Ram Read Data[0x800400a0]: 0x000003a0
+ Ram Write Data @ [0x800100a4] : 0x000003a1; Ram Read Data[0x800400a4]: 0x000003a1
+ Ram Write Data @ [0x800100a8] : 0x000003a2; Ram Read Data[0x800400a8]: 0x000003a2
+ Ram Write Data @ [0x800100ac] : 0x000003a3; Ram Read Data[0x800400ac]: 0x000003a3
+ Ram Write Data @ [0x800100b0] : 0x000003a4; Ram Read Data[0x800400b0]: 0x000003a4
+ Ram Write Data @ [0x800100b4] : 0x000003a5; Ram Read Data[0x800400b4]: 0x000003a4
+	DMA has gone wrong somewhere in copying a: 000003a5 to b: 000003a4 i:45 burst: 
+
+ Ram Write Data @ [0x800100b8] : 0x000003a6; Ram Read Data[0x800400b8]: 0x000003a2
+	DMA has gone wrong somewhere in copying a: 000003a6 to b: 000003a2 i:46 burst: 
+
+ Ram Write Data @ [0x800100bc] : 0x000003a7; Ram Read Data[0x800400bc]: 0x000003a7
+ Ram Write Data @ [0x800100c0] : 0x000003a8; Ram Read Data[0x800400c0]: 0x000001a8
+	DMA has gone wrong somewhere in copying a: 000003a8 to b: 000001a8 i:48 burst: 
+
+ Ram Write Data @ [0x800100c4] : 0x000003a9; Ram Read Data[0x800400c4]: 0x000003a9
+ Ram Write Data @ [0x800100c8] : 0x000003aa; Ram Read Data[0x800400c8]: 0x000001aa
+	DMA has gone wrong somewhere in copying a: 000003aa to b: 000001aa i:50 burst: 
+
+ Ram Write Data @ [0x800100cc] : 0x000003ab; Ram Read Data[0x800400cc]: 0x000003ab
+ Ram Write Data @ [0x800100d0] : 0x000003ac; Ram Read Data[0x800400d0]: 0x000001ac
+	DMA has gone wrong somewhere in copying a: 000003ac to b: 000001ac i:52 burst: 
+
+ Ram Write Data @ [0x800100d4] : 0x000003ad; Ram Read Data[0x800400d4]: 0x000003ac
+	DMA has gone wrong somewhere in copying a: 000003ad to b: 000003ac i:53 burst: 
+
+ Ram Write Data @ [0x800100d8] : 0x000003ae; Ram Read Data[0x800400d8]: 0x000001a2
+	DMA has gone wrong somewhere in copying a: 000003ae to b: 000001a2 i:54 burst: 
+
+ Ram Write Data @ [0x800100dc] : 0x000003af; Ram Read Data[0x800400dc]: 0x000003af
+ Ram Write Data @ [0x800100e0] : 0x000003b0; Ram Read Data[0x800400e0]: 0x000001b0
+	DMA has gone wrong somewhere in copying a: 000003b0 to b: 000001b0 i:56 burst: 
+
+ Ram Write Data @ [0x800100e4] : 0x000003b1; Ram Read Data[0x800400e4]: 0x000003b1
+ Ram Write Data @ [0x800100e8] : 0x000003b2; Ram Read Data[0x800400e8]: 0x000001b2
+	DMA has gone wrong somewhere in copying a: 000003b2 to b: 000001b2 i:58 burst: 
+
+ Ram Write Data @ [0x800100ec] : 0x000003b3; Ram Read Data[0x800400ec]: 0x000003b3
+ Ram Write Data @ [0x800100f0] : 0x000003b4; Ram Read Data[0x800400f0]: 0x000001b4
+	DMA has gone wrong somewhere in copying a: 000003b4 to b: 000001b4 i:60 burst: 
+
+ Ram Write Data @ [0x800100f4] : 0x000003b5; Ram Read Data[0x800400f4]: 0x000003b4
+	DMA has gone wrong somewhere in copying a: 000003b5 to b: 000003b4 i:61 burst: 
+
+ Ram Write Data @ [0x800100f8] : 0x000003b6; Ram Read Data[0x800400f8]: 0x000001b2
+	DMA has gone wrong somewhere in copying a: 000003b6 to b: 000001b2 i:62 burst: 
+
+ Ram Write Data @ [0x800100fc] : 0x000003b7; Ram Read Data[0x800400fc]: 0x000003b7
+ Ram Write Data @ [0x80010100] : 0x000003b8; Ram Read Data[0x80040100]: 0x000003b0
+	DMA has gone wrong somewhere in copying a: 000003b8 to b: 000003b0 i:64 burst: 
+
+ Ram Write Data @ [0x80010104] : 0x000003b9; Ram Read Data[0x80040104]: 0x000003b9
+ Ram Write Data @ [0x80010108] : 0x000003ba; Ram Read Data[0x80040108]: 0x000003ba
+ Ram Write Data @ [0x8001010c] : 0x000003bb; Ram Read Data[0x8004010c]: 0x000003bb
+ Ram Write Data @ [0x80010110] : 0x000003bc; Ram Read Data[0x80040110]: 0x000003bc
+ Ram Write Data @ [0x80010114] : 0x000003bd; Ram Read Data[0x80040114]: 0x000003bc
+	DMA has gone wrong somewhere in copying a: 000003bd to b: 000003bc i:69 burst: 
+
+ Ram Write Data @ [0x80010118] : 0x000003be; Ram Read Data[0x80040118]: 0x000003b2
+	DMA has gone wrong somewhere in copying a: 000003be to b: 000003b2 i:70 burst: 
+
+ Ram Write Data @ [0x8001011c] : 0x000003bf; Ram Read Data[0x8004011c]: 0x00000387
+	DMA has gone wrong somewhere in copying a: 000003bf to b: 00000387 i:71 burst: 
+
+ Ram Write Data @ [0x80010120] : 0x000003c0; Ram Read Data[0x80040120]: 0x000003c0
+ Ram Write Data @ [0x80010124] : 0x000003c1; Ram Read Data[0x80040124]: 0x000003c1
+ Ram Write Data @ [0x80010128] : 0x000003c2; Ram Read Data[0x80040128]: 0x000003c2
+ Ram Write Data @ [0x8001012c] : 0x000003c3; Ram Read Data[0x8004012c]: 0x000003c3
+ Ram Write Data @ [0x80010130] : 0x000003c4; Ram Read Data[0x80040130]: 0x000003c4
+ Ram Write Data @ [0x80010134] : 0x000003c5; Ram Read Data[0x80040134]: 0x000003c4
+	DMA has gone wrong somewhere in copying a: 000003c5 to b: 000003c4 i:77 burst: 
+
+ Ram Write Data @ [0x80010138] : 0x000003c6; Ram Read Data[0x80040138]: 0x000003c2
+	DMA has gone wrong somewhere in copying a: 000003c6 to b: 000003c2 i:78 burst: 
+
+ Ram Write Data @ [0x8001013c] : 0x000003c7; Ram Read Data[0x8004013c]: 0x000003c7
+ Ram Write Data @ [0x80010140] : 0x000003c8; Ram Read Data[0x80040140]: 0x000000c8
+	DMA has gone wrong somewhere in copying a: 000003c8 to b: 000000c8 i:80 burst: 
+
+ Ram Write Data @ [0x80010144] : 0x000003c9; Ram Read Data[0x80040144]: 0x000003c9
+ Ram Write Data @ [0x80010148] : 0x000003ca; Ram Read Data[0x80040148]: 0x000000ca
+	DMA has gone wrong somewhere in copying a: 000003ca to b: 000000ca i:82 burst: 
+
+ Ram Write Data @ [0x8001014c] : 0x000003cb; Ram Read Data[0x8004014c]: 0x000003cb
+ Ram Write Data @ [0x80010150] : 0x000003cc; Ram Read Data[0x80040150]: 0x000000cc
+	DMA has gone wrong somewhere in copying a: 000003cc to b: 000000cc i:84 burst: 
+
+ Ram Write Data @ [0x80010154] : 0x000003cd; Ram Read Data[0x80040154]: 0x000003cc
+	DMA has gone wrong somewhere in copying a: 000003cd to b: 000003cc i:85 burst: 
+
+ Ram Write Data @ [0x80010158] : 0x000003ce; Ram Read Data[0x80040158]: 0x000000c2
+	DMA has gone wrong somewhere in copying a: 000003ce to b: 000000c2 i:86 burst: 
+
+ Ram Write Data @ [0x8001015c] : 0x000003cf; Ram Read Data[0x8004015c]: 0x000003cf
+ Ram Write Data @ [0x80010160] : 0x000003d0; Ram Read Data[0x80040160]: 0x000003d0
+ Ram Write Data @ [0x80010164] : 0x000003d1; Ram Read Data[0x80040164]: 0x000003d1
+ Ram Write Data @ [0x80010168] : 0x000003d2; Ram Read Data[0x80040168]: 0x000003d2
+ Ram Write Data @ [0x8001016c] : 0x000003d3; Ram Read Data[0x8004016c]: 0x000003d3
+ Ram Write Data @ [0x80010170] : 0x000003d4; Ram Read Data[0x80040170]: 0x000003d4
+ Ram Write Data @ [0x80010174] : 0x000003d5; Ram Read Data[0x80040174]: 0x000003d4
+	DMA has gone wrong somewhere in copying a: 000003d5 to b: 000003d4 i:93 burst: 
+
+ Ram Write Data @ [0x80010178] : 0x000003d6; Ram Read Data[0x80040178]: 0x000003d2
+	DMA has gone wrong somewhere in copying a: 000003d6 to b: 000003d2 i:94 burst: 
+
+ Ram Write Data @ [0x8001017c] : 0x000003d7; Ram Read Data[0x8004017c]: 0x000003d7
+ Ram Write Data @ [0x80010180] : 0x000003d8; Ram Read Data[0x80040180]: 0x000003d0
+	DMA has gone wrong somewhere in copying a: 000003d8 to b: 000003d0 i:96 burst: 
+
+ Ram Write Data @ [0x80010184] : 0x000003d9; Ram Read Data[0x80040184]: 0x000003d9
+ Ram Write Data @ [0x80010188] : 0x000003da; Ram Read Data[0x80040188]: 0x000003da
+ Ram Write Data @ [0x8001018c] : 0x000003db; Ram Read Data[0x8004018c]: 0x000003db
+ Ram Write Data @ [0x80010190] : 0x000003dc; Ram Read Data[0x80040190]: 0x000003dc
+ Ram Write Data @ [0x80010194] : 0x000003dd; Ram Read Data[0x80040194]: 0x000003dc
+	DMA has gone wrong somewhere in copying a: 000003dd to b: 000003dc i:101 burst: 
+
+ Ram Write Data @ [0x80010198] : 0x000003de; Ram Read Data[0x80040198]: 0x000003d2
+	DMA has gone wrong somewhere in copying a: 000003de to b: 000003d2 i:102 burst: 
+
+ Ram Write Data @ [0x8001019c] : 0x000003df; Ram Read Data[0x8004019c]: 0x000003d7
+	DMA has gone wrong somewhere in copying a: 000003df to b: 000003d7 i:103 burst: 
+
+ Ram Write Data @ [0x800101a0] : 0x000003e0; Ram Read Data[0x800401a0]: 0x000003e0
+ Ram Write Data @ [0x800101a4] : 0x000003e1; Ram Read Data[0x800401a4]: 0x000003e1
+ Ram Write Data @ [0x800101a8] : 0x000003e2; Ram Read Data[0x800401a8]: 0x000003e2
+ Ram Write Data @ [0x800101ac] : 0x000003e3; Ram Read Data[0x800401ac]: 0x000003e3
+ Ram Write Data @ [0x800101b0] : 0x000003e4; Ram Read Data[0x800401b0]: 0x000003e4
+ Ram Write Data @ [0x800101b4] : 0x000003e5; Ram Read Data[0x800401b4]: 0x000003e4
+	DMA has gone wrong somewhere in copying a: 000003e5 to b: 000003e4 i:109 burst: 
+
+ Ram Write Data @ [0x800101b8] : 0x000003e6; Ram Read Data[0x800401b8]: 0x000003e2
+	DMA has gone wrong somewhere in copying a: 000003e6 to b: 000003e2 i:110 burst: 
+
+ Ram Write Data @ [0x800101bc] : 0x000003e7; Ram Read Data[0x800401bc]: 0x000003e7
+ Ram Write Data @ [0x800101c0] : 0x000003e8; Ram Read Data[0x800401c0]: 0x000003e0
+	DMA has gone wrong somewhere in copying a: 000003e8 to b: 000003e0 i:112 burst: 
+
+ Ram Write Data @ [0x800101c4] : 0x000003e9; Ram Read Data[0x800401c4]: 0x000003e9
+ Ram Write Data @ [0x800101c8] : 0x000003ea; Ram Read Data[0x800401c8]: 0x000003ea
+ Ram Write Data @ [0x800101cc] : 0x000003eb; Ram Read Data[0x800401cc]: 0x000003eb
+ Ram Write Data @ [0x800101d0] : 0x000003ec; Ram Read Data[0x800401d0]: 0x000003ec
+ Ram Write Data @ [0x800101d4] : 0x000003ed; Ram Read Data[0x800401d4]: 0x000003ec
+	DMA has gone wrong somewhere in copying a: 000003ed to b: 000003ec i:117 burst: 
+
+ Ram Write Data @ [0x800101d8] : 0x000003ee; Ram Read Data[0x800401d8]: 0x000003e2
+	DMA has gone wrong somewhere in copying a: 000003ee to b: 000003e2 i:118 burst: 
+
+ Ram Write Data @ [0x800101dc] : 0x000003ef; Ram Read Data[0x800401dc]: 0x000003c7
+	DMA has gone wrong somewhere in copying a: 000003ef to b: 000003c7 i:119 burst: 
+
+ Ram Write Data @ [0x800101e0] : 0x000003f0; Ram Read Data[0x800401e0]: 0x000001f0
+	DMA has gone wrong somewhere in copying a: 000003f0 to b: 000001f0 i:120 burst: 
+
+ Ram Write Data @ [0x800101e4] : 0x000003f1; Ram Read Data[0x800401e4]: 0x000003f1
+ Ram Write Data @ [0x800101e8] : 0x000003f2; Ram Read Data[0x800401e8]: 0x000001f2
+	DMA has gone wrong somewhere in copying a: 000003f2 to b: 000001f2 i:122 burst: 
+
+ Ram Write Data @ [0x800101ec] : 0x000003f3; Ram Read Data[0x800401ec]: 0x000003f3
+ Ram Write Data @ [0x800101f0] : 0x000003f4; Ram Read Data[0x800401f0]: 0x00000170
+	DMA has gone wrong somewhere in copying a: 000003f4 to b: 00000170 i:124 burst: 
+	 Burst Value: 0 seems to pass
+	 Cleared 
+	 DMA copy from BRAM to TCM seems to work for all bursts
+ = 71336
+ = 71344
+
+
+
+
+Starting DMA mem to mem transfer
+SDRAM init value 1
+Address of a: 80040000 b: 80010000 	 Fencing? 
+	 DMA_CCR3 value: 00006adf
+	 Waiting for DMA interrupt ISR value: 00000700
+	 Clearing Interrupt Flags
+
+ Ram Write Data @ [0x80040000] : 0x00000378; Ram Read Data[0x80010000]: 0x00000340
+	DMA has gone wrong somewhere in copying a: 00000378 to b: 00000340 i:0 burst: 
+
+ Ram Write Data @ [0x80040004] : 0x00000379; Ram Read Data[0x80010004]: 0x00000379
+ Ram Write Data @ [0x80040008] : 0x0000037a; Ram Read Data[0x80010008]: 0x0000037a
+ Ram Write Data @ [0x8004000c] : 0x0000037b; Ram Read Data[0x8001000c]: 0x0000037b
+ Ram Write Data @ [0x80040010] : 0x0000037c; Ram Read Data[0x80010010]: 0x0000037c
+ Ram Write Data @ [0x80040014] : 0x0000037d; Ram Read Data[0x80010014]: 0x0000037c
+	DMA has gone wrong somewhere in copying a: 0000037d to b: 0000037c i:5 burst: 
+
+ Ram Write Data @ [0x80040018] : 0x0000037e; Ram Read Data[0x80010018]: 0x00000372
+	DMA has gone wrong somewhere in copying a: 0000037e to b: 00000372 i:6 burst: 
+
+ Ram Write Data @ [0x8004001c] : 0x0000037f; Ram Read Data[0x8001001c]: 0x00000347
+	DMA has gone wrong somewhere in copying a: 0000037f to b: 00000347 i:7 burst: 
+
+ Ram Write Data @ [0x80040020] : 0x00000380; Ram Read Data[0x80010020]: 0x00000380
+ Ram Write Data @ [0x80040024] : 0x00000381; Ram Read Data[0x80010024]: 0x00000381
+ Ram Write Data @ [0x80040028] : 0x00000382; Ram Read Data[0x80010028]: 0x00000382
+ Ram Write Data @ [0x8004002c] : 0x00000383; Ram Read Data[0x8001002c]: 0x00000383
+ Ram Write Data @ [0x80040030] : 0x00000384; Ram Read Data[0x80010030]: 0x00000384
+ Ram Write Data @ [0x80040034] : 0x00000385; Ram Read Data[0x80010034]: 0x00000384
+	DMA has gone wrong somewhere in copying a: 00000385 to b: 00000384 i:13 burst: 
+
+ Ram Write Data @ [0x80040038] : 0x00000386; Ram Read Data[0x80010038]: 0x00000386
+ Ram Write Data @ [0x8004003c] : 0x00000387; Ram Read Data[0x8001003c]: 0x00000387
+ Ram Write Data @ [0x80040040] : 0x00000388; Ram Read Data[0x80010040]: 0x00000388
+ Ram Write Data @ [0x80040044] : 0x00000389; Ram Read Data[0x80010044]: 0x00000389
+ Ram Write Data @ [0x80040048] : 0x0000038a; Ram Read Data[0x80010048]: 0x0000038a
+ Ram Write Data @ [0x8004004c] : 0x0000038b; Ram Read Data[0x8001004c]: 0x0000038b
+ Ram Write Data @ [0x80040050] : 0x0000038c; Ram Read Data[0x80010050]: 0x0000038c
+ Ram Write Data @ [0x80040054] : 0x0000038d; Ram Read Data[0x80010054]: 0x0000038d
+ Ram Write Data @ [0x80040058] : 0x0000038e; Ram Read Data[0x80010058]: 0x00000386
+	DMA has gone wrong somewhere in copying a: 0000038e to b: 00000386 i:22 burst: 
+
+ Ram Write Data @ [0x8004005c] : 0x0000038f; Ram Read Data[0x8001005c]: 0x0000038f
+ Ram Write Data @ [0x80040060] : 0x00000390; Ram Read Data[0x80010060]: 0x00000390
+ Ram Write Data @ [0x80040064] : 0x00000391; Ram Read Data[0x80010064]: 0x00000391
+ Ram Write Data @ [0x80040068] : 0x00000392; Ram Read Data[0x80010068]: 0x00000392
+ Ram Write Data @ [0x8004006c] : 0x00000393; Ram Read Data[0x8001006c]: 0x00000393
+ Ram Write Data @ [0x80040070] : 0x00000394; Ram Read Data[0x80010070]: 0x00000394
+ Ram Write Data @ [0x80040074] : 0x00000395; Ram Read Data[0x80010074]: 0x00000394
+	DMA has gone wrong somewhere in copying a: 00000395 to b: 00000394 i:29 burst: 
+
+ Ram Write Data @ [0x80040078] : 0x00000396; Ram Read Data[0x80010078]: 0x00000396
+ Ram Write Data @ [0x8004007c] : 0x00000397; Ram Read Data[0x8001007c]: 0x00000397
+ Ram Write Data @ [0x80040080] : 0x00000398; Ram Read Data[0x80010080]: 0x00000198
+	DMA has gone wrong somewhere in copying a: 00000398 to b: 00000198 i:32 burst: 
+
+ Ram Write Data @ [0x80040084] : 0x00000399; Ram Read Data[0x80010084]: 0x00000399
+ Ram Write Data @ [0x80040088] : 0x0000039a; Ram Read Data[0x80010088]: 0x0000019a
+	DMA has gone wrong somewhere in copying a: 0000039a to b: 0000019a i:34 burst: 
+
+ Ram Write Data @ [0x8004008c] : 0x0000039b; Ram Read Data[0x8001008c]: 0x0000039b
+ Ram Write Data @ [0x80040090] : 0x0000039c; Ram Read Data[0x80010090]: 0x0000019c
+	DMA has gone wrong somewhere in copying a: 0000039c to b: 0000019c i:36 burst: 
+
+ Ram Write Data @ [0x80040094] : 0x0000039d; Ram Read Data[0x80010094]: 0x0000039c
+	DMA has gone wrong somewhere in copying a: 0000039d to b: 0000039c i:37 burst: 
+
+ Ram Write Data @ [0x80040098] : 0x0000039e; Ram Read Data[0x80010098]: 0x00000192
+	DMA has gone wrong somewhere in copying a: 0000039e to b: 00000192 i:38 burst: 
+
+ Ram Write Data @ [0x8004009c] : 0x0000039f; Ram Read Data[0x8001009c]: 0x0000039f
+ Ram Write Data @ [0x800400a0] : 0x000003a0; Ram Read Data[0x800100a0]: 0x000003a0
+ Ram Write Data @ [0x800400a4] : 0x000003a1; Ram Read Data[0x800100a4]: 0x000003a1
+ Ram Write Data @ [0x800400a8] : 0x000003a2; Ram Read Data[0x800100a8]: 0x000003a2
+ Ram Write Data @ [0x800400ac] : 0x000003a3; Ram Read Data[0x800100ac]: 0x000003a3
+ Ram Write Data @ [0x800400b0] : 0x000003a4; Ram Read Data[0x800100b0]: 0x000003a4
+ Ram Write Data @ [0x800400b4] : 0x000003a5; Ram Read Data[0x800100b4]: 0x000003a4
+	DMA has gone wrong somewhere in copying a: 000003a5 to b: 000003a4 i:45 burst: 
+
+ Ram Write Data @ [0x800400b8] : 0x000003a6; Ram Read Data[0x800100b8]: 0x000003a2
+	DMA has gone wrong somewhere in copying a: 000003a6 to b: 000003a2 i:46 burst: 
+
+ Ram Write Data @ [0x800400bc] : 0x000003a7; Ram Read Data[0x800100bc]: 0x000003a7
+ Ram Write Data @ [0x800400c0] : 0x000003a8; Ram Read Data[0x800100c0]: 0x000001a8
+	DMA has gone wrong somewhere in copying a: 000003a8 to b: 000001a8 i:48 burst: 
+
+ Ram Write Data @ [0x800400c4] : 0x000003a9; Ram Read Data[0x800100c4]: 0x000003a9
+ Ram Write Data @ [0x800400c8] : 0x000003aa; Ram Read Data[0x800100c8]: 0x000001aa
+	DMA has gone wrong somewhere in copying a: 000003aa to b: 000001aa i:50 burst: 
+
+ Ram Write Data @ [0x800400cc] : 0x000003ab; Ram Read Data[0x800100cc]: 0x000003ab
+ Ram Write Data @ [0x800400d0] : 0x000003ac; Ram Read Data[0x800100d0]: 0x000001ac
+	DMA has gone wrong somewhere in copying a: 000003ac to b: 000001ac i:52 burst: 
+
+ Ram Write Data @ [0x800400d4] : 0x000003ad; Ram Read Data[0x800100d4]: 0x000003ac
+	DMA has gone wrong somewhere in copying a: 000003ad to b: 000003ac i:53 burst: 
+
+ Ram Write Data @ [0x800400d8] : 0x000003ae; Ram Read Data[0x800100d8]: 0x000001a2
+	DMA has gone wrong somewhere in copying a: 000003ae to b: 000001a2 i:54 burst: 
+
+ Ram Write Data @ [0x800400dc] : 0x000003af; Ram Read Data[0x800100dc]: 0x000003af
+ Ram Write Data @ [0x800400e0] : 0x000003b0; Ram Read Data[0x800100e0]: 0x000000b0
+	DMA has gone wrong somewhere in copying a: 000003b0 to b: 000000b0 i:56 burst: 
+
+ Ram Write Data @ [0x800400e4] : 0x000003b1; Ram Read Data[0x800100e4]: 0x000003b1
+ Ram Write Data @ [0x800400e8] : 0x000003b2; Ram Read Data[0x800100e8]: 0x000000b2
+	DMA has gone wrong somewhere in copying a: 000003b2 to b: 000000b2 i:58 burst: 
+
+ Ram Write Data @ [0x800400ec] : 0x000003b3; Ram Read Data[0x800100ec]: 0x000003b3
+ Ram Write Data @ [0x800400f0] : 0x000003b4; Ram Read Data[0x800100f0]: 0x000000b4
+	DMA has gone wrong somewhere in copying a: 000003b4 to b: 000000b4 i:60 burst: 
+
+ Ram Write Data @ [0x800400f4] : 0x000003b5; Ram Read Data[0x800100f4]: 0x000003b4
+	DMA has gone wrong somewhere in copying a: 000003b5 to b: 000003b4 i:61 burst: 
+
+ Ram Write Data @ [0x800400f8] : 0x000003b6; Ram Read Data[0x800100f8]: 0x000000b2
+	DMA has gone wrong somewhere in copying a: 000003b6 to b: 000000b2 i:62 burst: 
+
+ Ram Write Data @ [0x800400fc] : 0x000003b7; Ram Read Data[0x800100fc]: 0x000003b7
+ Ram Write Data @ [0x80040100] : 0x000003b8; Ram Read Data[0x80010100]: 0x000003b0
+	DMA has gone wrong somewhere in copying a: 000003b8 to b: 000003b0 i:64 burst: 
+
+ Ram Write Data @ [0x80040104] : 0x000003b9; Ram Read Data[0x80010104]: 0x000003b9
+ Ram Write Data @ [0x80040108] : 0x000003ba; Ram Read Data[0x80010108]: 0x000003ba
+ Ram Write Data @ [0x8004010c] : 0x000003bb; Ram Read Data[0x8001010c]: 0x000003bb
+ Ram Write Data @ [0x80040110] : 0x000003bc; Ram Read Data[0x80010110]: 0x000003bc
+ Ram Write Data @ [0x80040114] : 0x000003bd; Ram Read Data[0x80010114]: 0x000003bc
+	DMA has gone wrong somewhere in copying a: 000003bd to b: 000003bc i:69 burst: 
+
+ Ram Write Data @ [0x80040118] : 0x000003be; Ram Read Data[0x80010118]: 0x000003b2
+	DMA has gone wrong somewhere in copying a: 000003be to b: 000003b2 i:70 burst: 
+
+ Ram Write Data @ [0x8004011c] : 0x000003bf; Ram Read Data[0x8001011c]: 0x00000387
+	DMA has gone wrong somewhere in copying a: 000003bf to b: 00000387 i:71 burst: 
+
+ Ram Write Data @ [0x80040120] : 0x000003c0; Ram Read Data[0x80010120]: 0x000003c0
+ Ram Write Data @ [0x80040124] : 0x000003c1; Ram Read Data[0x80010124]: 0x000003c1
+ Ram Write Data @ [0x80040128] : 0x000003c2; Ram Read Data[0x80010128]: 0x000003c2
+ Ram Write Data @ [0x8004012c] : 0x000003c3; Ram Read Data[0x8001012c]: 0x000003c3
+ Ram Write Data @ [0x80040130] : 0x000003c4; Ram Read Data[0x80010130]: 0x000003c4
+ Ram Write Data @ [0x80040134] : 0x000003c5; Ram Read Data[0x80010134]: 0x000003c4
+	DMA has gone wrong somewhere in copying a: 000003c5 to b: 000003c4 i:77 burst: 
+
+ Ram Write Data @ [0x80040138] : 0x000003c6; Ram Read Data[0x80010138]: 0x000003c6
+ Ram Write Data @ [0x8004013c] : 0x000003c7; Ram Read Data[0x8001013c]: 0x000003c7
+ Ram Write Data @ [0x80040140] : 0x000003c8; Ram Read Data[0x80010140]: 0x000003c8
+ Ram Write Data @ [0x80040144] : 0x000003c9; Ram Read Data[0x80010144]: 0x000003c9
+ Ram Write Data @ [0x80040148] : 0x000003ca; Ram Read Data[0x80010148]: 0x000003ca
+ Ram Write Data @ [0x8004014c] : 0x000003cb; Ram Read Data[0x8001014c]: 0x000003cb
+ Ram Write Data @ [0x80040150] : 0x000003cc; Ram Read Data[0x80010150]: 0x000003cc
+ Ram Write Data @ [0x80040154] : 0x000003cd; Ram Read Data[0x80010154]: 0x000003cc
+	DMA has gone wrong somewhere in copying a: 000003cd to b: 000003cc i:85 burst: 
+
+ Ram Write Data @ [0x80040158] : 0x000003ce; Ram Read Data[0x80010158]: 0x000003c2
+	DMA has gone wrong somewhere in copying a: 000003ce to b: 000003c2 i:86 burst: 
+
+ Ram Write Data @ [0x8004015c] : 0x000003cf; Ram Read Data[0x8001015c]: 0x000003cf
+ Ram Write Data @ [0x80040160] : 0x000003d0; Ram Read Data[0x80010160]: 0x000003d0
+ Ram Write Data @ [0x80040164] : 0x000003d1; Ram Read Data[0x80010164]: 0x000003d1
+ Ram Write Data @ [0x80040168] : 0x000003d2; Ram Read Data[0x80010168]: 0x000003d2
+ Ram Write Data @ [0x8004016c] : 0x000003d3; Ram Read Data[0x8001016c]: 0x000003d3
+ Ram Write Data @ [0x80040170] : 0x000003d4; Ram Read Data[0x80010170]: 0x000003d4
+ Ram Write Data @ [0x80040174] : 0x000003d5; Ram Read Data[0x80010174]: 0x000003d4
+	DMA has gone wrong somewhere in copying a: 000003d5 to b: 000003d4 i:93 burst: 
+
+ Ram Write Data @ [0x80040178] : 0x000003d6; Ram Read Data[0x80010178]: 0x000003d2
+	DMA has gone wrong somewhere in copying a: 000003d6 to b: 000003d2 i:94 burst: 
+
+ Ram Write Data @ [0x8004017c] : 0x000003d7; Ram Read Data[0x8001017c]: 0x000003d7
+ Ram Write Data @ [0x80040180] : 0x000003d8; Ram Read Data[0x80010180]: 0x000003d8
+ Ram Write Data @ [0x80040184] : 0x000003d9; Ram Read Data[0x80010184]: 0x000003d9
+ Ram Write Data @ [0x80040188] : 0x000003da; Ram Read Data[0x80010188]: 0x000003da
+ Ram Write Data @ [0x8004018c] : 0x000003db; Ram Read Data[0x8001018c]: 0x000003db
+ Ram Write Data @ [0x80040190] : 0x000003dc; Ram Read Data[0x80010190]: 0x000003dc
+ Ram Write Data @ [0x80040194] : 0x000003dd; Ram Read Data[0x80010194]: 0x000003dc
+	DMA has gone wrong somewhere in copying a: 000003dd to b: 000003dc i:101 burst: 
+
+ Ram Write Data @ [0x80040198] : 0x000003de; Ram Read Data[0x80010198]: 0x000003d2
+	DMA has gone wrong somewhere in copying a: 000003de to b: 000003d2 i:102 burst: 
+
+ Ram Write Data @ [0x8004019c] : 0x000003df; Ram Read Data[0x8001019c]: 0x000003df
+ Ram Write Data @ [0x800401a0] : 0x000003e0; Ram Read Data[0x800101a0]: 0x000000e0
+	DMA has gone wrong somewhere in copying a: 000003e0 to b: 000000e0 i:104 burst: 
+
+ Ram Write Data @ [0x800401a4] : 0x000003e1; Ram Read Data[0x800101a4]: 0x000003e1
+ Ram Write Data @ [0x800401a8] : 0x000003e2; Ram Read Data[0x800101a8]: 0x000000e2
+	DMA has gone wrong somewhere in copying a: 000003e2 to b: 000000e2 i:106 burst: 
+
+ Ram Write Data @ [0x800401ac] : 0x000003e3; Ram Read Data[0x800101ac]: 0x000003e3
+ Ram Write Data @ [0x800401b0] : 0x000003e4; Ram Read Data[0x800101b0]: 0x000000e4
+	DMA has gone wrong somewhere in copying a: 000003e4 to b: 000000e4 i:108 burst: 
+
+ Ram Write Data @ [0x800401b4] : 0x000003e5; Ram Read Data[0x800101b4]: 0x000003e4
+	DMA has gone wrong somewhere in copying a: 000003e5 to b: 000003e4 i:109 burst: 
+
+ Ram Write Data @ [0x800401b8] : 0x000003e6; Ram Read Data[0x800101b8]: 0x000000e2
+	DMA has gone wrong somewhere in copying a: 000003e6 to b: 000000e2 i:110 burst: 
+
+ Ram Write Data @ [0x800401bc] : 0x000003e7; Ram Read Data[0x800101bc]: 0x000003e7
+ Ram Write Data @ [0x800401c0] : 0x000003e8; Ram Read Data[0x800101c0]: 0x000003e8
+ Ram Write Data @ [0x800401c4] : 0x000003e9; Ram Read Data[0x800101c4]: 0x000003e9
+ Ram Write Data @ [0x800401c8] : 0x000003ea; Ram Read Data[0x800101c8]: 0x000003ea
+ Ram Write Data @ [0x800401cc] : 0x000003eb; Ram Read Data[0x800101cc]: 0x000003eb
+ Ram Write Data @ [0x800401d0] : 0x000003ec; Ram Read Data[0x800101d0]: 0x000003ec
+ Ram Write Data @ [0x800401d4] : 0x000003ed; Ram Read Data[0x800101d4]: 0x000003ec
+	DMA has gone wrong somewhere in copying a: 000003ed to b: 000003ec i:117 burst: 
+
+ Ram Write Data @ [0x800401d8] : 0x000003ee; Ram Read Data[0x800101d8]: 0x000003e2
+	DMA has gone wrong somewhere in copying a: 000003ee to b: 000003e2 i:118 burst: 
+
+ Ram Write Data @ [0x800401dc] : 0x000003ef; Ram Read Data[0x800101dc]: 0x000003ef
+ Ram Write Data @ [0x800401e0] : 0x000003f0; Ram Read Data[0x800101e0]: 0x000003f0
+ Ram Write Data @ [0x800401e4] : 0x000003f1; Ram Read Data[0x800101e4]: 0x000003f1
+ Ram Write Data @ [0x800401e8] : 0x000003f2; Ram Read Data[0x800101e8]: 0x000003f2
+ Ram Write Data @ [0x800401ec] : 0x000003f3; Ram Read Data[0x800101ec]: 0x000003f3
+ Ram Write Data @ [0x800401f0] : 0x000003f4; Ram Read Data[0x800101f0]: 0x000003f0
+	DMA has gone wrong somewhere in copying a: 000003f4 to b: 000003f0 i:124 burst: 
+	 Burst Value: 0 seems to pass
+	 Cleared 
+	 DMA copy from BRAM to TCM seems to work for all bursts
+ = 71312
+ = 71320
+
+
+
+
+Starting DMA mem to mem transfer
+SDRAM init value 1
+Address of a: 80040000 b: 80010000 	 Fencing? 
+	 DMA_CCR3 value: 00006adf
+	 Waiting for DMA interrupt ISR value: 00000700
+	 Clearing Interrupt Flags
+
+ Ram Write Data @ [0x80040000] : 0x00000014; Ram Read Data[0x80010000]: 0x00000014
+ Ram Write Data @ [0x80040004] : 0x00000015; Ram Read Data[0x80010004]: 0x00000015
+ Ram Write Data @ [0x80040008] : 0x0000001d; Ram Read Data[0x80010008]: 0x0000001d
+ Ram Write Data @ [0x8004000c] : 0x0000001e; Ram Read Data[0x8001000c]: 0x0000001e
+ Ram Write Data @ [0x80040010] : 0x00000014; Ram Read Data[0x80010010]: 0x00000010
+	DMA has gone wrong somewhere in copying a: 00000014 to b: 00000010 i:4 burst: 
+
+ Ram Write Data @ [0x80040014] : 0x00000015; Ram Read Data[0x80010014]: 0x00000001
+	DMA has gone wrong somewhere in copying a: 00000015 to b: 00000001 i:5 burst: 
+
+ Ram Write Data @ [0x80040018] : 0x0000001d; Ram Read Data[0x80010018]: 0x0000001d
+ Ram Write Data @ [0x8004001c] : 0x0000001e; Ram Read Data[0x8001001c]: 0x0000001e
+ Ram Write Data @ [0x80040020] : 0x00000014; Ram Read Data[0x80010020]: 0x00000014
+ Ram Write Data @ [0x80040024] : 0x00000015; Ram Read Data[0x80010024]: 0x00000015
+ Ram Write Data @ [0x80040028] : 0x0000001d; Ram Read Data[0x80010028]: 0x0000001d
+ Ram Write Data @ [0x8004002c] : 0x0000001e; Ram Read Data[0x8001002c]: 0x0000001e
+ Ram Write Data @ [0x80040030] : 0x00000014; Ram Read Data[0x80010030]: 0x00000010
+	DMA has gone wrong somewhere in copying a: 00000014 to b: 00000010 i:12 burst: 
+
+ Ram Write Data @ [0x80040034] : 0x00000015; Ram Read Data[0x80010034]: 0x00000001
+	DMA has gone wrong somewhere in copying a: 00000015 to b: 00000001 i:13 burst: 
+
+ Ram Write Data @ [0x80040038] : 0x0000001d; Ram Read Data[0x80010038]: 0x0000001d
+ Ram Write Data @ [0x8004003c] : 0x0000001e; Ram Read Data[0x8001003c]: 0x0000001e
+ Ram Write Data @ [0x80040040] : 0x00000014; Ram Read Data[0x80010040]: 0x00000014
+ Ram Write Data @ [0x80040044] : 0x00000015; Ram Read Data[0x80010044]: 0x00000015
+ Ram Write Data @ [0x80040048] : 0x0000001d; Ram Read Data[0x80010048]: 0x0000001d
+ Ram Write Data @ [0x8004004c] : 0x0000001e; Ram Read Data[0x8001004c]: 0x0000001e
+ Ram Write Data @ [0x80040050] : 0x00000014; Ram Read Data[0x80010050]: 0x00000010
+	DMA has gone wrong somewhere in copying a: 00000014 to b: 00000010 i:20 burst: 
+
+ Ram Write Data @ [0x80040054] : 0x00000015; Ram Read Data[0x80010054]: 0x00000001
+	DMA has gone wrong somewhere in copying a: 00000015 to b: 00000001 i:21 burst: 
+
+ Ram Write Data @ [0x80040058] : 0x0000001d; Ram Read Data[0x80010058]: 0x0000001d
+ Ram Write Data @ [0x8004005c] : 0x0000001e; Ram Read Data[0x8001005c]: 0x0000001e
+ Ram Write Data @ [0x80040060] : 0x00000014; Ram Read Data[0x80010060]: 0x00000014
+ Ram Write Data @ [0x80040064] : 0x00000015; Ram Read Data[0x80010064]: 0x00000015
+ Ram Write Data @ [0x80040068] : 0x0000001d; Ram Read Data[0x80010068]: 0x0000001d
+ Ram Write Data @ [0x8004006c] : 0x0000001e; Ram Read Data[0x8001006c]: 0x0000001e
+ Ram Write Data @ [0x80040070] : 0x00000014; Ram Read Data[0x80010070]: 0x00000010
+	DMA has gone wrong somewhere in copying a: 00000014 to b: 00000010 i:28 burst: 
+
+ Ram Write Data @ [0x80040074] : 0x00000015; Ram Read Data[0x80010074]: 0x00000001
+	DMA has gone wrong somewhere in copying a: 00000015 to b: 00000001 i:29 burst: 
+
+ Ram Write Data @ [0x80040078] : 0x0000001d; Ram Read Data[0x80010078]: 0x0000001d
+ Ram Write Data @ [0x8004007c] : 0x0000001e; Ram Read Data[0x8001007c]: 0x0000001e
+ Ram Write Data @ [0x80040080] : 0x00000014; Ram Read Data[0x80010080]: 0x00000014
+ Ram Write Data @ [0x80040084] : 0x00000015; Ram Read Data[0x80010084]: 0x00000015
+ Ram Write Data @ [0x80040088] : 0x0000001d; Ram Read Data[0x80010088]: 0x0000001d
+ Ram Write Data @ [0x8004008c] : 0x0000001e; Ram Read Data[0x8001008c]: 0x0000001e
+ Ram Write Data @ [0x80040090] : 0x00000014; Ram Read Data[0x80010090]: 0x00000010
+	DMA has gone wrong somewhere in copying a: 00000014 to b: 00000010 i:36 burst: 
+
+ Ram Write Data @ [0x80040094] : 0x00000015; Ram Read Data[0x80010094]: 0x00000001
+	DMA has gone wrong somewhere in copying a: 00000015 to b: 00000001 i:37 burst: 
+
+ Ram Write Data @ [0x80040098] : 0x0000001d; Ram Read Data[0x80010098]: 0x0000001d
+ Ram Write Data @ [0x8004009c] : 0x0000001e; Ram Read Data[0x8001009c]: 0x0000001e
+ Ram Write Data @ [0x800400a0] : 0x00000014; Ram Read Data[0x800100a0]: 0x00000014
+ Ram Write Data @ [0x800400a4] : 0x00000015; Ram Read Data[0x800100a4]: 0x00000015
+ Ram Write Data @ [0x800400a8] : 0x0000001d; Ram Read Data[0x800100a8]: 0x0000001d
+ Ram Write Data @ [0x800400ac] : 0x0000001e; Ram Read Data[0x800100ac]: 0x0000001e
+ Ram Write Data @ [0x800400b0] : 0x00000014; Ram Read Data[0x800100b0]: 0x00000010
+	DMA has gone wrong somewhere in copying a: 00000014 to b: 00000010 i:44 burst: 
+
+ Ram Write Data @ [0x800400b4] : 0x00000015; Ram Read Data[0x800100b4]: 0x00000001
+	DMA has gone wrong somewhere in copying a: 00000015 to b: 00000001 i:45 burst: 
+
+ Ram Write Data @ [0x800400b8] : 0x0000001d; Ram Read Data[0x800100b8]: 0x0000001d
+ Ram Write Data @ [0x800400bc] : 0x0000001e; Ram Read Data[0x800100bc]: 0x0000001e
+ Ram Write Data @ [0x800400c0] : 0x00000014; Ram Read Data[0x800100c0]: 0x00000014
+ Ram Write Data @ [0x800400c4] : 0x00000015; Ram Read Data[0x800100c4]: 0x00000015
+ Ram Write Data @ [0x800400c8] : 0x0000001d; Ram Read Data[0x800100c8]: 0x0000001d
+ Ram Write Data @ [0x800400cc] : 0x0000001e; Ram Read Data[0x800100cc]: 0x0000001e
+ Ram Write Data @ [0x800400d0] : 0x00000014; Ram Read Data[0x800100d0]: 0x00000010
+	DMA has gone wrong somewhere in copying a: 00000014 to b: 00000010 i:52 burst: 
+
+ Ram Write Data @ [0x800400d4] : 0x00000015; Ram Read Data[0x800100d4]: 0x00000001
+	DMA has gone wrong somewhere in copying a: 00000015 to b: 00000001 i:53 burst: 
+
+ Ram Write Data @ [0x800400d8] : 0x0000001d; Ram Read Data[0x800100d8]: 0x0000001d
+ Ram Write Data @ [0x800400dc] : 0x0000001e; Ram Read Data[0x800100dc]: 0x0000001e
+ Ram Write Data @ [0x800400e0] : 0x00000014; Ram Read Data[0x800100e0]: 0x00000014
+ Ram Write Data @ [0x800400e4] : 0x00000015; Ram Read Data[0x800100e4]: 0x00000015
+ Ram Write Data @ [0x800400e8] : 0x0000001d; Ram Read Data[0x800100e8]: 0x0000001d
+ Ram Write Data @ [0x800400ec] : 0x0000001e; Ram Read Data[0x800100ec]: 0x0000001e
+ Ram Write Data @ [0x800400f0] : 0x00000014; Ram Read Data[0x800100f0]: 0x00000010
+	DMA has gone wrong somewhere in copying a: 00000014 to b: 00000010 i:60 burst: 
+
+ Ram Write Data @ [0x800400f4] : 0x00000015; Ram Read Data[0x800100f4]: 0x00000001
+	DMA has gone wrong somewhere in copying a: 00000015 to b: 00000001 i:61 burst: 
+
+ Ram Write Data @ [0x800400f8] : 0x0000001d; Ram Read Data[0x800100f8]: 0x0000001d
+ Ram Write Data @ [0x800400fc] : 0x0000001e; Ram Read Data[0x800100fc]: 0x0000001e
+ Ram Write Data @ [0x80040100] : 0x00000014; Ram Read Data[0x80010100]: 0x00000014
+ Ram Write Data @ [0x80040104] : 0x00000015; Ram Read Data[0x80010104]: 0x00000015
+ Ram Write Data @ [0x80040108] : 0x0000001d; Ram Read Data[0x80010108]: 0x0000001d
+ Ram Write Data @ [0x8004010c] : 0x0000001e; Ram Read Data[0x8001010c]: 0x0000001e
+ Ram Write Data @ [0x80040110] : 0x00000014; Ram Read Data[0x80010110]: 0x00000010
+	DMA has gone wrong somewhere in copying a: 00000014 to b: 00000010 i:68 burst: 
+
+ Ram Write Data @ [0x80040114] : 0x00000015; Ram Read Data[0x80010114]: 0x00000001
+	DMA has gone wrong somewhere in copying a: 00000015 to b: 00000001 i:69 burst: 
+
+ Ram Write Data @ [0x80040118] : 0x0000001d; Ram Read Data[0x80010118]: 0x0000001d
+ Ram Write Data @ [0x8004011c] : 0x0000001e; Ram Read Data[0x8001011c]: 0x0000001e
+ Ram Write Data @ [0x80040120] : 0x00000014; Ram Read Data[0x80010120]: 0x00000014
+ Ram Write Data @ [0x80040124] : 0x00000015; Ram Read Data[0x80010124]: 0x00000015
+ Ram Write Data @ [0x80040128] : 0x0000001d; Ram Read Data[0x80010128]: 0x0000001d
+ Ram Write Data @ [0x8004012c] : 0x0000001e; Ram Read Data[0x8001012c]: 0x0000001e
+ Ram Write Data @ [0x80040130] : 0x00000014; Ram Read Data[0x80010130]: 0x00000010
+	DMA has gone wrong somewhere in copying a: 00000014 to b: 00000010 i:76 burst: 
+
+ Ram Write Data @ [0x80040134] : 0x00000015; Ram Read Data[0x80010134]: 0x00000001
+	DMA has gone wrong somewhere in copying a: 00000015 to b: 00000001 i:77 burst: 
+
+ Ram Write Data @ [0x80040138] : 0x0000001d; Ram Read Data[0x80010138]: 0x0000001d
+ Ram Write Data @ [0x8004013c] : 0x0000001e; Ram Read Data[0x8001013c]: 0x0000001e
+ Ram Write Data @ [0x80040140] : 0x00000014; Ram Read Data[0x80010140]: 0x00000014
+ Ram Write Data @ [0x80040144] : 0x00000015; Ram Read Data[0x80010144]: 0x00000015
+ Ram Write Data @ [0x80040148] : 0x0000001d; Ram Read Data[0x80010148]: 0x0000001d
+ Ram Write Data @ [0x8004014c] : 0x0000001e; Ram Read Data[0x8001014c]: 0x0000001e
+ Ram Write Data @ [0x80040150] : 0x00000014; Ram Read Data[0x80010150]: 0x00000010
+	DMA has gone wrong somewhere in copying a: 00000014 to b: 00000010 i:84 burst: 
+
+ Ram Write Data @ [0x80040154] : 0x00000015; Ram Read Data[0x80010154]: 0x00000001
+	DMA has gone wrong somewhere in copying a: 00000015 to b: 00000001 i:85 burst: 
+
+ Ram Write Data @ [0x80040158] : 0x0000001d; Ram Read Data[0x80010158]: 0x0000001d
+ Ram Write Data @ [0x8004015c] : 0x0000001e; Ram Read Data[0x8001015c]: 0x0000001e
+ Ram Write Data @ [0x80040160] : 0x00000014; Ram Read Data[0x80010160]: 0x00000014
+ Ram Write Data @ [0x80040164] : 0x00000015; Ram Read Data[0x80010164]: 0x00000015
+ Ram Write Data @ [0x80040168] : 0x0000001d; Ram Read Data[0x80010168]: 0x0000001d
+ Ram Write Data @ [0x8004016c] : 0x0000001e; Ram Read Data[0x8001016c]: 0x0000001e
+ Ram Write Data @ [0x80040170] : 0x00000014; Ram Read Data[0x80010170]: 0x00000010
+	DMA has gone wrong somewhere in copying a: 00000014 to b: 00000010 i:92 burst: 
+
+ Ram Write Data @ [0x80040174] : 0x00000015; Ram Read Data[0x80010174]: 0x00000001
+	DMA has gone wrong somewhere in copying a: 00000015 to b: 00000001 i:93 burst: 
+
+ Ram Write Data @ [0x80040178] : 0x0000001d; Ram Read Data[0x80010178]: 0x0000001d
+ Ram Write Data @ [0x8004017c] : 0x0000001e; Ram Read Data[0x8001017c]: 0x0000001e
+ Ram Write Data @ [0x80040180] : 0x00000014; Ram Read Data[0x80010180]: 0x00000014
+ Ram Write Data @ [0x80040184] : 0x00000015; Ram Read Data[0x80010184]: 0x00000015
+ Ram Write Data @ [0x80040188] : 0x0000001d; Ram Read Data[0x80010188]: 0x0000001d
+ Ram Write Data @ [0x8004018c] : 0x0000001e; Ram Read Data[0x8001018c]: 0x0000001e
+ Ram Write Data @ [0x80040190] : 0x00000014; Ram Read Data[0x80010190]: 0x00000010
+	DMA has gone wrong somewhere in copying a: 00000014 to b: 00000010 i:100 burst: 
+
+ Ram Write Data @ [0x80040194] : 0x00000015; Ram Read Data[0x80010194]: 0x00000001
+	DMA has gone wrong somewhere in copying a: 00000015 to b: 00000001 i:101 burst: 
+
+ Ram Write Data @ [0x80040198] : 0x0000001d; Ram Read Data[0x80010198]: 0x0000001d
+ Ram Write Data @ [0x8004019c] : 0x0000001e; Ram Read Data[0x8001019c]: 0x0000001e
+ Ram Write Data @ [0x800401a0] : 0x00000014; Ram Read Data[0x800101a0]: 0x00000014
+ Ram Write Data @ [0x800401a4] : 0x00000015; Ram Read Data[0x800101a4]: 0x00000015
+ Ram Write Data @ [0x800401a8] : 0x0000001d; Ram Read Data[0x800101a8]: 0x0000001d
+ Ram Write Data @ [0x800401ac] : 0x0000001e; Ram Read Data[0x800101ac]: 0x0000001e
+ Ram Write Data @ [0x800401b0] : 0x00000014; Ram Read Data[0x800101b0]: 0x00000010
+	DMA has gone wrong somewhere in copying a: 00000014 to b: 00000010 i:108 burst: 
+
+ Ram Write Data @ [0x800401b4] : 0x00000015; Ram Read Data[0x800101b4]: 0x00000005
+	DMA has gone wrong somewhere in copying a: 00000015 to b: 00000005 i:109 burst: 
+
+ Ram Write Data @ [0x800401b8] : 0x0000001d; Ram Read Data[0x800101b8]: 0x0000001d
+ Ram Write Data @ [0x800401bc] : 0x0000001e; Ram Read Data[0x800101bc]: 0x0000001e
+ Ram Write Data @ [0x800401c0] : 0x00000014; Ram Read Data[0x800101c0]: 0x00000014
+ Ram Write Data @ [0x800401c4] : 0x00000015; Ram Read Data[0x800101c4]: 0x00000015
+ Ram Write Data @ [0x800401c8] : 0x0000001d; Ram Read Data[0x800101c8]: 0x0000001d
+ Ram Write Data @ [0x800401cc] : 0x0000001e; Ram Read Data[0x800101cc]: 0x0000001e
+ Ram Write Data @ [0x800401d0] : 0x00000014; Ram Read Data[0x800101d0]: 0x00000010
+	DMA has gone wrong somewhere in copying a: 00000014 to b: 00000010 i:116 burst: 
+
+ Ram Write Data @ [0x800401d4] : 0x00000015; Ram Read Data[0x800101d4]: 0x00000005
+	DMA has gone wrong somewhere in copying a: 00000015 to b: 00000005 i:117 burst: 
+
+ Ram Write Data @ [0x800401d8] : 0x0000001d; Ram Read Data[0x800101d8]: 0x0000001d
+ Ram Write Data @ [0x800401dc] : 0x0000001e; Ram Read Data[0x800101dc]: 0x0000001e
+ Ram Write Data @ [0x800401e0] : 0x00000014; Ram Read Data[0x800101e0]: 0x00000014
+ Ram Write Data @ [0x800401e4] : 0x00000015; Ram Read Data[0x800101e4]: 0x00000015
+ Ram Write Data @ [0x800401e8] : 0x0000001d; Ram Read Data[0x800101e8]: 0x0000001d
+ Ram Write Data @ [0x800401ec] : 0x0000001e; Ram Read Data[0x800101ec]: 0x0000001e
+ Ram Write Data @ [0x800401f0] : 0x00000014; Ram Read Data[0x800101f0]: 0x00000014	 Burst Value: 0 seems to pass
+	 Cleared 
+	 DMA copy from BRAM to TCM seems to work for all bursts
+ = 71272
+ = 71276
+
+
+
+
+Starting DMA mem to mem transfer
+SDRAM init value 1
+Address of a: 80040000 b: 80010000 	 Fencing? 
+	 DMA_CCR3 value: 00006adf
+	 Waiting for DMA interrupt ISR value: 00000700
+	 Clearing Interrupt Flags
+
+ Ram Write Data @ [0x80040000] : 0x00000014; Ram Read Data[0x80010000]: 0x00000014
+ Ram Write Data @ [0x80040004] : 0x00000015; Ram Read Data[0x80010004]: 0x00000015
+ Ram Write Data @ [0x80040008] : 0x00000014; Ram Read Data[0x80010008]: 0x00000014
+ Ram Write Data @ [0x8004000c] : 0x00000015; Ram Read Data[0x8001000c]: 0x00000015
+ Ram Write Data @ [0x80040010] : 0x00000014; Ram Read Data[0x80010010]: 0x00000014
+ Ram Write Data @ [0x80040014] : 0x00000015; Ram Read Data[0x80010014]: 0x00000015
+ Ram Write Data @ [0x80040018] : 0x00000014; Ram Read Data[0x80010018]: 0x00000014
+ Ram Write Data @ [0x8004001c] : 0x00000015; Ram Read Data[0x8001001c]: 0x00000015
+ Ram Write Data @ [0x80040020] : 0x00000014; Ram Read Data[0x80010020]: 0x00000014
+ Ram Write Data @ [0x80040024] : 0x00000015; Ram Read Data[0x80010024]: 0x00000015
+ Ram Write Data @ [0x80040028] : 0x00000014; Ram Read Data[0x80010028]: 0x00000014
+ Ram Write Data @ [0x8004002c] : 0x00000015; Ram Read Data[0x8001002c]: 0x00000015
+ Ram Write Data @ [0x80040030] : 0x00000014; Ram Read Data[0x80010030]: 0x00000014
+ Ram Write Data @ [0x80040034] : 0x00000015; Ram Read Data[0x80010034]: 0x00000015
+ Ram Write Data @ [0x80040038] : 0x00000014; Ram Read Data[0x80010038]: 0x00000014
+ Ram Write Data @ [0x8004003c] : 0x00000015; Ram Read Data[0x8001003c]: 0x00000015
+ Ram Write Data @ [0x80040040] : 0x00000014; Ram Read Data[0x80010040]: 0x00000014
+ Ram Write Data @ [0x80040044] : 0x00000015; Ram Read Data[0x80010044]: 0x00000015
+ Ram Write Data @ [0x80040048] : 0x00000014; Ram Read Data[0x80010048]: 0x00000014
+ Ram Write Data @ [0x8004004c] : 0x00000015; Ram Read Data[0x8001004c]: 0x00000015
+ Ram Write Data @ [0x80040050] : 0x00000014; Ram Read Data[0x80010050]: 0x00000014
+ Ram Write Data @ [0x80040054] : 0x00000015; Ram Read Data[0x80010054]: 0x00000015
+ Ram Write Data @ [0x80040058] : 0x00000014; Ram Read Data[0x80010058]: 0x00000014
+ Ram Write Data @ [0x8004005c] : 0x00000015; Ram Read Data[0x8001005c]: 0x00000015
+ Ram Write Data @ [0x80040060] : 0x00000014; Ram Read Data[0x80010060]: 0x00000014
+ Ram Write Data @ [0x80040064] : 0x00000015; Ram Read Data[0x80010064]: 0x00000015
+ Ram Write Data @ [0x80040068] : 0x00000014; Ram Read Data[0x80010068]: 0x00000014
+ Ram Write Data @ [0x8004006c] : 0x00000015; Ram Read Data[0x8001006c]: 0x00000015
+ Ram Write Data @ [0x80040070] : 0x00000014; Ram Read Data[0x80010070]: 0x00000014
+ Ram Write Data @ [0x80040074] : 0x00000015; Ram Read Data[0x80010074]: 0x00000015
+ Ram Write Data @ [0x80040078] : 0x00000014; Ram Read Data[0x80010078]: 0x00000014
+ Ram Write Data @ [0x8004007c] : 0x00000015; Ram Read Data[0x8001007c]: 0x00000015
+ Ram Write Data @ [0x80040080] : 0x00000014; Ram Read Data[0x80010080]: 0x00000014
+ Ram Write Data @ [0x80040084] : 0x00000015; Ram Read Data[0x80010084]: 0x00000015
+ Ram Write Data @ [0x80040088] : 0x00000014; Ram Read Data[0x80010088]: 0x00000014
+ Ram Write Data @ [0x8004008c] : 0x00000015; Ram Read Data[0x8001008c]: 0x00000015
+ Ram Write Data @ [0x80040090] : 0x00000014; Ram Read Data[0x80010090]: 0x00000014
+ Ram Write Data @ [0x80040094] : 0x00000015; Ram Read Data[0x80010094]: 0x00000015
+ Ram Write Data @ [0x80040098] : 0x00000014; Ram Read Data[0x80010098]: 0x00000014
+ Ram Write Data @ [0x8004009c] : 0x00000015; Ram Read Data[0x8001009c]: 0x00000015
+ Ram Write Data @ [0x800400a0] : 0x00000014; Ram Read Data[0x800100a0]: 0x00000014
+ Ram Write Data @ [0x800400a4] : 0x00000015; Ram Read Data[0x800100a4]: 0x00000015
+ Ram Write Data @ [0x800400a8] : 0x00000014; Ram Read Data[0x800100a8]: 0x00000014
+ Ram Write Data @ [0x800400ac] : 0x00000015; Ram Read Data[0x800100ac]: 0x00000015
+ Ram Write Data @ [0x800400b0] : 0x00000014; Ram Read Data[0x800100b0]: 0x00000014
+ Ram Write Data @ [0x800400b4] : 0x00000015; Ram Read Data[0x800100b4]: 0x00000015
+ Ram Write Data @ [0x800400b8] : 0x00000014; Ram Read Data[0x800100b8]: 0x00000014
+ Ram Write Data @ [0x800400bc] : 0x00000015; Ram Read Data[0x800100bc]: 0x00000015
+ Ram Write Data @ [0x800400c0] : 0x00000014; Ram Read Data[0x800100c0]: 0x00000014
+ Ram Write Data @ [0x800400c4] : 0x00000015; Ram Read Data[0x800100c4]: 0x00000015
+ Ram Write Data @ [0x800400c8] : 0x00000014; Ram Read Data[0x800100c8]: 0x00000014
+ Ram Write Data @ [0x800400cc] : 0x00000015; Ram Read Data[0x800100cc]: 0x00000015
+ Ram Write Data @ [0x800400d0] : 0x00000014; Ram Read Data[0x800100d0]: 0x00000014
+ Ram Write Data @ [0x800400d4] : 0x00000015; Ram Read Data[0x800100d4]: 0x00000015
+ Ram Write Data @ [0x800400d8] : 0x00000014; Ram Read Data[0x800100d8]: 0x00000014
+ Ram Write Data @ [0x800400dc] : 0x00000015; Ram Read Data[0x800100dc]: 0x00000015
+ Ram Write Data @ [0x800400e0] : 0x00000014; Ram Read Data[0x800100e0]: 0x00000014
+ Ram Write Data @ [0x800400e4] : 0x00000015; Ram Read Data[0x800100e4]: 0x00000015
+ Ram Write Data @ [0x800400e8] : 0x00000014; Ram Read Data[0x800100e8]: 0x00000014
+ Ram Write Data @ [0x800400ec] : 0x00000015; Ram Read Data[0x800100ec]: 0x00000015
+ Ram Write Data @ [0x800400f0] : 0x00000014; Ram Read Data[0x800100f0]: 0x00000014
+ Ram Write Data @ [0x800400f4] : 0x00000015; Ram Read Data[0x800100f4]: 0x00000015
+ Ram Write Data @ [0x800400f8] : 0x00000014; Ram Read Data[0x800100f8]: 0x00000014
+ Ram Write Data @ [0x800400fc] : 0x00000015; Ram Read Data[0x800100fc]: 0x00000015
+ Ram Write Data @ [0x80040100] : 0x00000014; Ram Read Data[0x80010100]: 0x00000014
+ Ram Write Data @ [0x80040104] : 0x00000015; Ram Read Data[0x80010104]: 0x00000015
+ Ram Write Data @ [0x80040108] : 0x00000014; Ram Read Data[0x80010108]: 0x00000014
+ Ram Write Data @ [0x8004010c] : 0x00000015; Ram Read Data[0x8001010c]: 0x00000015
+ Ram Write Data @ [0x80040110] : 0x00000014; Ram Read Data[0x80010110]: 0x00000014
+ Ram Write Data @ [0x80040114] : 0x00000015; Ram Read Data[0x80010114]: 0x00000015
+ Ram Write Data @ [0x80040118] : 0x00000014; Ram Read Data[0x80010118]: 0x00000014
+ Ram Write Data @ [0x8004011c] : 0x00000015; Ram Read Data[0x8001011c]: 0x00000015
+ Ram Write Data @ [0x80040120] : 0x00000014; Ram Read Data[0x80010120]: 0x00000014
+ Ram Write Data @ [0x80040124] : 0x00000015; Ram Read Data[0x80010124]: 0x00000015
+ Ram Write Data @ [0x80040128] : 0x00000014; Ram Read Data[0x80010128]: 0x00000014
+ Ram Write Data @ [0x8004012c] : 0x00000015; Ram Read Data[0x8001012c]: 0x00000015
+ Ram Write Data @ [0x80040130] : 0x00000014; Ram Read Data[0x80010130]: 0x00000014
+ Ram Write Data @ [0x80040134] : 0x00000015; Ram Read Data[0x80010134]: 0x00000015
+ Ram Write Data @ [0x80040138] : 0x00000014; Ram Read Data[0x80010138]: 0x00000014
+ Ram Write Data @ [0x8004013c] : 0x00000015; Ram Read Data[0x8001013c]: 0x00000015
+ Ram Write Data @ [0x80040140] : 0x00000014; Ram Read Data[0x80010140]: 0x00000014
+ Ram Write Data @ [0x80040144] : 0x00000015; Ram Read Data[0x80010144]: 0x00000015
+ Ram Write Data @ [0x80040148] : 0x00000014; Ram Read Data[0x80010148]: 0x00000014
+ Ram Write Data @ [0x8004014c] : 0x00000015; Ram Read Data[0x8001014c]: 0x00000015
+ Ram Write Data @ [0x80040150] : 0x00000014; Ram Read Data[0x80010150]: 0x00000014
+ Ram Write Data @ [0x80040154] : 0x00000015; Ram Read Data[0x80010154]: 0x00000015
+ Ram Write Data @ [0x80040158] : 0x00000014; Ram Read Data[0x80010158]: 0x00000014
+ Ram Write Data @ [0x8004015c] : 0x00000015; Ram Read Data[0x8001015c]: 0x00000015
+ Ram Write Data @ [0x80040160] : 0x00000014; Ram Read Data[0x80010160]: 0x00000014
+ Ram Write Data @ [0x80040164] : 0x00000015; Ram Read Data[0x80010164]: 0x00000015
+ Ram Write Data @ [0x80040168] : 0x00000014; Ram Read Data[0x80010168]: 0x00000014
+ Ram Write Data @ [0x8004016c] : 0x00000015; Ram Read Data[0x8001016c]: 0x00000015
+ Ram Write Data @ [0x80040170] : 0x00000014; Ram Read Data[0x80010170]: 0x00000014
+ Ram Write Data @ [0x80040174] : 0x00000015; Ram Read Data[0x80010174]: 0x00000015
+ Ram Write Data @ [0x80040178] : 0x00000014; Ram Read Data[0x80010178]: 0x00000014
+ Ram Write Data @ [0x8004017c] : 0x00000015; Ram Read Data[0x8001017c]: 0x00000015
+ Ram Write Data @ [0x80040180] : 0x00000014; Ram Read Data[0x80010180]: 0x00000014
+ Ram Write Data @ [0x80040184] : 0x00000015; Ram Read Data[0x80010184]: 0x00000015
+ Ram Write Data @ [0x80040188] : 0x00000014; Ram Read Data[0x80010188]: 0x00000014
+ Ram Write Data @ [0x8004018c] : 0x00000015; Ram Read Data[0x8001018c]: 0x00000015
+ Ram Write Data @ [0x80040190] : 0x00000014; Ram Read Data[0x80010190]: 0x00000014
+ Ram Write Data @ [0x80040194] : 0x00000015; Ram Read Data[0x80010194]: 0x00000015
+ Ram Write Data @ [0x80040198] : 0x00000014; Ram Read Data[0x80010198]: 0x00000014
+ Ram Write Data @ [0x8004019c] : 0x00000015; Ram Read Data[0x8001019c]: 0x00000015
+ Ram Write Data @ [0x800401a0] : 0x00000014; Ram Read Data[0x800101a0]: 0x00000014
+ Ram Write Data @ [0x800401a4] : 0x00000015; Ram Read Data[0x800101a4]: 0x00000015
+ Ram Write Data @ [0x800401a8] : 0x00000014; Ram Read Data[0x800101a8]: 0x00000014
+ Ram Write Data @ [0x800401ac] : 0x00000015; Ram Read Data[0x800101ac]: 0x00000015
+ Ram Write Data @ [0x800401b0] : 0x00000014; Ram Read Data[0x800101b0]: 0x00000014
+ Ram Write Data @ [0x800401b4] : 0x00000015; Ram Read Data[0x800101b4]: 0x00000015
+ Ram Write Data @ [0x800401b8] : 0x00000014; Ram Read Data[0x800101b8]: 0x00000014
+ Ram Write Data @ [0x800401bc] : 0x00000015; Ram Read Data[0x800101bc]: 0x00000015
+ Ram Write Data @ [0x800401c0] : 0x00000014; Ram Read Data[0x800101c0]: 0x00000014
+ Ram Write Data @ [0x800401c4] : 0x00000015; Ram Read Data[0x800101c4]: 0x00000015
+ Ram Write Data @ [0x800401c8] : 0x00000014; Ram Read Data[0x800101c8]: 0x00000014
+ Ram Write Data @ [0x800401cc] : 0x00000015; Ram Read Data[0x800101cc]: 0x00000015
+ Ram Write Data @ [0x800401d0] : 0x00000014; Ram Read Data[0x800101d0]: 0x00000014
+ Ram Write Data @ [0x800401d4] : 0x00000015; Ram Read Data[0x800101d4]: 0x00000015
+ Ram Write Data @ [0x800401d8] : 0x00000014; Ram Read Data[0x800101d8]: 0x00000014
+ Ram Write Data @ [0x800401dc] : 0x00000015; Ram Read Data[0x800101dc]: 0x00000015
+ Ram Write Data @ [0x800401e0] : 0x00000014; Ram Read Data[0x800101e0]: 0x00000014
+ Ram Write Data @ [0x800401e4] : 0x00000015; Ram Read Data[0x800101e4]: 0x00000015
+ Ram Write Data @ [0x800401e8] : 0x00000014; Ram Read Data[0x800101e8]: 0x00000014
+ Ram Write Data @ [0x800401ec] : 0x00000015; Ram Read Data[0x800101ec]: 0x00000015
+ Ram Write Data @ [0x800401f0] : 0x00000014; Ram Read Data[0x800101f0]: 0x00000014	 Burst Value: 0 seems to pass
+	 Cleared 
+	 DMA copy from BRAM to TCM seems to work for all bursts
+ = 71248
+ = 71252
+
+
+
+Starting DMA mem to mem transfer
+
+ SDRAM write 1 from Core
+ SDRAM Write from core 1 is success
+ SDRAM write 2 from Core
+ SDRAM Write from core 2 is success
+ SDRAM write 3 from Core
+ SDRAM Write from core 3  is success
+ SDRAM write 4 from Core
+ SDRAM Write from core 4  is successSDRAM init value 1
+Address of a: 80040000 b: 80010000 	 Fencing? 
+	 DMA_CCR3 value: 00006adf
+	 Waiting for DMA interrupt ISR value: 00000700
+	 Clearing Interrupt Flags
+
+ Ram Write Data @ [0x80040000] : 0x00000000; Ram Read Data[0x80010000]: 0x00000000
+ Ram Write Data @ [0x80040004] : 0x00000001; Ram Read Data[0x80010004]: 0x00000001
+ Ram Write Data @ [0x80040008] : 0x00000002; Ram Read Data[0x80010008]: 0x00000002
+ Ram Write Data @ [0x8004000c] : 0x00000003; Ram Read Data[0x8001000c]: 0x00000003
+ Ram Write Data @ [0x80040010] : 0x00000004; Ram Read Data[0x80010010]: 0x00000004
+ Ram Write Data @ [0x80040014] : 0x00000005; Ram Read Data[0x80010014]: 0x00000005
+ Ram Write Data @ [0x80040018] : 0x00000006; Ram Read Data[0x80010018]: 0x00000006
+ Ram Write Data @ [0x8004001c] : 0x00000007; Ram Read Data[0x8001001c]: 0x00000007
+ Ram Write Data @ [0x80040020] : 0x00000008; Ram Read Data[0x80010020]: 0x00000008
+ Ram Write Data @ [0x80040024] : 0x00000009; Ram Read Data[0x80010024]: 0x00000009
+ Ram Write Data @ [0x80040028] : 0x0000000a; Ram Read Data[0x80010028]: 0x0000000a
+ Ram Write Data @ [0x8004002c] : 0x0000000b; Ram Read Data[0x8001002c]: 0x0000000b
+ Ram Write Data @ [0x80040030] : 0x0000000c; Ram Read Data[0x80010030]: 0x0000000c
+ Ram Write Data @ [0x80040034] : 0x0000000d; Ram Read Data[0x80010034]: 0x0000000d
+ Ram Write Data @ [0x80040038] : 0x0000000e; Ram Read Data[0x80010038]: 0x0000000e
+ Ram Write Data @ [0x8004003c] : 0x0000000f; Ram Read Data[0x8001003c]: 0x0000000f
+ Ram Write Data @ [0x80040040] : 0x00000010; Ram Read Data[0x80010040]: 0x00000010
+ Ram Write Data @ [0x80040044] : 0x00000011; Ram Read Data[0x80010044]: 0x00000011
+ Ram Write Data @ [0x80040048] : 0x00000012; Ram Read Data[0x80010048]: 0x00000012
+ Ram Write Data @ [0x8004004c] : 0x00000013; Ram Read Data[0x8001004c]: 0x00000013
+ Ram Write Data @ [0x80040050] : 0x00000014; Ram Read Data[0x80010050]: 0x00000014
+ Ram Write Data @ [0x80040054] : 0x00000015; Ram Read Data[0x80010054]: 0x00000015
+ Ram Write Data @ [0x80040058] : 0x00000016; Ram Read Data[0x80010058]: 0x00000016
+ Ram Write Data @ [0x8004005c] : 0x00000017; Ram Read Data[0x8001005c]: 0x00000017
+ Ram Write Data @ [0x80040060] : 0x00000018; Ram Read Data[0x80010060]: 0x00000018
+ Ram Write Data @ [0x80040064] : 0x00000019; Ram Read Data[0x80010064]: 0x00000019
+ Ram Write Data @ [0x80040068] : 0x0000001a; Ram Read Data[0x80010068]: 0x0000001a
+ Ram Write Data @ [0x8004006c] : 0x0000001b; Ram Read Data[0x8001006c]: 0x0000001b
+ Ram Write Data @ [0x80040070] : 0x0000001c; Ram Read Data[0x80010070]: 0x0000001c
+ Ram Write Data @ [0x80040074] : 0x0000001d; Ram Read Data[0x80010074]: 0x0000001d
+ Ram Write Data @ [0x80040078] : 0x0000001e; Ram Read Data[0x80010078]: 0x0000001e
+ Ram Write Data @ [0x8004007c] : 0x0000001f; Ram Read Data[0x8001007c]: 0x0000001f
+ Ram Write Data @ [0x80040080] : 0x00000020; Ram Read Data[0x80010080]: 0x00000020
+ Ram Write Data @ [0x80040084] : 0x00000021; Ram Read Data[0x80010084]: 0x00000021
+ Ram Write Data @ [0x80040088] : 0x00000022; Ram Read Data[0x80010088]: 0x00000022
+ Ram Write Data @ [0x8004008c] : 0x00000023; Ram Read Data[0x8001008c]: 0x00000023
+ Ram Write Data @ [0x80040090] : 0x00000024; Ram Read Data[0x80010090]: 0x00000024
+ Ram Write Data @ [0x80040094] : 0x00000025; Ram Read Data[0x80010094]: 0x00000025
+ Ram Write Data @ [0x80040098] : 0x00000026; Ram Read Data[0x80010098]: 0x00000026
+ Ram Write Data @ [0x8004009c] : 0x00000027; Ram Read Data[0x8001009c]: 0x00000027
+ Ram Write Data @ [0x800400a0] : 0x00000028; Ram Read Data[0x800100a0]: 0x00000028
+ Ram Write Data @ [0x800400a4] : 0x00000029; Ram Read Data[0x800100a4]: 0x00000029
+ Ram Write Data @ [0x800400a8] : 0x0000002a; Ram Read Data[0x800100a8]: 0x0000002a
+ Ram Write Data @ [0x800400ac] : 0x0000002b; Ram Read Data[0x800100ac]: 0x0000002b
+ Ram Write Data @ [0x800400b0] : 0x0000002c; Ram Read Data[0x800100b0]: 0x0000002c
+ Ram Write Data @ [0x800400b4] : 0x0000002d; Ram Read Data[0x800100b4]: 0x0000002d
+ Ram Write Data @ [0x800400b8] : 0x0000002e; Ram Read Data[0x800100b8]: 0x0000002e
+ Ram Write Data @ [0x800400bc] : 0x0000002f; Ram Read Data[0x800100bc]: 0x0000002f
+ Ram Write Data @ [0x800400c0] : 0x00000030; Ram Read Data[0x800100c0]: 0x00000030
+ Ram Write Data @ [0x800400c4] : 0x00000031; Ram Read Data[0x800100c4]: 0x00000031
+ Ram Write Data @ [0x800400c8] : 0x00000032; Ram Read Data[0x800100c8]: 0x00000032
+ Ram Write Data @ [0x800400cc] : 0x00000033; Ram Read Data[0x800100cc]: 0x00000033
+ Ram Write Data @ [0x800400d0] : 0x00000034; Ram Read Data[0x800100d0]: 0x00000034
+ Ram Write Data @ [0x800400d4] : 0x00000035; Ram Read Data[0x800100d4]: 0x00000035
+ Ram Write Data @ [0x800400d8] : 0x00000036; Ram Read Data[0x800100d8]: 0x00000036
+ Ram Write Data @ [0x800400dc] : 0x00000037; Ram Read Data[0x800100dc]: 0x00000037
+ Ram Write Data @ [0x800400e0] : 0x00000038; Ram Read Data[0x800100e0]: 0x00000038
+ Ram Write Data @ [0x800400e4] : 0x00000039; Ram Read Data[0x800100e4]: 0x00000039
+ Ram Write Data @ [0x800400e8] : 0x0000003a; Ram Read Data[0x800100e8]: 0x0000003a
+ Ram Write Data @ [0x800400ec] : 0x0000003b; Ram Read Data[0x800100ec]: 0x0000003b
+ Ram Write Data @ [0x800400f0] : 0x0000003c; Ram Read Data[0x800100f0]: 0x0000003c
+ Ram Write Data @ [0x800400f4] : 0x0000003d; Ram Read Data[0x800100f4]: 0x0000003d
+ Ram Write Data @ [0x800400f8] : 0x0000003e; Ram Read Data[0x800100f8]: 0x0000003e
+ Ram Write Data @ [0x800400fc] : 0x0000003f; Ram Read Data[0x800100fc]: 0x0000003f
+ Ram Write Data @ [0x80040100] : 0x00000040; Ram Read Data[0x80010100]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000040 to b: 00000000 i:64 burst: 
+
+ Ram Write Data @ [0x80040104] : 0x00000041; Ram Read Data[0x80010104]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000041 to b: 00000000 i:65 burst: 
+
+ Ram Write Data @ [0x80040108] : 0x00000042; Ram Read Data[0x80010108]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000042 to b: 00000000 i:66 burst: 
+
+ Ram Write Data @ [0x8004010c] : 0x00000043; Ram Read Data[0x8001010c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000043 to b: 00000000 i:67 burst: 
+
+ Ram Write Data @ [0x80040110] : 0x00000044; Ram Read Data[0x80010110]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000044 to b: 00000000 i:68 burst: 
+
+ Ram Write Data @ [0x80040114] : 0x00000045; Ram Read Data[0x80010114]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000045 to b: 00000000 i:69 burst: 
+
+ Ram Write Data @ [0x80040118] : 0x00000046; Ram Read Data[0x80010118]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000046 to b: 00000000 i:70 burst: 
+
+ Ram Write Data @ [0x8004011c] : 0x00000047; Ram Read Data[0x8001011c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000047 to b: 00000000 i:71 burst: 
+
+ Ram Write Data @ [0x80040120] : 0x00000048; Ram Read Data[0x80010120]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000048 to b: 00000000 i:72 burst: 
+
+ Ram Write Data @ [0x80040124] : 0x00000049; Ram Read Data[0x80010124]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000049 to b: 00000000 i:73 burst: 
+
+ Ram Write Data @ [0x80040128] : 0x0000004a; Ram Read Data[0x80010128]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000004a to b: 00000000 i:74 burst: 
+
+ Ram Write Data @ [0x8004012c] : 0x0000004b; Ram Read Data[0x8001012c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000004b to b: 00000000 i:75 burst: 
+
+ Ram Write Data @ [0x80040130] : 0x0000004c; Ram Read Data[0x80010130]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000004c to b: 00000000 i:76 burst: 
+
+ Ram Write Data @ [0x80040134] : 0x0000004d; Ram Read Data[0x80010134]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000004d to b: 00000000 i:77 burst: 
+
+ Ram Write Data @ [0x80040138] : 0x0000004e; Ram Read Data[0x80010138]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000004e to b: 00000000 i:78 burst: 
+
+ Ram Write Data @ [0x8004013c] : 0x0000004f; Ram Read Data[0x8001013c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000004f to b: 00000000 i:79 burst: 
+
+ Ram Write Data @ [0x80040140] : 0x00000050; Ram Read Data[0x80010140]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000050 to b: 00000000 i:80 burst: 
+
+ Ram Write Data @ [0x80040144] : 0x00000051; Ram Read Data[0x80010144]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000051 to b: 00000000 i:81 burst: 
+
+ Ram Write Data @ [0x80040148] : 0x00000052; Ram Read Data[0x80010148]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000052 to b: 00000000 i:82 burst: 
+
+ Ram Write Data @ [0x8004014c] : 0x00000053; Ram Read Data[0x8001014c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000053 to b: 00000000 i:83 burst: 
+
+ Ram Write Data @ [0x80040150] : 0x00000054; Ram Read Data[0x80010150]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000054 to b: 00000000 i:84 burst: 
+
+ Ram Write Data @ [0x80040154] : 0x00000055; Ram Read Data[0x80010154]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000055 to b: 00000000 i:85 burst: 
+
+ Ram Write Data @ [0x80040158] : 0x00000056; Ram Read Data[0x80010158]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000056 to b: 00000000 i:86 burst: 
+
+ Ram Write Data @ [0x8004015c] : 0x00000057; Ram Read Data[0x8001015c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000057 to b: 00000000 i:87 burst: 
+
+ Ram Write Data @ [0x80040160] : 0x00000058; Ram Read Data[0x80010160]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000058 to b: 00000000 i:88 burst: 
+
+ Ram Write Data @ [0x80040164] : 0x00000059; Ram Read Data[0x80010164]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000059 to b: 00000000 i:89 burst: 
+
+ Ram Write Data @ [0x80040168] : 0x0000005a; Ram Read Data[0x80010168]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000005a to b: 00000000 i:90 burst: 
+
+ Ram Write Data @ [0x8004016c] : 0x0000005b; Ram Read Data[0x8001016c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000005b to b: 00000000 i:91 burst: 
+
+ Ram Write Data @ [0x80040170] : 0x0000005c; Ram Read Data[0x80010170]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000005c to b: 00000000 i:92 burst: 
+
+ Ram Write Data @ [0x80040174] : 0x0000005d; Ram Read Data[0x80010174]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000005d to b: 00000000 i:93 burst: 
+
+ Ram Write Data @ [0x80040178] : 0x0000005e; Ram Read Data[0x80010178]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000005e to b: 00000000 i:94 burst: 
+
+ Ram Write Data @ [0x8004017c] : 0x0000005f; Ram Read Data[0x8001017c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000005f to b: 00000000 i:95 burst: 
+
+ Ram Write Data @ [0x80040180] : 0x00000060; Ram Read Data[0x80010180]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000060 to b: 00000000 i:96 burst: 
+
+ Ram Write Data @ [0x80040184] : 0x00000061; Ram Read Data[0x80010184]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000061 to b: 00000000 i:97 burst: 
+
+ Ram Write Data @ [0x80040188] : 0x00000062; Ram Read Data[0x80010188]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000062 to b: 00000000 i:98 burst: 
+
+ Ram Write Data @ [0x8004018c] : 0x00000063; Ram Read Data[0x8001018c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000063 to b: 00000000 i:99 burst: 
+
+ Ram Write Data @ [0x80040190] : 0x00000064; Ram Read Data[0x80010190]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000064 to b: 00000000 i:100 burst: 
+
+ Ram Write Data @ [0x80040194] : 0x00000065; Ram Read Data[0x80010194]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000065 to b: 00000000 i:101 burst: 
+
+ Ram Write Data @ [0x80040198] : 0x00000066; Ram Read Data[0x80010198]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000066 to b: 00000000 i:102 burst: 
+
+ Ram Write Data @ [0x8004019c] : 0x00000067; Ram Read Data[0x8001019c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000067 to b: 00000000 i:103 burst: 
+
+ Ram Write Data @ [0x800401a0] : 0x00000068; Ram Read Data[0x800101a0]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000068 to b: 00000000 i:104 burst: 
+
+ Ram Write Data @ [0x800401a4] : 0x00000069; Ram Read Data[0x800101a4]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000069 to b: 00000000 i:105 burst: 
+
+ Ram Write Data @ [0x800401a8] : 0x0000006a; Ram Read Data[0x800101a8]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000006a to b: 00000000 i:106 burst: 
+
+ Ram Write Data @ [0x800401ac] : 0x0000006b; Ram Read Data[0x800101ac]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000006b to b: 00000000 i:107 burst: 
+
+ Ram Write Data @ [0x800401b0] : 0x0000006c; Ram Read Data[0x800101b0]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000006c to b: 00000000 i:108 burst: 
+
+ Ram Write Data @ [0x800401b4] : 0x0000006d; Ram Read Data[0x800101b4]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000006d to b: 00000000 i:109 burst: 
+
+ Ram Write Data @ [0x800401b8] : 0x0000006e; Ram Read Data[0x800101b8]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000006e to b: 00000000 i:110 burst: 
+
+ Ram Write Data @ [0x800401bc] : 0x0000006f; Ram Read Data[0x800101bc]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000006f to b: 00000000 i:111 burst: 
+
+ Ram Write Data @ [0x800401c0] : 0x00000070; Ram Read Data[0x800101c0]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000070 to b: 00000000 i:112 burst: 
+
+ Ram Write Data @ [0x800401c4] : 0x00000071; Ram Read Data[0x800101c4]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000071 to b: 00000000 i:113 burst: 
+
+ Ram Write Data @ [0x800401c8] : 0x00000072; Ram Read Data[0x800101c8]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000072 to b: 00000000 i:114 burst: 
+
+ Ram Write Data @ [0x800401cc] : 0x00000073; Ram Read Data[0x800101cc]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000073 to b: 00000000 i:115 burst: 
+
+ Ram Write Data @ [0x800401d0] : 0x00000074; Ram Read Data[0x800101d0]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000074 to b: 00000000 i:116 burst: 
+
+ Ram Write Data @ [0x800401d4] : 0x00000075; Ram Read Data[0x800101d4]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000075 to b: 00000000 i:117 burst: 
+
+ Ram Write Data @ [0x800401d8] : 0x00000076; Ram Read Data[0x800101d8]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000076 to b: 00000000 i:118 burst: 
+
+ Ram Write Data @ [0x800401dc] : 0x00000077; Ram Read Data[0x800101dc]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000077 to b: 00000000 i:119 burst: 
+
+ Ram Write Data @ [0x800401e0] : 0x00000078; Ram Read Data[0x800101e0]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000078 to b: 00000000 i:120 burst: 
+
+ Ram Write Data @ [0x800401e4] : 0x00000079; Ram Read Data[0x800101e4]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000079 to b: 00000000 i:121 burst: 
+
+ Ram Write Data @ [0x800401e8] : 0x0000007a; Ram Read Data[0x800101e8]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000007a to b: 00000000 i:122 burst: 
+
+ Ram Write Data @ [0x800401ec] : 0x0000007b; Ram Read Data[0x800101ec]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000007b to b: 00000000 i:123 burst: 
+
+ Ram Write Data @ [0x800401f0] : 0x0000007c; Ram Read Data[0x800101f0]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000007c to b: 00000000 i:124 burst: 
+
+ Ram Write Data @ [0x800401f4] : 0x0000007d; Ram Read Data[0x800101f4]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000007d to b: 00000000 i:125 burst: 
+
+ Ram Write Data @ [0x800401f8] : 0x0000007e; Ram Read Data[0x800101f8]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000007e to b: 00000000 i:126 burst: 
+
+ Ram Write Data @ [0x800401fc] : 0x0000007f; Ram Read Data[0x800101fc]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000007f to b: 00000000 i:127 burst: 
+
+ Ram Write Data @ [0x80040200] : 0x00000080; Ram Read Data[0x80010200]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000080 to b: 00000000 i:128 burst: 
+
+ Ram Write Data @ [0x80040204] : 0x00000081; Ram Read Data[0x80010204]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000081 to b: 00000000 i:129 burst: 
+
+ Ram Write Data @ [0x80040208] : 0x00000082; Ram Read Data[0x80010208]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000082 to b: 00000000 i:130 burst: 
+
+ Ram Write Data @ [0x8004020c] : 0x00000083; Ram Read Data[0x8001020c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000083 to b: 00000000 i:131 burst: 
+
+ Ram Write Data @ [0x80040210] : 0x00000084; Ram Read Data[0x80010210]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000084 to b: 00000000 i:132 burst: 
+
+ Ram Write Data @ [0x80040214] : 0x00000085; Ram Read Data[0x80010214]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000085 to b: 00000000 i:133 burst: 
+
+ Ram Write Data @ [0x80040218] : 0x00000086; Ram Read Data[0x80010218]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000086 to b: 00000000 i:134 burst: 
+
+ Ram Write Data @ [0x8004021c] : 0x00000087; Ram Read Data[0x8001021c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000087 to b: 00000000 i:135 burst: 
+
+ Ram Write Data @ [0x80040220] : 0x00000088; Ram Read Data[0x80010220]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000088 to b: 00000000 i:136 burst: 
+
+ Ram Write Data @ [0x80040224] : 0x00000089; Ram Read Data[0x80010224]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000089 to b: 00000000 i:137 burst: 
+
+ Ram Write Data @ [0x80040228] : 0x0000008a; Ram Read Data[0x80010228]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000008a to b: 00000000 i:138 burst: 
+
+ Ram Write Data @ [0x8004022c] : 0x0000008b; Ram Read Data[0x8001022c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000008b to b: 00000000 i:139 burst: 
+
+ Ram Write Data @ [0x80040230] : 0x0000008c; Ram Read Data[0x80010230]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000008c to b: 00000000 i:140 burst: 
+
+ Ram Write Data @ [0x80040234] : 0x0000008d; Ram Read Data[0x80010234]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000008d to b: 00000000 i:141 burst: 
+
+ Ram Write Data @ [0x80040238] : 0x0000008e; Ram Read Data[0x80010238]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000008e to b: 00000000 i:142 burst: 
+
+ Ram Write Data @ [0x8004023c] : 0x0000008f; Ram Read Data[0x8001023c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000008f to b: 00000000 i:143 burst: 
+
+ Ram Write Data @ [0x80040240] : 0x00000090; Ram Read Data[0x80010240]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000090 to b: 00000000 i:144 burst: 
+
+ Ram Write Data @ [0x80040244] : 0x00000091; Ram Read Data[0x80010244]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000091 to b: 00000000 i:145 burst: 
+
+ Ram Write Data @ [0x80040248] : 0x00000092; Ram Read Data[0x80010248]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000092 to b: 00000000 i:146 burst: 
+
+ Ram Write Data @ [0x8004024c] : 0x00000093; Ram Read Data[0x8001024c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000093 to b: 00000000 i:147 burst: 
+
+ Ram Write Data @ [0x80040250] : 0x00000094; Ram Read Data[0x80010250]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000094 to b: 00000000 i:148 burst: 
+
+ Ram Write Data @ [0x80040254] : 0x00000095; Ram Read Data[0x80010254]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000095 to b: 00000000 i:149 burst: 
+
+ Ram Write Data @ [0x80040258] : 0x00000096; Ram Read Data[0x80010258]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000096 to b: 00000000 i:150 burst: 
+
+ Ram Write Data @ [0x8004025c] : 0x00000097; Ram Read Data[0x8001025c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000097 to b: 00000000 i:151 burst: 
+
+ Ram Write Data @ [0x80040260] : 0x00000098; Ram Read Data[0x80010260]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000098 to b: 00000000 i:152 burst: 
+
+ Ram Write Data @ [0x80040264] : 0x00000099; Ram Read Data[0x80010264]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 00000099 to b: 00000000 i:153 burst: 
+
+ Ram Write Data @ [0x80040268] : 0x0000009a; Ram Read Data[0x80010268]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000009a to b: 00000000 i:154 burst: 
+
+ Ram Write Data @ [0x8004026c] : 0x0000009b; Ram Read Data[0x8001026c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000009b to b: 00000000 i:155 burst: 
+
+ Ram Write Data @ [0x80040270] : 0x0000009c; Ram Read Data[0x80010270]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000009c to b: 00000000 i:156 burst: 
+
+ Ram Write Data @ [0x80040274] : 0x0000009d; Ram Read Data[0x80010274]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000009d to b: 00000000 i:157 burst: 
+
+ Ram Write Data @ [0x80040278] : 0x0000009e; Ram Read Data[0x80010278]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000009e to b: 00000000 i:158 burst: 
+
+ Ram Write Data @ [0x8004027c] : 0x0000009f; Ram Read Data[0x8001027c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 0000009f to b: 00000000 i:159 burst: 
+
+ Ram Write Data @ [0x80040280] : 0x000000a0; Ram Read Data[0x80010280]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 000000a0 to b: 00000000 i:160 burst: 
+
+ Ram Write Data @ [0x80040284] : 0x000000a1; Ram Read Data[0x80010284]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 000000a1 to b: 00000000 i:161 burst: 
+
+ Ram Write Data @ [0x80040288] : 0x000000a2; Ram Read Data[0x80010288]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 000000a2 to b: 00000000 i:162 burst: 
+
+ Ram Write Data @ [0x8004028c] : 0x000000a3; Ram Read Data[0x8001028c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 000000a3 to b: 00000000 i:163 burst: 
+
+ Ram Write Data @ [0x80040290] : 0x000000a4; Ram Read Data[0x80010290]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 000000a4 to b: 00000000 i:164 burst: 
+
+ Ram Write Data @ [0x80040294] : 0x000000a5; Ram Read Data[0x80010294]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 000000a5 to b: 00000000 i:165 burst: 
+
+ Ram Write Data @ [0x80040298] : 0x000000a6; Ram Read Data[0x80010298]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 000000a6 to b: 00000000 i:166 burst: 
+
+ Ram Write Data @ [0x8004029c] : 0x000000a7; Ram Read Data[0x8001029c]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 000000a7 to b: 00000000 i:167 burst: 
+
+ Ram Write Data @ [0x800402a0] : 0x000000a8; Ram Read Data[0x800102a0]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 000000a8 to b: 00000000 i:168 burst: 
+
+ Ram Write Data @ [0x800402a4] : 0x000000a9; Ram Read Data[0x800102a4]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 000000a9 to b: 00000000 i:169 burst: 
+
+ Ram Write Data @ [0x800402a8] : 0x000000aa; Ram Read Data[0x800102a8]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 000000aa to b: 00000000 i:170 burst: 
+
+ Ram Write Data @ [0x800402ac] : 0x000000ab; Ram Read Data[0x800102ac]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 000000ab to b: 00000000 i:171 burst: 
+
+ Ram Write Data @ [0x800402b0] : 0x000000ac; Ram Read Data[0x800102b0]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 000000ac to b: 00000000 i:172 burst: 
+
+ Ram Write Data @ [0x800402b4] : 0x000000ad; Ram Read Data[0x800102b4]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 000000ad to b: 00000000 i:173 burst: 
+
+ Ram Write Data @ [0x800402b8] : 0x000000ae; Ram Read Data[0x800102b8]: 0x00000000
+	DMA has gone wrong somewhere in copying a: 000000ae to b: 00000000 i:174 burst: 
+
+ Ram Write Data @ [0x800402bc] : 0x000000af; Ram Read Data[0x800102bc]: 0x00000000
+	DMA has gone wrong somewhere in 

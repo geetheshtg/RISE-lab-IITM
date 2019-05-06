@@ -1,0 +1,15 @@
+target remote localhost:3333
+set remotetimeout 10
+file HYFLASH/outputs/hfread.shakti
+#file HYFLASH/outputs/hyperbusi.shakti
+set {int} 0x11748=0x40
+set {int} 0x11778=1
+set {int} 0x11768=0x2
+set {int} 0x11780=0x0
+set {int} 0x11788=11
+set {int} 0x11790=110
+set {int} 0x11718=1
+load
+
+
+

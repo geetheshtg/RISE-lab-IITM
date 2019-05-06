@@ -1,0 +1,123 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Wed Jan 31 12:32:47 2018
+# Process ID: 26035
+# Current directory: /home/rimo/Desktop/vishvesh/sdramcode/software
+# Command line: vivado
+# Log file: /home/rimo/Desktop/vishvesh/sdramcode/software/vivado.log
+# Journal file: /home/rimo/Desktop/vishvesh/sdramcode/software/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/rimo/Desktop/vishvesh/sdramcode/bitstream/Top_updated.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/rimo/Desktop/vishvesh/sdramcode/bitstream/Top_updated.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/rimo/Desktop/hyper.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/rimo/Desktop/hyper.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/rimo/Desktop/vishvesh/sdramcode/bitstream/Hyper_01_02_2018.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/rimo/Desktop/vishvesh/sdramcode/bitstream/Hyper_01_02_2018.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+open_project /home/rimo/work/hyperflash/projects/11_01_2018/c64_intel_release/cclass/synthesis/risecreek_intel/risecreek_intel.xpr
+current_project {New Project}
+close_hw
+close_project
+open_project /home/rimo/work/hyperflash/projects/11_01_2018/c64_intel_release/cclass/synthesis/risecreek_intel/risecreek_intel.xpr
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/rimo/work/rimo/rimo/fpga_v2/fpga_v2/fpga_v2.runs/impl_1/Top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/rimo/work/hyperflash/projects/11_01_2018/c64_intel_release/cclass/synthesis/risecreek_intel/risecreek_intel.runs/impl_1/Top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/rimo/work/hyperflash/projects/11_01_2018/c64_intel_release/cclass/synthesis/risecreek_intel/risecreek_intel.runs/impl_1/Top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/rimo/work/hyperflash/projects/11_01_2018/c64_intel_release/cclass/synthesis/risecreek_intel/risecreek_intel.runs/impl_1/Top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/rimo/work/hyperflash/projects/11_01_2018/c64_intel_release/cclass/synthesis/risecreek_intel/risecreek_intel.runs/impl_1/Top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/rimo/work/hyperflash/projects/11_01_2018/c64_intel_release/cclass/synthesis/risecreek_intel/risecreek_intel.runs/impl_1/Top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/rimo/work/hyperflash/projects/11_01_2018/c64_intel_release/cclass/synthesis/risecreek_intel/risecreek_intel.runs/impl_1/Top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/rimo/work/hyperflash/projects/11_01_2018/c64_intel_release/cclass/synthesis/risecreek_intel/risecreek_intel.runs/impl_1/Top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/rimo/work/hyperflash/projects/11_01_2018/c64_intel_release/cclass/synthesis/risecreek_intel/risecreek_intel.runs/impl_1/Top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/rimo/work/hyperflash/projects/11_01_2018/c64_intel_release/cclass/synthesis/risecreek_intel/risecreek_intel.runs/impl_1/Top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property used_in_implementation false [get_files  /home/rimo/work/hyperflash/projects/11_01_2018/c64_intel_release/cclass/synthesis/risecreek_intel/risecreek_intel.srcs/constrs_1/new/risecreek_constraints_intel.xdc]
+add_files -fileset constrs_1 -norecurse /home/rimo/work/hyperflash/projects/11_01_2018/c64_intel_release/cclass/synthesis/risecreek_intel/risecreek_intel.srcs/constrs_1/new/risecreek_constraints_spansion_artix.xdc
+remove_files -fileset constrs_1 /home/rimo/work/hyperflash/projects/11_01_2018/c64_intel_release/cclass/synthesis/risecreek_intel/risecreek_intel.srcs/constrs_1/new/risecreek_constraints_intel.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/rimo/work/hyperflash/projects/11_01_2018/c64_intel_release/cclass/synthesis/risecreek_intel/risecreek_intel.runs/impl_1/Top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/rimo/work/hyperflash/projects/11_01_2018/c64_intel_release/cclass/synthesis/risecreek_intel/risecreek_intel.runs/impl_1/Top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/rimo/work/hyperflash/projects/11_01_2018/c64_intel_release/cclass/synthesis/risecreek_intel/risecreek_intel.runs/impl_1/Top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/rimo/work/hyperflash/projects/11_01_2018/c64_intel_release/cclass/synthesis/risecreek_intel/risecreek_intel.runs/impl_1/Top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+close_project
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/rimo/Desktop/vishvesh/sdramcode/bitstream/HyperFlash_02_02_2018.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
