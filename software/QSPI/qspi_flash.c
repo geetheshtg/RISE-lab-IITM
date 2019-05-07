@@ -13,89 +13,89 @@ int main()
     waitfor(100); //Time for Micron Flash to get ready
     int status=0;
     int read_id=0;
-    qspi_init(27,0,3,1,15);
+    qspi_init(27,0,3,1,15); //line 138 of qspi.h for initialising 
     //Read ID Command
 
-    if(micron_write_enable(status)){
+    if(micron_write_enable(status)){     //line 166 of qspi.h for
         printf("Panic: Write Enable Command Failed to execute");
         return -1;
     }
-    reset_interrupt_flags();
-    if(micron_write_enable(status)){
+    reset_interrupt_flags(); //line 144 of qspi.h for resetting all the flags
+    if(micron_write_enable(status)){     //line 166 of qspi.h for
         printf("Panic: Write Enable Command Failed to execute");
         return -1;
     }
-    reset_interrupt_flags();
-    micron_read_id_cmd(status,read_id);
-    reset_interrupt_flags();
+    reset_interrupt_flags(); // line 144
+    micron_read_id_cmd(status,read_id); //line 208 of qspi.h to read ID command to see if protocol is proper
+    reset_interrupt_flags(); //line 144
     
-    if(micron_write_enable(status)){
+    if(micron_write_enable(status)){     //line 166
         printf("Panic: Write Enable Command Failed to execute");
         return -1;
     }
-    reset_interrupt_flags();
+    reset_interrupt_flags();  //line 144
     
-    if(micron_enable_4byte_addressing(status)){
+    if(micron_enable_4byte_addressing(status)){  //line 174 to enable 4 byte address
         printf("Panic: Enable 4 byte addressing command failed to execute");
         return -1;
     }
-    reset_interrupt_flags();        
+    reset_interrupt_flags();     //line 144
     
     
-    set_qspi_shakti32(dlr,0x4);
-    set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDRD)|CCR_DMODE(SINGLE)|CCR_DCYC(7)|CCR_ADSIZE(FOURBYTE)|CCR_ADMODE(SINGLE)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(0x0B)));
-    set_qspi_shakti32(ar,0x100000); //Address where the Config_string is situated in the micron nand flash memory waitfor(1000);
+    set_qspi_shakti32(dlr,0x4);   //line 113 of qspi.h for setting 0x04 to dlr i.e setting address
+    set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDRD)|CCR_DMODE(SINGLE)|CCR_DCYC(7)|CCR_ADSIZE(FOURBYTE)|CCR_ADMODE(SINGLE)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(0x0B)));  //line 113 for setting ccr
+    set_qspi_shakti32(ar,0x100000); // line 113 for setting ar...i.e Address where the Config_string is situated in the micron nand flash memory waitfor(1000);
 //    printf("Status : %08x dcr : %08x cr : %08x ccr : %08x dlr: %08x ar: %08x",status,*dcr,*cr,*ccr,*dlr,*ar);
-    wait_for_tcf(status);
+    wait_for_tcf(status);   //line 148 for indicating the completion of command
     
     //int read_data = get_qspi_shakti(dr);
-    *config_string = get_qspi_shakti(dr);
+    *config_string = get_qspi_shakti(dr);  //line 128 for getting the address of the config string
     printf("\tRead data before start of XIP is : %08x\n",*config_string);
-    reset_interrupt_flags();
+    reset_interrupt_flags();      //line 144
  
-    if(micron_write_enable(status)){
+    if(micron_write_enable(status)){     //line 166
         printf("Panic: Command Failed to execute");
         return -1;
     }
-    reset_interrupt_flags();
+    reset_interrupt_flags();     //line 144
 
 
 
     int xip_value = 0x93; //Quad I/O Mode with 8 Dummy Cycles. SDR Mode
-    if(micron_configure_xip_volatile(status,xip_value)){
+    if(micron_configure_xip_volatile(status,xip_value)){    //line 182 to write the volatile configuration register
         printf("Panic: XIP Volatile Reg not written, Command Failed");
         return -1;
     }
 
-    reset_interrupt_flags();
+    reset_interrupt_flags();     //line 144
 
 
 
     printf("\t Quad I/O Mode with Dummy Confirmation bit to enable XIP\n");
-    set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDRD)|CCR_DMODE(QUAD)|CCR_DUMMY_CONFIRMATION|CCR_DCYC(8)|CCR_ADSIZE(FOURBYTE)|CCR_ADMODE(QUAD)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(0xEC)));
-    set_qspi_shakti32(dlr,0x4);
-    set_qspi_shakti32(ar,0x100000); //Address where the Config_string is situated in the micron nand flash memory
+    set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDRD)|CCR_DMODE(QUAD)|CCR_DUMMY_CONFIRMATION|CCR_DCYC(8)|CCR_ADSIZE(FOURBYTE)|CCR_ADMODE(QUAD)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(0xEC)));   //line 113 set ccr
+    set_qspi_shakti32(dlr,0x4);   //line 113 to set ox4 to dlr
+    set_qspi_shakti32(ar,0x100000); //line 113 to set ar...i.e the Address where the Config_string is situated in the micron nand flash memory
     printf("Status : %d dcr : %d cr : %d ccr : %d dlr: %d ar: %d",status,*dcr,*cr,*ccr,*dlr,*ar);
-    wait_for_tcf(status);
+    wait_for_tcf(status);      //line 148 for checking the completion of command
     //int read_data = get_qspi_shakti(dr);
-    *config_string = get_qspi_shakti(dr);
+    *config_string = get_qspi_shakti(dr);  // line 128 getting the address of the config string 
     printf("\tRead data is : %x\n",*config_string);
     config_string++; //Next location in config string -- 0x1004
     reset_interrupt_flags();
     printf("\t Trying XIP now\n");
-    set_qspi_shakti32(ccr, (CCR_FMODE(CCR_FMODE_MMAPD)|CCR_DMODE(QUAD)|CCR_DCYC(8)|CCR_ADSIZE(FOURBYTE)|CCR_ADMODE(QUAD)|CCR_IMODE(NDATA)));
-    waitfor(25);
+    set_qspi_shakti32(ccr, (CCR_FMODE(CCR_FMODE_MMAPD)|CCR_DMODE(QUAD)|CCR_DCYC(8)|CCR_ADSIZE(FOURBYTE)|CCR_ADMODE(QUAD)|CCR_IMODE(NDATA)));   //line 113 for setting ccr
+    waitfor(25);  //wait for micron to store data
     int dum_data;
     for(i=0;i<67;++i) {
-         dum_data = get_qspi_shakti(read_data);
+         dum_data = get_qspi_shakti(read_data);   //taking the read_data as dummy data
          waitfor(10);
-         *config_string = dum_data;
-         config_string++;
-         read_data++;
+         *config_string = dum_data;             //setting the dum_data in config string's address
+         config_string++;                    //go to the next address
+         read_data++;                        //read_data address also to the next position
          reset_interrupt_flags();
-         waitfor(10);
+         waitfor(10);                        //wait for micron to store data
     }
-    config_string = (const int*)(0x80000000);
+    config_string = (const int*)(0x80000000);     
     //Should exit XIP mode and go to Idle state
     xip_value = 1;  //XIP value to terminate from Micron
    /* if(micron_disable_xip_volatile(status,xip_value)){
