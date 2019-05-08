@@ -7,45 +7,45 @@
 #define DEF_TIMEOUT 60
 
 //Memory Maps
-#define CR      0x11800 
-#define DCR     0x11804
-#define SR      0x11808
-#define FCR     0x1180c
-#define DLR     0x11810
-#define CCR     0x11814
-#define AR      0x11818
-#define ABR     0x1181c
-#define DR      0x11820
-#define PSMKR   0x11824
-#define PSMAR   0x11828
-#define PIR     0x1182c
-#define LPRT    0x11830
-#define STARTMM 0x90000000
+#define CR      0x11800 	//Control register
+#define DCR     0x11804		//Device configuration register
+#define SR      0x11808		//Status register
+#define FCR     0x1180c		//Flag clear register
+#define DLR     0x11810		//Data length register
+#define CCR     0x11814		//communication configuration register
+#define AR      0x11818		//address register
+#define ABR     0x1181c		//alternate bytes register
+#define DR      0x11820		//data register
+#define PSMKR   0x11824		//polling status mask register
+#define PSMAR   0x11828		//polling status match register
+#define PIR     0x1182c		//polling interval register
+#define LPRT    0x11830		//low power timeout register
+#define STARTMM 0x90000000	
 #define ENDMM   0x9FFFFFFF
 //Defines for configuring the registers at ease
 //Bit vectors for all the parameters in the CR
-#define CR_PRESCALER(x)   (x<<24)
-#define CR_PMM            (1<<23)
-#define CR_APMS           (1<<22)
-#define CR_TOIE           (1<<20)
-#define CR_SMIE           (1<<19)
-#define CR_FTIE           (1<<18)
-#define CR_TCIE           (1<<17)
-#define CR_TEIE           (1<<16)
-#define CR_FTHRES(x)      (x<<8 )
-#define CR_FSEL           (1<<7 )
-#define CR_DFM            (1<<6 )
-#define CR_SSHIFT         (1<<4 )
-#define CR_TCEN           (1<<3 )
-#define CR_DMAEN          (1<<2 )
-#define CR_ABORT          (1<<1 )
-#define CR_EN             (1<<0 )
+#define CR_PRESCALER(x)   (x<<24)//prescaler..clock prescaler
+#define CR_PMM            (1<<23)//polling match mode..this bit indicates which method should be used for determining a match during automatic polling mode..modified only when BUSY=0
+#define CR_APMS           (1<<22)//automatic poll mode stop..this bit determines if automatic polling is stopped after a match..can be modified only when BUSY=0
+#define CR_TOIE           (1<<20)//timeout interrupt enable..this bit enables the timeout interrupt
+#define CR_SMIE           (1<<19)//status match interrupt enable..this bit enables the status match interrupt
+#define CR_FTIE           (1<<18)//fifo threshold interrupt enable..this bit enables the fifo threshold interrupt
+#define CR_TCIE           (1<<17)//transfer complete interrupt enable..this bit enables the rransfer complete interrupt
+#define CR_TEIE           (1<<16)//transfer error interrupt enable..this bit enables the transfer error interrupt
+#define CR_FTHRES(x)      (x<<8 )//fifo threshold level..in indirect mode, this defines the threshold number of bytes in then fifo that will cause the fifo threshold flag(ftf, quadspi_sr[2]) to be set in indirect write mode(fmode=00).. in indirect read mode(fmode=01) if dmaen=1 then the dma controller for the corresponding channel must be disabled before changing the FTHRES value
+#define CR_FSEL           (1<<7 )//flash memory selection..this bit selects the flash memory to be addressed in single flash mode(when dfm=0)..modified only when busy=0..ignored when dfm=1
+#define CR_DFM            (1<<6 )//dual flash mode..this bit activates the dual flash modde..where two external flsh memories are used simulataneously to double the throughput and capacity..modified only when BUSY=0
+#define CR_SSHIFT         (1<<4 )//sample shift..By default, the QUADSPI samples data 1/2 of a CLK cycle after the data is driven by the Flash memory. This bit allows the data is to be sampled later in order to account for external signal delays. Firmware must assure that SSHIFT = 0 when in DDR mode (when DDRM = 1). This field can be modified only when BUSY = 0.
+#define CR_TCEN           (1<<3 )//timeout counter enable..This bit is valid only when memory-mapped mode (FMODE = 11) is selected. Activating this bit causes the chip select (nCS) to be released (and thus reduces consumption) if there has not been an access after a certain amount of time, where this time is defined by TIMEOUT[15:0] (QUADSPI_LPTR). Enable the timeout counter. By default, the QUADSPI never stops its prefetch operation, keeping the previous read operation active with nCS maintained low, even if no access to the Flash memory occurs for a long time. Since Flash memories tend to consume more when nCS is held low, the application might want to activate the timeout counter (TCEN = 1, QUADSPI_CR[3]) so that nCS is released after a period of TIMEOUT[15:0] (QUADSPI_LPTR) cycles have elapsed without an access since when the FIFO becomes full with prefetch data. This bit can be modified only when BUSY = 0.
+#define CR_DMAEN          (1<<2 )//dma enable..In indirect mode, DMA can be used to input or output data via the QUADSPI_DR register. DMA transfers are initiated when the FIFO threshold flag, FTF, is set.
+#define CR_ABORT          (1<<1 )//abort request..This bit aborts the on-going command sequence. It is automatically reset once the abort is complete. This bit stops the current transfer. In polling mode or memory-mapped mode, this bit also resets the APM bit or the DM bit.
+#define CR_EN             (1<<0 )//enable..enable the QUADSPI
 
 //Bit vectors for DCR 
-#define DCR_FSIZE(x)       (x<<16) 
-#define DCR_MODE_BYTE(x)   (x<<21)
-#define DCR_CSHT(x)        (x<<8 )
-#define DCR_CKMODE         0x1 
+#define DCR_FSIZE(x)       (x<<16)//flash memory size
+#define DCR_MODE_BYTE(x)   (x<<21)//
+#define DCR_CSHT(x)        (x<<8 )//chip select high time
+#define DCR_CKMODE         0x1 	  //clock mode..indicates the level that clk taked between command
 
 //Bit vectors for status register
 #define SR_FLEVEL(x)      (x<<8) 
