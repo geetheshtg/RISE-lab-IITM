@@ -42,10 +42,10 @@
 #define CR_EN             (1<<0 )//enable..enable the QUADSPI
 
 //Bit vectors for DCR 
-#define DCR_FSIZE(x)       (x<<16)//flash memory size
+#define DCR_FSIZE(x)       (x<<16)//flash memory size. This field defines the size of external memory using the following formula. Number of bytes in Flash memory = 2[FSIZE+1] FSIZE+1 is effectively the number of address bits required to address the Flash memory. The Flash memory capacity can be up to 4GB (addressed using 32 bits) in indirect mode, but the addressable space in memory-mapped mode is limited to 256MB. If DFM = 1, FSIZE indicates the total capacity of the two Flash memories together. This field can be modified only when BUSY = 0.
 #define DCR_MODE_BYTE(x)   (x<<21)//
-#define DCR_CSHT(x)        (x<<8 )//chip select high time
-#define DCR_CKMODE         0x1 	  //clock mode..indicates the level that clk taked between command
+#define DCR_CSHT(x)        (x<<8 )//chip select high time.. CSHT+1 defines the minimum number of CLK cycles which the chip select (nCS) must remain high between commands issued to the Flash memory. This field can be modified only when BUSY = 0.
+#define DCR_CKMODE         0x1 	  //clock mode..indicates the level that clk takes between command
 
 //Bit vectors for status register
 #define SR_FLEVEL(x)      (x<<8) 
