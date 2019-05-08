@@ -1,18 +1,14 @@
-The quad SPI memory interface integrated inside stm32 products provides a communication interface allowing the microcontroller to communicate with external SPI and quad SPI memories.
-This interface is fully configurable allowing easy connection of any existing serial memories available today on the market.
-Applications can benefit from the easy connection of external serial memories requiring only a few pins.
-Thanks to the memory mapping feature, external memories can be simply accommodated in the existing project whenever more memory space is needed.
-The quad SPI memory interface integrated inside stm32 products offers three operating modes and is optimized for communication with external memories with support for dual flash mode allowing access to 8 bits in a single reading cycle.
+The quad SPI memory interface provides a communication interface allowing the microcontroller to communicate with external SPI and quad SPI memories.
+It has the memory mapping feature, i.e external memories can be simply accommodated whenever more memory space is needed.
+The quad SPI memory interface offers three operating modes and is optimized for communication with external memories with support for dual flash mode allowing access to 8 bits in a single reading cycle.
 It supports both single and dual data rate operation.
-The quad SPI memory interface supports the connection of one or two external memories.
+The quad SPI memory interface supports the connection of one or two external flash memories.
 This means that data can be transferred over a 4 or 8-bit data bus in-between the memory and the microcontroller.
-It gives the user flexibility to choose between the number of pins required for connection, 6 for a single and 10 for a double connection and the performance of the data transfer, 4 bits for a single or 8 bits for a double connection.
-The quad SPI memory interface operates in three modes
+It gives the user flexibility to choose between the number of pins required for connection, 6 for a single and 10 for a double connection and for the performance of the data transfer, 4 bits for a single or 8 bits for a double connection.
+The quad SPI memory interface operates in three modes as follows
 1. Indirect mode where it behaves as a classical SPI interface and all operations are performed through registers.
-2. Status polling mode where the flash status registers are read periodically through interrupts generation.
+2. Status polling mode where the flash status registers are read periodically through interrupt generation.
 3. Memory-mapped mode where the external memory is seen as an internal memory for read operations.
-The quad SPI memory interface offers high flexibility in frame format configuration.
-This flexibility allows addressing of any serial flash memory.
 Users can enable or disable each of the five phases and configure the length of each phase as well as the number of lines used for each phase.
 The quad SPI memory interface used in indirect operating mode behaves like a classical SPI interface.
 Transferred data goes through the data register with FIFO.
