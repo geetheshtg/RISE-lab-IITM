@@ -43,57 +43,57 @@
 
 //Bit vectors for DCR 
 #define DCR_FSIZE(x)       (x<<16)//flash memory size. This field defines the size of external memory using the following formula. Number of bytes in Flash memory = 2[FSIZE+1] FSIZE+1 is effectively the number of address bits required to address the Flash memory. The Flash memory capacity can be up to 4GB (addressed using 32 bits) in indirect mode, but the addressable space in memory-mapped mode is limited to 256MB. If DFM = 1, FSIZE indicates the total capacity of the two Flash memories together. This field can be modified only when BUSY = 0.
-#define DCR_MODE_BYTE(x)   (x<<21)//
+#define DCR_MODE_BYTE(x)   (x<<21)//not used in the code
 #define DCR_CSHT(x)        (x<<8 )//chip select high time.. CSHT+1 defines the minimum number of CLK cycles which the chip select (nCS) must remain high between commands issued to the Flash memory. This field can be modified only when BUSY = 0.
 #define DCR_CKMODE         0x1 	  //clock mode..indicates the level that clk takes between command
 
 //Bit vectors for status register
-#define SR_FLEVEL(x)      (x<<8) 
-#define SR_TOF            (1<<4)
-#define SR_SMF            (1<<3)
-#define SR_FTF            (1<<2)
-#define SR_TCF            (1<<1)
-#define SR_TEF            (1<<0)
+#define SR_FLEVEL(x)      (x<<8)//FIFO level. This field gives the number of valid bytes which are being held in the FIFO. FLEVEL = 0 when the FIFO is empty, and 16 when it is full. In memory-mapped mode and in automatic status polling mode, FLEVEL is zero.
+#define SR_TOF            (1<<4)//Timeout flag. This bit is 1 when timeout occurs. It is cleared by writing 1 to CTOF
+#define SR_SMF            (1<<3)//Status match flag. This bit is set in automatic polling mode when the unmasked received data matches the corresponding bits in the match register (QUADSPI_PSMAR). It is cleared by writing 1 to CSMF.
+#define SR_FTF            (1<<2)//FIFO threshold flag. In indirect mode, this bit is set when the FIFO threshold has been reached, or if there is any data left in the FIFO after reads from the Flash memory are complete. It is cleared automatically as soon as threshold condition is no longer true. In automatic polling mode this bit is set every time the status register is read, and the bit is cleared when the data register is read.
+#define SR_TCF            (1<<1)//Transfer complete flag. This bit is set in indirect mode when the programmed number of data has been transferred or in any mode when the transfer has been aborted. It is cleared by writing 1 to CTCF
+#define SR_TEF            (1<<0)//Transfer error flag. This bit is set in indirect mode when an invalid address is being accessed in indirect mode. It is cleared by writing 1 to CTEF
 
 //Bit vectors for flag clear register 
-#define FCR_CTOF (1<<4)
-#define FCR_CSMF (1<<3)
-#define FCR_CTCF (1<<1)
-#define FCR_CTEF (1<<0)
+#define FCR_CTOF (1<<4)//Clear timeout flag. Writing 1 clears the TOF flag in the QUADSPI_SR register
+#define FCR_CSMF (1<<3)//Clear status match flag. Writing 1 clears the SMF flag in the QUADSPI_SR register
+#define FCR_CTCF (1<<1)//Clear transfer complete flag. Writing 1 clears the TCF flag in the QUADSPI_SR register
+#define FCR_CTEF (1<<0)//Clear transfer error flag. Writing 1 clears the TEF flag in the QUADSPI_SR register
 
 //Bit vectors for DLR
 #define DL(x)  x  //Useless -- but for better readability of the code
 
 //Bit vectors for CCR
-#define CCR_DDRM                   (1<<31) 
-#define CCR_DHHC                   (1<<30)
+#define CCR_DDRM                   (1<<31) //Double data rate mode. This bit sets the DDR mode for the address, alternate byte and data phase. This field can be written only when BUSY = 0.
+#define CCR_DHHC                   (1<<30) //DDR hold. Delay the data output by 1/4 of the QUADSPI output clock cycle in DDR mode. This feature is only active in DDR mode. This field can be written only when BUSY = 0.
 #define CCR_DUMMY_BIT              (1<<29) // Needed by Micron Flash Memories
-#define CCR_SIOO                   (1<<28)
-#define CCR_FMODE(x)               (x<<26)
-#define CCR_DMODE(x)               (x<<24)
+#define CCR_SIOO                   (1<<28) //Send instruction only once mode. This bit has no effect when IMODE = 00. This field can be written only when BUSY = 0.
+#define CCR_FMODE(x)               (x<<26) //Functional mode. This field defines the QUADSPI functional mode of operation. If DMAEN = 1 already, then the DMA controller for the corresponding channel must be disabled before changing the FMODE value. This field can be written only when BUSY = 0.
+#define CCR_DMODE(x)               (x<<24) //Data mode. This field defines the data phases mode of operation. This field also determines the dummy phase mode of operation. This field can be written only when BUSY = 0.
 #define CCR_DUMMY_CONFIRMATION     (1<<23) // Needed by Micron Flash Memories
-#define CCR_DCYC(x)                (x<<18)
-#define CCR_ABSIZE(x)              (x<<16)
-#define CCR_ABMODE(x)              (x<<14)
-#define CCR_ADSIZE(x)              (x<<12)
-#define CCR_ADMODE(x)              (x<<10)
-#define CCR_IMODE(x)               (x<<8 )
-#define CCR_INSTRUCTION(x)         (x<<0 )
+#define CCR_DCYC(x)                (x<<18) //Number of dummy cycles. This field defines the duration of the dummy phase. In both SDR and DDR modes, it specifies a number of CLK cycles (0-31). This field can be written only when BUSY = 0.
+#define CCR_ABSIZE(x)              (x<<16) //Alternate bytes size. This bit defines alternate bytes size. This field can be written only when BUSY = 0.
+#define CCR_ABMODE(x)              (x<<14) //Alternate bytes mode. This field defines the alternate-bytes phase mode of operation. This field can be written only when BUSY = 0.
+#define CCR_ADSIZE(x)              (x<<12) //Address size. This bit defines address size. This field can be written only when BUSY = 0.
+#define CCR_ADMODE(x)              (x<<10) //Address mode. This field defines the address phase mode of operation. This field can be written only when BUSY = 0.
+#define CCR_IMODE(x)               (x<<8 ) //Instruction mode. This field defines the instruction phase mode of operation. This field can be written only when BUSY = 0.
+#define CCR_INSTRUCTION(x)         (x<<0 ) //Instruction. Instruction to be sent to the external SPI device. This field can be written only when BUSY = 0.
 
-#define CCR_FMODE_INDWR 0x0
-#define CCR_FMODE_INDRD 0x1
-#define CCR_FMODE_APOLL 0x2
-#define CCR_FMODE_MMAPD 0x3
+#define CCR_FMODE_INDWR 0x0 //Indirect write mode
+#define CCR_FMODE_INDRD 0x1 //Indirect read mode
+#define CCR_FMODE_APOLL 0x2 //Automatic polling mode
+#define CCR_FMODE_MMAPD 0x3 //Memory mapped mode
+// The above values of CCR_FMODE can only be changed when BUSY=0 and DMAEN=0
+#define NDATA  0x0 //for convenience
+#define SINGLE 0x1 // "		"
+#define DOUBLE 0x2 // "		"
+#define QUAD   0x3 // "		"
 
-#define NDATA  0x0
-#define SINGLE 0x1
-#define DOUBLE 0x2
-#define QUAD   0x3
-
-#define BYTE      0x0
-#define TWOBYTE   0x1
-#define THREEBYTE 0x2
-#define FOURBYTE  0x3
+#define BYTE      0x0 //for convenience
+#define TWOBYTE   0x1 // "	"
+#define THREEBYTE 0x2 // "	"
+#define FOURBYTE  0x3 // "	"
 
 int* cr       =      (const int*) CR;
 int* dcr      =      (const int*) DCR;
