@@ -29,6 +29,29 @@ int main()
         printf("Panic: Write Enable Command Failed to execute");
         return -1;
     }
+//  int micron_write_enable(int status){
+//     printf("\tWrite Enable\n");
+//     set_qspi_shakti32(ccr,(CCR_ADSIZE(FOURBYTE)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(0x06)));
+//     int ret = wait_for_tcf(status); //Indicating the completion of command -- Currently polling
+//     printf("Status : %d dcr : %d cr: %d ccr: %d \n",status,*dcr,*cr,*ccr);
+//     return ret;
+//  }   
+
+//   int wait_for_tcf(int status){
+//     int timeout = DEF_TIMEOUT;               //DEF_TIMEOUT is 60
+//     status = get_qspi_shakti(sr);            //get the status from the address of status register..initially the status is 0
+//     while(!( status & 0x02 ) && --timeout){  //
+//         waitfor(1000);
+//         status=get_qspi_shakti(sr);
+//     }
+//     if(timeout==0){
+//         printf("Request Timed out");
+//         return -1;
+//     }
+//     return 0;
+//   }  
+//     
+//     
     reset_interrupt_flags(); //line 144 of qspi.h for resetting all the flags
     if(micron_write_enable(status)){     //line 166 of qspi.h for
         printf("Panic: Write Enable Command Failed to execute");
