@@ -7,14 +7,23 @@
 
 int main()
 {
-    int* config_string = (int*)(0x80000000);  //location of config_string where the fetched config_string data will be present
-    int* read_data = (int*)(0x90100004); //Read data register after the first element is read through QUAD mode
+    int* config_string = (int*)(0x80000000);                  //location of config_string where the fetched config_string data will be present
+    int* read_data = (int*)(0x90100004);                      //Read data register after the first element is read through QUAD mode
     int i = 0;
-    waitfor(100); //Time for Micron Flash to get ready
+    waitfor(100);                                             //Time for Micron Flash to get ready
     int status=0;
     int read_id=0;
-    qspi_init(27,0,3,1,15); //line 138 of qspi.h for initialising 
-    //Read ID Command
+    qspi_init(27,0,3,1,15);                                   //Read ID Command
+
+//  void qspi_init(int fsize, int csht, int prescaler, int enable_interrupts, int fthreshold){
+//     int int_vector = enable_interrupts? (CR_TOIE|CR_SMIE|CR_FTIE|CR_TCIE|CR_TEIE) : 0; 
+//     set_qspi_shakti32(dcr,(DCR_FSIZE(fsize)|DCR_CSHT(csht)|DCR_CKMODE)); 
+//     set_qspi_shakti32(cr,(CR_PRESCALER(prescaler)|int_vector|CR_FTHRES(fthreshold)|CR_EN));
+//  }
+//  this function gets the flash memory size(fsize), chip select high time(csht), prescaler and fifo threshold level(fthreshold) values as parameters 
+//  It sets the fsize, csht and CKMODE in DCR(Device configuration register) and it sets prescaler, fthreshold and it also enables the QSPI in CR(Control Register)
+//  qspi_init()'s 4th parameter is enable_interrupts, since it is given as 1, which means interrupts are to be enabled.
+//  This enables timeout, status match, fifo threshold, transfer complete and transfer error interrupts in the control register
 
     if(micron_write_enable(status)){     //line 166 of qspi.h for
         printf("Panic: Write Enable Command Failed to execute");
