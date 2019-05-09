@@ -95,18 +95,18 @@
 #define THREEBYTE 0x2 // "	"
 #define FOURBYTE  0x3 // "	"
 
-int* cr       =      (const int*) CR;
-int* dcr      =      (const int*) DCR;
-int* sr       =      (const int*) SR;
-int* fcr      =      (const int*) FCR;
-int* ccr      =      (const int*) CCR;
-int* ar       =      (const int*) AR;
-int* abr      =      (const int*) ABR;
-int* dr       =      (const int*) DR;
-int* dlr      =      (const int*) DLR;
-int* psmkr    =      (const int*) PSMKR;
-int* pir      =      (const int*) PIR;
-int* lprt     =      (const int*) LPRT;
+int* cr       =      (const int*) CR;	//Control
+int* dcr      =      (const int*) DCR;	//Device configuration
+int* sr       =      (const int*) SR;	//status
+int* fcr      =      (const int*) FCR;	//flag clear
+int* ccr      =      (const int*) CCR;	//comminication configuration
+int* ar       =      (const int*) AR;	//address
+int* abr      =      (const int*) ABR;	//alternate bytes
+int* dr       =      (const int*) DR;	//data
+int* dlr      =      (const int*) DLR;	//data length
+int* psmkr    =      (const int*) PSMKR;//polling status mask
+int* pir      =      (const int*) PIR;	//polling interval
+int* lprt     =      (const int*) LPRT;	//low power timeout
 int* startmm  =      (const int*) STARTMM;
 int* endmm    =      (const int*) ENDMM;
 
