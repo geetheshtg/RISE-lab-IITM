@@ -122,7 +122,14 @@ int main()
         printf("Panic: XIP Volatile Reg not written, Command Failed");
         return -1;
     }
-    reset_interrupt_flags();     
+    reset_interrupt_flags();   
+//  For checking if the flash can operate in XIP mode
+//  the data register is feeded with value 0x93, which is the value to be written into the VECR register to enable XIP mode  
+//  the CCR is set in indirect wrrite mode
+//  after checking the flash memory for XIP operation the interrupt flags are reset    
+
+    
+    
 //  int micron_configure_xip_volatile(int status, int value){
 //      printf("\tWrite Volatile Configuration Register\n");
 //      set_qspi_shakti32(dlr,DL(1));
@@ -137,7 +144,7 @@ int main()
 
 
     printf("\t Quad I/O Mode with Dummy Confirmation bit to enable XIP\n");
-    set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDRD)|CCR_DMODE(QUAD)|CCR_DUMMY_CONFIRMATION|CCR_DCYC(8)|CCR_ADSIZE(FOURBYTE)|CCR_ADMODE(QUAD)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(0xEC)));   //line 113 set ccr
+    set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDRD)|CCR_DMODE(QUAD)|CCR_DUMMY_CONFIRMATION|CCR_DCYC(8)|CCR_ADSIZE(FOURBYTE)|CCR_ADMODE(QUAD)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(0xEC)));  
     set_qspi_shakti32(dlr,0x4);   
     set_qspi_shakti32(ar,0x100000); 
     printf("Status : %d dcr : %d cr : %d ccr : %d dlr: %d ar: %d",status,*dcr,*cr,*ccr,*dlr,*ar);
@@ -146,8 +153,15 @@ int main()
     printf("\tRead data is : %x\n",*config_string);
     config_string++; //Next location in config string -- 0x1004
     reset_interrupt_flags();
+//  This part of code is to check if dummy confirmation bit can be used to enable XIP
+//  Dummy confirmation is set to 0 - XIP enabled
+//  the config string is read from the data register and it is verified  
+//  config_string++ will move the pointer to its next position thereby reading the whole string
+//  finally reset the interrupt flags for further execution  
+    
+    
     printf("\t Trying XIP now\n");
-    set_qspi_shakti32(ccr, (CCR_FMODE(CCR_FMODE_MMAPD)|CCR_DMODE(QUAD)|CCR_DCYC(8)|CCR_ADSIZE(FOURBYTE)|CCR_ADMODE(QUAD)|CCR_IMODE(NDATA)));   //line 113 for setting ccr
+    set_qspi_shakti32(ccr, (CCR_FMODE(CCR_FMODE_MMAPD)|CCR_DMODE(QUAD)|CCR_DCYC(8)|CCR_ADSIZE(FOURBYTE)|CCR_ADMODE(QUAD)|CCR_IMODE(NDATA)));  
     waitfor(25);  //wait for micron to store data
     int dum_data;
     for(i=0;i<67;++i) {
@@ -159,6 +173,11 @@ int main()
          reset_interrupt_flags();
          waitfor(10);                        //wait for micron to store data
     }
+//  In this part of the code, the device is set to memory mapped mode with QUADSPI enabled
+//  Here, no instruction is passed as the CCR_IMODE is set to 0
+    
+    
+    
     config_string = (const int*)(0x80000000);     
     //Should exit XIP mode and go to Idle state
     xip_value = 1;  //XIP value to terminate from Micron
