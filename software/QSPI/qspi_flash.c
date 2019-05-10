@@ -25,6 +25,11 @@ int main()
 //  qspi_init()'s 4th parameter is enable_interrupts, since it is given as 1, which means interrupts are to be enabled.
 //  This enables timeout, status match, fifo threshold, transfer complete and transfer error interrupts in the control register
 
+    
+//  micron_write_enable(status) will enable the flash memory in write mode
+//  parameter passed - address of the status register
+//  CCR_INSTRUCTION(0x06) is used, 
+//  the function will return true or false depending on the timeout, if true then program stops execution
     if(micron_write_enable(status)){    
         printf("Panic: Write Enable Command Failed to execute");
         return -1;
