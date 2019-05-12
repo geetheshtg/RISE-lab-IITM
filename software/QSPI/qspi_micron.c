@@ -2,7 +2,8 @@
 
 #define MEM_TYPE_N25Q256_ID 0x20BA1910
 
-
+///Function to discover the presence of memory device
+///Instruction passed - 0x9E - Read ID of memory device
 int flashIdentificationDevice(){
 	printf("\tReading the ID register and discovering the Flash Device\n");
 	set_qspi_shakti32(dlr,4);
@@ -21,6 +22,8 @@ int flashIdentificationDevice(){
     }
 }
 
+///Takes value from the previous function
+///This function is pretty useless as the memory device is checked in the previous function itself
 int flashMemInit(){   //Supposedly a set of routines to check if the memory/interface or whatever is proper
 	int ret = flashIdentificationDevice();
 	if(ret==-1){
@@ -31,6 +34,8 @@ int flashMemInit(){   //Supposedly a set of routines to check if the memory/inte
 	//to fill in code
 }
 
+///Function to read the status bit of the flash
+///Instruction passed - 0x05 - Read status register
 int flashReadStatusRegister(){
     printf("\tReading the Status bits of the Flash\n");
     set_qspi_shakti32(dlr,4);
@@ -48,6 +53,7 @@ int flashReadStatusRegister(){
     	return value;
 }
 
+///
 int flashReadFlagRegister(){
 	return 0;
 }
