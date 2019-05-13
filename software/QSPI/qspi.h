@@ -135,6 +135,23 @@ void waitfor(unsigned int secs) {
 	while(time++ < secs);
 }
 
+/**
+ * @brief Initializes various parameters needed by the board.
+ *
+ * This function only works when the board was successfully detected
+ * by Soletta and a corresponding
+ * pin multiplexer module was found.
+ *
+ * @see set_aspi_shakti32().
+ *
+ * @param fsize Flash memory size.
+ * @param csht Chip select high time.
+ * @param prescaler Clock prescaler.
+ * @param enable_interrupts Will enable interrupts 
+ * @param fthreshold FIFO threshold
+ *
+ * @return Void.
+ */
 void qspi_init(int fsize, int csht, int prescaler, int enable_interrupts, int fthreshold){
     int int_vector = enable_interrupts? (CR_TOIE|CR_SMIE|CR_FTIE|CR_TCIE|CR_TEIE) : 0; 
     set_qspi_shakti32(dcr,(DCR_FSIZE(fsize)|DCR_CSHT(csht)|DCR_CKMODE)); 
