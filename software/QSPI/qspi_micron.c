@@ -10,8 +10,13 @@
 #define FAST_RD 0x0B		//Fast read
 #define QDFAST_RD 0xEB		//Quad I/O fast read
 
-///Function to discover the presence of memory device
-///Instruction passed - 0x9E - Read ID of memory device
+/**
+ * @brief Function to discover the presence and working of memory device.
+ *
+ * This function passes the instruction 0x9E which reads the ID of memory device.
+ *
+ * @return 0 on success, -1 otherwise.
+ */
 int flashIdentificationDevice(){
 	printf("\tReading the ID register and discovering the Flash Device\n");
 	set_qspi_shakti32(dlr,4);
@@ -30,8 +35,15 @@ int flashIdentificationDevice(){
     }
 }
 
-///Takes value from the previous function
-///This function is pretty useless as the memory device is checked in the previous function itself
+/**
+ * @brief To detect the presence of memory device.
+ *
+ * This function calls flashIdentificationDevice() and again returns the same value in main().
+ * 
+ * @see flashIdentificationDevice().
+ *
+ * @return 0 if Device detected, -1 otherwise.
+ */
 int flashMemInit(){   //Supposedly a set of routines to check if the memory/interface or whatever is proper
 	int ret = flashIdentificationDevice();
 	if(ret==-1){
@@ -42,8 +54,15 @@ int flashMemInit(){   //Supposedly a set of routines to check if the memory/inte
 	//to fill in code
 }
 
-///Function to read the status bits of the flash
-///Instruction passed - 0x05 - Read status register
+/**
+ * @brief To read the status bits of the flash.
+ *
+ * This function reads the status bits of the flash from the status register
+ * It uses the instruction 0x05 to read the status register.
+ * 
+ * @see wait_for_tcf(), set_qspi_shakti32()
+ * @return @a value on success, -1 otherwise.
+ */
 int flashReadStatusRegister(){
     printf("\tReading the Status bits of the Flash\n");
     set_qspi_shakti32(dlr,4);
