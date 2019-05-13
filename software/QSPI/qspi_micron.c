@@ -2,12 +2,20 @@
 
 #define MEM_TYPE_N25Q256_ID 0x20BA1910
 
+#define READ_ID 0x9E		//Read ID of memory device
+#define READ_SR 0x05		//Read status register
+#define WR_EN 0x06		//Write enable
+#define FOURBYTE_AD 0xB7	//Enter 4 byte addressing mode
+#define WR_VCR 0x81		//Write Volatile configuration register
+#define FAST_RD 0x0B		//Fast read
+#define QDFAST_RD 0xEB		//Quad I/O fast read
+
 ///Function to discover the presence of memory device
 ///Instruction passed - 0x9E - Read ID of memory device
 int flashIdentificationDevice(){
 	printf("\tReading the ID register and discovering the Flash Device\n");
 	set_qspi_shakti32(dlr,4);
-    set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDRD)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(0x9E)|CCR_DMODE(SINGLE)));
+    set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDRD)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(READ_ID)|CCR_DMODE(SINGLE)));
     int status = 0; // Useless Variable but still!!!!
     int ret = wait_for_tcf(status);
     int value = get_qspi_shakti(dr);
@@ -39,7 +47,7 @@ int flashMemInit(){   //Supposedly a set of routines to check if the memory/inte
 int flashReadStatusRegister(){
     printf("\tReading the Status bits of the Flash\n");
     set_qspi_shakti32(dlr,4);
-    set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDRD)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(0x05)|CCR_DMODE(SINGLE)));
+    set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDRD)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(READ_SR)|CCR_DMODE(SINGLE)));
     int status = 0;
     int ret = wait_for_tcf(status);
     waitfor(100);
@@ -53,16 +61,16 @@ int flashReadStatusRegister(){
     	return value;
 }
 
-///
+///Function not used anywhere in the code
 int flashReadFlagRegister(){
 	return 0;
 }
 
-///Function to enable write
+///Function to enable single write mode
 ///Instruction passed - 0x06 - Write enable
 int flashWriteEnable(){
     printf("\tWrite Enable\n");
-    set_qspi_shakti32(ccr,(CCR_IMODE(SINGLE)|CCR_INSTRUCTION(0x06)));
+    set_qspi_shakti32(ccr,(CCR_IMODE(SINGLE)|CCR_INSTRUCTION(WR_EN)));
     int ret = wait_for_tcf(0); //Indicating the completion of command -- Currently polling
     reset_interrupt_flags();
     return ret; 
@@ -76,7 +84,7 @@ int flashEnable4ByteAddressingMode(){  //Enable 4-byte addressing Mode and read 
         return -1;
     }
     waitfor(100);
-    set_qspi_shakti32(ccr,(CCR_IMODE(SINGLE)|CCR_INSTRUCTION(0xB7)));
+    set_qspi_shakti32(ccr,(CCR_IMODE(SINGLE)|CCR_INSTRUCTION(FOURBYTE_AD)));
     int status =0; 
     int ret = wait_for_tcf(status);
     reset_interrupt_flags();
@@ -137,7 +145,7 @@ int flashWriteVolatileConfigReg(int value){
     printf("\t Setting Volatile Configuration Register with the Value: %08x",value);
     set_qspi_shakti32(dlr,DL(1));
     set_qspi_shakti8(dr,value);  //The value to be written into the VECR register to enable XIP. Indicating XIP to operate in Quad Mode
-    set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDWR)|CCR_DMODE(SINGLE)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(0x81)));
+    set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDWR)|CCR_DMODE(SINGLE)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(WR_VCR)));
     waitfor(50);
     int status=0;
     int ret = wait_for_tcf(status);
@@ -150,8 +158,11 @@ int flashWriteVolatileConfigReg(int value){
 
 int main()
 {
+	
+///Sets the flash memory size, chip select high time, prescaler and FIFO threshold
+///Enables all the interrupts
     qspi_init(27,0,3,1,15);
-    uart_init();
+    uart_init();		//Function not defined anywhere, header file UART.h should be used
     int ar_read,i,j;
     waitfor(100); //Time for Micron to start, maybe?
     if(flashMemInit()) //Because of STARTUPE2 primitive, the run fails for the first time it is programmed since three clock cycles are skipped. Run again
@@ -170,18 +181,20 @@ int main()
 
     ar_read=0;
     for(i=0;i<512;++i){
-        flashReadSingleSPI(7,ar_read,0x0B,4,THREEBYTE);
+        flashReadSingleSPI(7,ar_read,FAST_RD,4,THREEBYTE);
         waitfor(100);
         ar_read+=4;
     }
 
     printf("\n\n\n");
 
+    //Scenario-2
+	
     printf("\t Quad SPI read, Three Byte Address with 9!! Dummy Cycles 0XEB as the instruction\n");
 
     ar_read=0;
     for(i=0;i<512;++i){
-        flashReadQuadSPI(9,ar_read,0xEB,4,THREEBYTE);
+        flashReadQuadSPI(9,ar_read,QDFAST_RD,4,THREEBYTE);
         waitfor(100);
         ar_read+=4;
     }
