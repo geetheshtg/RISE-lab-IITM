@@ -34,7 +34,7 @@ int flashMemInit(){   //Supposedly a set of routines to check if the memory/inte
 	//to fill in code
 }
 
-///Function to read the status bit of the flash
+///Function to read the status bits of the flash
 ///Instruction passed - 0x05 - Read status register
 int flashReadStatusRegister(){
     printf("\tReading the Status bits of the Flash\n");
@@ -58,7 +58,8 @@ int flashReadFlagRegister(){
 	return 0;
 }
 
-
+///Function to enable write
+///Instruction passed - 0x06 - Write enable
 int flashWriteEnable(){
     printf("\tWrite Enable\n");
     set_qspi_shakti32(ccr,(CCR_IMODE(SINGLE)|CCR_INSTRUCTION(0x06)));
@@ -67,8 +68,9 @@ int flashWriteEnable(){
     return ret; 
 }
 
+///Function to enable 4 byte addressing mode in memory device
+///Instruction passed - 0xB7 - Enter 4 byte addressing mode
 int flashEnable4ByteAddressingMode(){  //Enable 4-byte addressing Mode and read the status to verify that it has happened correctly
-
     if(flashWriteEnable()){
         printf("\t Write Enable Failed \n");
         return -1;
@@ -88,7 +90,10 @@ int flashEnable4ByteAddressingMode(){  //Enable 4-byte addressing Mode and read 
         printf("\t 4-byte Addressing mode not Enabled\n");
 }
 
-
+///Function called in main(), necessary instruction has to be passed in order to work properly
+///Function call from main() - flashReadSingleSPI(7,ar_read,0x0B,4,THREEBYTE);
+///Instruction passed - 0x0B - Fast read
+///Will enable the flash memory in Single SPI fast read mode
 int flashReadSingleSPI(int dummy_cycles, int read_address, int instruction, int data_words, int adsize){
     set_qspi_shakti32(dlr,data_words);
     set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDRD)|CCR_DMODE(SINGLE)|CCR_DCYC(dummy_cycles)|CCR_ADMODE(SINGLE)|CCR_IMODE(SINGLE)|CCR_ADSIZE(adsize)|CCR_INSTRUCTION(instruction)));
@@ -105,6 +110,10 @@ int flashReadSingleSPI(int dummy_cycles, int read_address, int instruction, int 
     return value;
 }
 
+///Function called in main(), instruction and other parameters need to be passed
+///Function call from main() - flashReadQuadSPI(9,ar_read,0xEB,4,THREEBYTE);
+///Instruction passed - 0xEB - Quad I/O fast read
+///Will enable the flash memory in Quad SPI fast read mode
 int flashReadQuadSPI(int dummy_cycles, int read_address, int instruction, int data_words, int adsize){
      set_qspi_shakti32(dlr,data_words);
      set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDRD)|CCR_DMODE(QUAD)|CCR_DCYC(dummy_cycles)|CCR_ADSIZE(adsize)|CCR_ADMODE(QUAD)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(instruction)));
@@ -121,6 +130,9 @@ int flashReadQuadSPI(int dummy_cycles, int read_address, int instruction, int da
      return value;
  }
 
+///Function to enable XIP by writing volatile configuration register
+///Passes value 0x93 into the data register which enables Quad I/O mode with 8 dummy cycles in SDR mode
+///Instruction passed - 0x81 - Write volatile configuration register
 int flashWriteVolatileConfigReg(int value){
     printf("\t Setting Volatile Configuration Register with the Value: %08x",value);
     set_qspi_shakti32(dlr,DL(1));
