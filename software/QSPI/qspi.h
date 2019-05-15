@@ -6,6 +6,10 @@
 
 #define DEF_TIMEOUT 60
 
+/** 
+ * @def READ_ID 
+ * To read the ID of memory device
+ */
 
 #define MEM_TYPE_N25Q256_ID 0x20BA1910
 
