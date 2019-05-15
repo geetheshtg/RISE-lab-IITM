@@ -1,14 +1,14 @@
 #include "qspi.h"
 
-#define MEM_TYPE_N25Q256_ID 0x20BA1910
+// #define MEM_TYPE_N25Q256_ID 0x20BA1910
 
-#define READ_ID 0x9E		/**Read ID of memory device*/
-#define READ_SR 0x05		/**Read status register*/
-#define WR_EN 0x06		/**Write enable*/
-#define FOURBYTE_AD 0xB7	/**Enter 4 byte addressing mode*/
-#define WR_VCR 0x81		/**Write Volatile configuration register*/
-#define FAST_RD 0x0B		/**Fast read*/
-#define QDFAST_RD 0xEB		/**Quad I/O fast read*/
+// #define READ_ID 0x9E		/**Read ID of memory device*/
+// #define READ_SR 0x05		/**Read status register*/
+// #define WR_EN 0x06		/**Write enable*/
+// #define FOURBYTE_AD 0xB7	/**Enter 4 byte addressing mode*/
+// #define WR_VCR 0x81		/**Write Volatile configuration register*/
+// #define FAST_RD 0x0B		/**Fast read*/
+// #define QDFAST_RD 0xEB		/**Quad I/O fast read*/
 
 /**
  * @brief Function to discover the presence and working of memory device.
