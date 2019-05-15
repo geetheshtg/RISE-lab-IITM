@@ -110,21 +110,63 @@ int* lprt     =      (const int*) LPRT;	//low power timeout
 int* startmm  =      (const int*) STARTMM;
 int* endmm    =      (const int*) ENDMM;
 
+/**
+ * @brief Set the value at a memory location.
+ * 
+ * This function is used in several places to set different modes in the board by enabling various bits and passing certain instructions.
+ * This function is particularly used for 32 bit memories.
+ * 
+ * @param *addr Address of the memory location 
+ * @param val Value to be stored in the location
+ *
+ * @return Void.
+ */
 void set_qspi_shakti32(int* addr, int val)
 {
     *addr = val;
 }
 
+/**
+ * @brief Set the value at a memory location.
+ *
+ * This function is used in several places to set different modes in the board by enabling various bits and passing certain instructions.
+ * This function is particularly used for 16 bit memories.
+ * 
+ * @param *addr Address of the memory location 
+ * @param val Value to be stored in the location
+ *
+ * @return Void.
+ */
 void set_qspi_shakti16(int16_t* addr, int16_t val)
 {
     *addr = val;
 }
 
+/**
+ * @brief Set the value at a memory location.
+ *
+ * This function is used in several places to set different modes in the board by enabling various bits and passing certain instructions.
+ * This function is particularly used for 8 bit memories.
+ * 
+ * @param *addr Address of the memory location 
+ * @param val Value to be stored in the location
+ *
+ * @return Void.
+ */
 void set_qspi_shakti8(char* addr, char val)
 {
     *addr= val;
 }
 
+/**
+ * @brief Get the value at a memory location.
+ *
+ * This function is used to get the value from a particular address of a memory location.
+ * 
+ * @param *addr Address of the memory location 
+ *
+ * @return @a *addr The value at @a addr memory location.
+ */
 int get_qspi_shakti(int* addr)
 {
  return *addr;
@@ -158,10 +200,27 @@ void qspi_init(int fsize, int csht, int prescaler, int enable_interrupts, int ft
     set_qspi_shakti32(cr,(CR_PRESCALER(prescaler)|int_vector|CR_FTHRES(fthreshold)|CR_EN));
 }
 
+/**
+ * @brief Clear all the flags from the status register.
+ *
+ * Thi function is used to disable all the flags which were enabled when different modes were set
+ *
+ * @return Void.
+ */
 void reset_interrupt_flags(){
     set_qspi_shakti32(fcr,(FCR_CTOF|FCR_CSMF|FCR_CTCF|FCR_CTEF)); //Resetting all the flags
 }
 
+/**
+ * @brief Waits for a command to complete execution.
+ *
+ * This function is used to check if the memory device is feasible to complete an instruction.
+ * 
+ * @param *addr Address of the memory location 
+ * @param val Value to be stored in the location
+ *
+ * @return Void.
+ */
 int wait_for_tcf(int status){
     int timeout = DEF_TIMEOUT; 
 
