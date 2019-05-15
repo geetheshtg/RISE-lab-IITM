@@ -6,6 +6,17 @@
 
 #define DEF_TIMEOUT 60
 
+
+#define MEM_TYPE_N25Q256_ID 0x20BA1910
+
+#define READ_ID 0x9E		/**Read ID of memory device*/
+#define READ_SR 0x05		/**Read status register*/
+#define WR_EN 0x06		/**Write enable*/
+#define FOURBYTE_AD 0xB7	/**Enter 4 byte addressing mode*/
+#define WR_VCR 0x81		/**Write Volatile configuration register*/
+#define FAST_RD 0x0B		/**Fast read*/
+#define QDFAST_RD 0xEB		/**Quad I/O fast read*/
+
 //Memory Maps
 #define CR      0x11800 	//!Control register
 #define DCR     0x11804		//!Device configuration register
@@ -252,7 +263,7 @@ int wait_for_tcf(int status){
  */
 int micron_write_enable(int status){
     printf("\tWrite Enable\n");
-    set_qspi_shakti32(ccr,(CCR_ADSIZE(FOURBYTE)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(0x06)));
+    set_qspi_shakti32(ccr,(CCR_ADSIZE(FOURBYTE)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(WR_EN)));
     int ret = wait_for_tcf(status); //Indicating the completion of command -- Currently polling
     printf("Status : %d dcr : %d cr: %d ccr: %d \n",status,*dcr,*cr,*ccr);
     return ret;
@@ -272,7 +283,7 @@ int micron_write_enable(int status){
  */
 int micron_enable_4byte_addressing(int status){
     printf("\t Enable 4 byte address \n");
-    set_qspi_shakti32(ccr,(CCR_ADSIZE(FOURBYTE)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(0xB7)));
+    set_qspi_shakti32(ccr,(CCR_ADSIZE(FOURBYTE)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(FOURBYTE_AD)));
     int ret = wait_for_tcf(status); //Indicating the completion of command -- Currently polling
     printf("Status : %d dcr : %d cr: %d ccr: %d \n",status,*dcr,*cr,*ccr);
     return ret;
@@ -282,7 +293,7 @@ int micron_configure_xip_volatile(int status, int value){
     printf("\tWrite Volatile Configuration Register\n");
     set_qspi_shakti32(dlr,DL(1));
     set_qspi_shakti8(dr,value);  //The value to be written into the VECR register to enable XIP. Indicating XIP to operate in Quad Mode
-    set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDWR)|CCR_DMODE(SINGLE)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(0x81)));
+    set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDWR)|CCR_DMODE(SINGLE)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(WR_VCR)));
     waitfor(50);
     int ret = wait_for_tcf(status);
     printf("Status : %d dcr : %d cr : %d ccr : %d dlr: %d dr: %d\n",status,*dcr,*cr,*ccr,*dlr,*dr);
@@ -307,14 +318,14 @@ int micron_disable_xip_volatile(int status, int value){
 int micron_read_id_cmd(int status, int value){
     printf("\tRead ID Command to see if the Protocol is Proper\n");
     set_qspi_shakti32(dlr,4);
-    set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDRD)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(0x9E)|CCR_DMODE(SINGLE)));
+    set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDRD)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(READ_ID)|CCR_DMODE(SINGLE)));
     int ret = wait_for_tcf(status);
     value = get_qspi_shakti(dr);
     printf("Read ID: %08x",value);
     return ret;
 }
 
-int micron_read_configuration_register(int status, int value){
+/*int micron_read_configuration_register(int status, int value){
     printf("\tRead ID Command to see if the Protocol is Proper\n");
     set_qspi_shakti32(dlr,4);
     set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDRD)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(0xBE)|CCR_DMODE(SINGLE)));
@@ -322,6 +333,6 @@ int micron_read_configuration_register(int status, int value){
     value = get_qspi_shakti(dr);
     printf("Configuration Register Value: %08x",value);
     return ret;
-}
+}*/
 
 #endif
