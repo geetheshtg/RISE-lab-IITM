@@ -2,13 +2,13 @@
 
 #define MEM_TYPE_N25Q256_ID 0x20BA1910
 
-#define READ_ID 0x9E		//Read ID of memory device
-#define READ_SR 0x05		//Read status register
-#define WR_EN 0x06		//Write enable
-#define FOURBYTE_AD 0xB7	//Enter 4 byte addressing mode
-#define WR_VCR 0x81		//Write Volatile configuration register
-#define FAST_RD 0x0B		//Fast read
-#define QDFAST_RD 0xEB		//Quad I/O fast read
+#define READ_ID 0x9E		/**Read ID of memory device*/
+#define READ_SR 0x05		/**Read status register*/
+#define WR_EN 0x06		/**Write enable*/
+#define FOURBYTE_AD 0xB7	/**Enter 4 byte addressing mode*/
+#define WR_VCR 0x81		/**Write Volatile configuration register*/
+#define FAST_RD 0x0B		/**Fast read*/
+#define QDFAST_RD 0xEB		/**Quad I/O fast read*/
 
 /**
  * @brief Function to discover the presence and working of memory device.
@@ -80,13 +80,21 @@ int flashReadStatusRegister(){
     	return value;
 }
 
-///Function not used anywhere in the code
+/**Function not used anywhere in the code*/
 int flashReadFlagRegister(){
 	return 0;
 }
 
-///Function to enable single write mode
-///Instruction passed - 0x06 - Write enable
+/**Function to enable single write mode*/
+/**Instruction passed - 0x06 - Write enable*/
+/**
+ * @brief To enable single write mode.
+ *
+ * This function passes the instruction 0x06 to the memory device which will Write enable it.
+ * 
+ * @see wait_for_tcf(), set_qspi_shakti32()
+ * @return an integer value returned by wait_for_tcf().
+ */
 int flashWriteEnable(){
     printf("\tWrite Enable\n");
     set_qspi_shakti32(ccr,(CCR_IMODE(SINGLE)|CCR_INSTRUCTION(WR_EN)));
@@ -95,8 +103,17 @@ int flashWriteEnable(){
     return ret; 
 }
 
-///Function to enable 4 byte addressing mode in memory device
-///Instruction passed - 0xB7 - Enter 4 byte addressing mode
+/**Function to enable 4 byte addressing mode in memory device*/
+/**Instruction passed - 0xB7 - Enter 4 byte addressing mode*/
+/**
+ * @brief To read the status bits of the flash.
+ *
+ * This function enables 4 byte addressing mode in the memory device
+ * It uses the instruction 0xB7 to enter 4 byte addressing mode.
+ * 
+ * @see wait_for_tcf(), set_qspi_shakti32()
+ * @return -1 on failure.
+ */
 int flashEnable4ByteAddressingMode(){  //Enable 4-byte addressing Mode and read the status to verify that it has happened correctly
     if(flashWriteEnable()){
         printf("\t Write Enable Failed \n");
@@ -117,10 +134,26 @@ int flashEnable4ByteAddressingMode(){  //Enable 4-byte addressing Mode and read 
         printf("\t 4-byte Addressing mode not Enabled\n");
 }
 
-///Function called in main(), necessary instruction has to be passed in order to work properly
-///Function call from main() - flashReadSingleSPI(7,ar_read,0x0B,4,THREEBYTE);
-///Instruction passed - 0x0B - Fast read
-///Will enable the flash memory in Single SPI fast read mode
+/**Function called in main(), necessary instruction has to be passed in order to work properly*/
+/**Function call from main() - flashReadSingleSPI(7,ar_read,0x0B,4,THREEBYTE);*/
+/**Instruction passed - 0x0B - Fast read*/
+/**Will enable the flash memory in Single SPI fast read mode*/
+/**
+ * @brief To read data in single SPI mode.
+ *
+ * This function passes various parameters that are needed to read data in single SPI mode
+ * The instruction 0x0B is to be passed for entering Single SPI fast read mode.
+ * 
+ * @see wait_for_tcf(), set_qspi_shakti32()
+ *
+ * @param dummy_cycles Number of dummy cycles.
+ * @param read_address Address from which data is to be read.
+ * @param instruction Instruction to be passed to the memory device.
+ * @param data_words Length of the data to be passed into DLR.
+ * @param adsize Size of the address.
+ *
+ * @return @a value on success,-1 on failure.
+ */
 int flashReadSingleSPI(int dummy_cycles, int read_address, int instruction, int data_words, int adsize){
     set_qspi_shakti32(dlr,data_words);
     set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDRD)|CCR_DMODE(SINGLE)|CCR_DCYC(dummy_cycles)|CCR_ADMODE(SINGLE)|CCR_IMODE(SINGLE)|CCR_ADSIZE(adsize)|CCR_INSTRUCTION(instruction)));
@@ -141,6 +174,22 @@ int flashReadSingleSPI(int dummy_cycles, int read_address, int instruction, int 
 ///Function call from main() - flashReadQuadSPI(9,ar_read,0xEB,4,THREEBYTE);
 ///Instruction passed - 0xEB - Quad I/O fast read
 ///Will enable the flash memory in Quad SPI fast read mode
+/**
+ * @brief To read data in Quad SPI mode.
+ *
+ * This function passes various parameters that are needed to read data in quad SPI mode
+ * The instruction 0xEB is to be passed for entering Ouad I/O fast read mode.
+ * 
+ * @see wait_for_tcf(), set_qspi_shakti32()
+ *
+ * @param dummy_cycles Number of dummy cycles.
+ * @param read_address Address from which data is to be read.
+ * @param instruction Instruction to be passed to the memory device.
+ * @param data_words Length of the data to be passed into DLR.
+ * @param adsize Size of the address.
+ *
+ * @return @a value on success,-1 on failure.
+ */
 int flashReadQuadSPI(int dummy_cycles, int read_address, int instruction, int data_words, int adsize){
      set_qspi_shakti32(dlr,data_words);
      set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDRD)|CCR_DMODE(QUAD)|CCR_DCYC(dummy_cycles)|CCR_ADSIZE(adsize)|CCR_ADMODE(QUAD)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(instruction)));
@@ -160,6 +209,16 @@ int flashReadQuadSPI(int dummy_cycles, int read_address, int instruction, int da
 ///Function to enable XIP by writing volatile configuration register
 ///Passes value 0x93 into the data register which enables Quad I/O mode with 8 dummy cycles in SDR mode
 ///Instruction passed - 0x81 - Write volatile configuration register
+/**
+ * @brief To write into volatile configuration register and enable XIP.
+ *
+ * This function passes the value 0x93, into the data register which enables Quad I/O mode with 8 dummy cycles in SDR mode
+ * The instruction 0x81 is to be passed to write volatile configuration register.
+ * 
+ * @see wait_for_tcf(), set_qspi_shakti32(), set_qspi_shakti8().
+ *
+ * @return @a value on success,-1 on failure.
+ */
 int flashWriteVolatileConfigReg(int value){
     printf("\t Setting Volatile Configuration Register with the Value: %08x",value);
     set_qspi_shakti32(dlr,DL(1));
