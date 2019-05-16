@@ -4,9 +4,10 @@ Installation procedure:
 In your terminal, to install doxygen and it's GUI:
 
 sudo apt-get install doxygen
+
 sudo apt-get install graphviz
 
-To open the doxygen GUI:
+To open the doxygen GUI, enter command:
 
 doxywizard
 
