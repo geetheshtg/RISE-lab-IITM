@@ -100,7 +100,7 @@
 //!This bit will enable the QUADSPI
 #define CR_EN             (1<<0 )
 
-//!Bit vectors for DCR 
+//Bit vectors for DCR 
 //!Flash memory size. This field defines the size of external memory using the following formula. Number of bytes in Flash memory = 2[FSIZE+1] FSIZE+1 is effectively the number of address bits required to address the Flash memory. The Flash memory capacity can be up to 4GB (addressed using 32 bits) in indirect mode, but the addressable space in memory-mapped mode is limited to 256MB. If DFM = 1, FSIZE indicates the total capacity of the two Flash memories together. This field can be modified only when BUSY = 0.
 #define DCR_FSIZE(x)       (x<<16)
 //!This macro is not used in the code. Probably this can be used to mention the number of bytes taken to set the mode.
@@ -110,7 +110,7 @@
 //!Clock mode. Indicates the level that clk takes between command
 #define DCR_CKMODE         0x1 	  
 
-//!Bit vectors for status register
+//Bit vectors for status register
 //!FIFO level. This field gives the number of valid bytes which are being held in the FIFO. FLEVEL = 0 when the FIFO is empty, and 16 when it is full. In memory-mapped mode and in automatic status polling mode, FLEVEL is zero.
 #define SR_FLEVEL(x)      (x<<8)
 //!Timeout flag. This bit is 1 when timeout occurs. It is cleared by writing 1 to CTOF
@@ -124,7 +124,7 @@
 //!Transfer error flag. This bit is set in indirect mode when an invalid address is being accessed in indirect mode. It is cleared by writing 1 to CTEF
 #define SR_TEF            (1<<0)
 
-//!Bit vectors for flag clear register 
+//Bit vectors for flag clear register 
 //!Clear timeout flag. Writing 1 clears the TOF flag in the QUADSPI_SR register
 #define FCR_CTOF (1<<4)
 //!Clear status match flag. Writing 1 clears the SMF flag in the QUADSPI_SR register
@@ -134,11 +134,11 @@
 //!Clear transfer error flag. Writing 1 clears the TEF flag in the QUADSPI_SR register
 #define FCR_CTEF (1<<0)
 
-//!Bit vectors for DLR
+//Bit vectors for DLR
 //!Useless -- but for better readability of the code
 #define DL(x)  x  
 
-//!Bit vectors for CCR
+//Bit vectors for CCR
 //!Double data rate mode. This bit sets the DDR mode for the address, alternate byte and data phase. This field can be written only when BUSY = 0.
 #define CCR_DDRM                   (1<<31) 
 //!DDR hold. Delay the data output by 1/4 of the QUADSPI output clock cycle in DDR mode. This feature is only active in DDR mode. This field can be written only when BUSY = 0.
