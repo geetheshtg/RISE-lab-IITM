@@ -65,8 +65,8 @@
 #define STARTMM 0x90000000
 //!Ending point of memory
 #define ENDMM   0x9FFFFFFF
-//!Defines for configuring the registers at ease
-//!Bit vectors for all the parameters in the CR
+//Defines for configuring the registers at ease
+//Bit vectors for all the parameters in the CR
 //!Sets the clock prescaler
 #define CR_PRESCALER(x)   (x<<24)
 //!Polling match mode. This bit indicates which method should be used for determining a match during automatic polling mode..modified only when BUSY=0
