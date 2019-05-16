@@ -22,6 +22,8 @@
  * Instruction to enable Single I/O fast read mode
  * @def QDFAST_RD 
  * Instruction to enable Quad I/O fast read mode
+ * @def XIP_VAL
+ * The value to be written in volatile configuration register to enable XIP
  */
 
 #define MEM_TYPE_N25Q256_ID 0x20BA1910
@@ -32,7 +34,8 @@
 #define FOURBYTE_AD 0xB7	
 #define WR_VCR 0x81		
 #define FAST_RD 0x0B		
-#define QDFAST_RD 0xEB		
+#define QDFAST_RD 0xEB	
+#define XIP_VAL 0x93
 
 //Memory Maps
 //!Memory location of Control register
