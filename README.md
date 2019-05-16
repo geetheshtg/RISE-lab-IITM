@@ -1,4 +1,4 @@
-#Details
+# Details
 The file with documented commands is given here software->QSPI->qspi_micron.c
 To view the documentation of the file, download the repository and run it using doxygen. Follow the procedure given below to run doxygen.
 
