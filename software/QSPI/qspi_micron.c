@@ -187,11 +187,11 @@ int flashReadSingleSPI(int dummy_cycles, int read_address, int instruction, int 
  * 
  * @see wait_for_tcf(), set_qspi_shakti32()
  *
- * @param dummy_cycles Number of dummy cycles.
- * @param read_address Address from which data is to be read.
- * @param instruction Instruction to be passed to the memory device.
- * @param data_words Length of the data to be passed into DLR.
- * @param adsize Size of the address.
+ * @param[in] dummy_cycles Number of dummy cycles.
+ * @param[in] read_address Address from which data is to be read.
+ * @param[in] instruction Instruction to be passed to the memory device.
+ * @param[in] data_words Length of the data to be passed into DLR.
+ * @param[in] adsize Size of the address.
  *
  * @return @a value on success,-1 on failure.
  */
