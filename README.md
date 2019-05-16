@@ -1,5 +1,6 @@
 # Details
-The file with documented commands is given at RISE-lab-IITM/software/QSPI/qspi_micron.c.
+The file with documented commands is given at RISE-lab-IITM/software/QSPI/qspi_micron.c. The header file qspi.h also contains documentation commands. Check that out too.
+
 
 To view the documentation of the file, download the repository and run it using doxygen. 
 Follow the procedure given below to run doxygen.
