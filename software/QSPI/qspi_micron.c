@@ -238,12 +238,34 @@ int flashWriteVolatileConfigReg(int value){
     return ret;
 }
  
-
+/**
+ * @brief Program to test the working of QUADSPI
+ * 
+ * This program focuses mainly on the working of QUADSPI by making some initial conditions and then executes 2 scenarios
+ *
+ * In the first step, we set the flash memory size, chip select high time, prescaler and FIFO threshold to the registers.
+ * All the interrupts are enabled. After this, it is checked if the flash memory is working properly.
+ *
+ * Scenarios:
+ *
+ * 1. Fast read command (Single SPI Read) working with 7 Dummy cycles : 
+ * 
+ * This scenario is just to test the working of fast read in SPI mode. This is done using Three byte address size and it works with 7 dummy cycles. The instruction passed to enable fast read mode is 0x0B.
+ * 
+ * 2. Quad fast read I/O (Quad SPI Read) working with 9 Dummy cycles
+ *
+ * Similar to the previous scenario, here the device is enabled in Quad I/O fast read mode with 3 bytes address size and 9 dummy cycles. The instruction passed to enable Quad I/O fast read mode is 0xEB.
+ *
+ * After these two scenarios, now the device is set in QUADSPI mode. The next step is to enable XIP and see if the QUADSPI mode works properly by writing and verifying a data from it.
+ * To enable XIP, the volatile configuration register has to be written with value 0x93 and to write the VCR, the instruction 0x0x81 is passed.
+ * Once the VCR is written with this value, a dummy confirmation bit is created to ensure the enabling of XIP. This bit can be used to enable or disable XIP.
+ * Now we check if the data can be properly read from the data register. The data read is put into a config_string and verified.
+ * 
+ * Then, XIP is enabled in memory mapped mode without passing any instruction. Here, a loop is performed where the read data from the data register is put into the config_string bit by bit and finally this data is also printed and verified.
+ */
 int main()
 {
 	
-///Sets the flash memory size, chip select high time, prescaler and FIFO threshold
-///Enables all the interrupts
     qspi_init(27,0,3,1,15);
     uart_init();		//Function not defined anywhere, header file UART.h should be used
     int ar_read,i,j;
@@ -273,7 +295,7 @@ int main()
 
     //Scenario-2
 	
-    printf("\t Quad SPI read, Three Byte Address with 9!! Dummy Cycles 0XEB as the instruction\n");
+    printf("\t Quad SPI read, Three Byte Address with 9 Dummy Cycles 0XEB as the instruction\n");
 
     ar_read=0;
     for(i=0;i<512;++i){
@@ -285,7 +307,7 @@ int main()
     printf("\n\n\n");
 
     //XIP Mode
-    int xip_value = 0x93;
+    int xip_value = XIP_VAL;
     if(flashWriteVolatileConfigReg(xip_value)){
         printf("\t Volatile Configuration Register not Set -- Diagnose\n");
         return -1;
