@@ -233,8 +233,8 @@ int* endmm    =      (const int*) ENDMM;
  * This function is used in several places to set different modes in the board by enabling various bits and passing certain instructions.
  * This function is particularly used for 32 bit memories.
  * 
- * @param *addr Address of the memory location 
- * @param val Value to be stored in the location
+ * @param[out] *addr Address of the memory location 
+ * @param[in] val Value to be stored in the location
  *
  * @return Void.
  */
@@ -249,8 +249,8 @@ void set_qspi_shakti32(int* addr, int val)
  * This function is used in several places to set different modes in the board by enabling various bits and passing certain instructions.
  * This function is particularly used for 16 bit memories.
  * 
- * @param *addr Address of the memory location 
- * @param val Value to be stored in the location
+ * @param[out] *addr Address of the memory location 
+ * @param[in] val Value to be stored in the location
  *
  * @return Void.
  */
@@ -265,8 +265,8 @@ void set_qspi_shakti16(int16_t* addr, int16_t val)
  * This function is used in several places to set different modes in the board by enabling various bits and passing certain instructions.
  * This function is particularly used for 8 bit memories.
  * 
- * @param *addr Address of the memory location 
- * @param val Value to be stored in the location
+ * @param[out] *addr Address of the memory location 
+ * @param[in] val Value to be stored in the location
  *
  * @return Void.
  */
@@ -280,7 +280,7 @@ void set_qspi_shakti8(char* addr, char val)
  *
  * This function is used to get the value from a particular address of a memory location.
  * 
- * @param *addr Address of the memory location 
+ * @param[in] *addr Address of the memory location 
  *
  * @return @a *addr The value at @a addr memory location.
  */
@@ -295,7 +295,7 @@ int get_qspi_shakti(int* addr)
  * This function uses a loop which does no particular operation and simply delays the program for the previous instruction to execute completely.
  * It uses an unsigned integer variable @a time which gets incremented i the loop till it reaches the given time to be delayed.
  *
- * @param secs The amount of time by which the program should be delayed.
+ * @param[in] secs The amount of time by which the program should be delayed.
  *
  * @return Void 
  */
@@ -312,11 +312,11 @@ void waitfor(unsigned int secs) {
  * 
  * @see set_qspi_shakti32().
  *
- * @param fsize Flash memory size.
- * @param csht Chip select high time.
- * @param prescaler Clock prescaler.
- * @param enable_interrupts Will enable interrupts 
- * @param fthreshold FIFO threshold
+ * @param[in] fsize Flash memory size.
+ * @param[in] csht Chip select high time.
+ * @param[in] prescaler Clock prescaler.
+ * @param[in] enable_interrupts Will enable interrupts 
+ * @param[in] fthreshold FIFO threshold
  *
  * @return Void.
  */
@@ -345,7 +345,7 @@ void reset_interrupt_flags(){
  * It uses a variable @a timeout which will initially be assigned to value @a DEF_TIMEOUT and it gets decremented inside a loop where the status of the device will be updated at every step and the updated status will be stored in @a status.
  * In case, the request gets timed out i.e if @a timeout becomes 0 then the function 
  * 
- * @param *status Status is used just as a variable and it will get updated at each cycle of the loop. 
+ * @param[out] status Status is used just as a variable and it will get updated at each cycle of the loop. 
  *
  * @see set_qspi_shakti32()
  *
@@ -375,7 +375,7 @@ int wait_for_tcf(int status){
  * This function is used to check if the memory device can be used to write data into it.
  * This function sets the Communication configuration register in single write mode and waits for the completion of execution.
  * 
- * @param status Status of the memory device
+ * @param[in] status Status of the memory device
  *
  * @see set_qspi_shakti32(), wait_for_tcf()
  *
@@ -395,7 +395,7 @@ int micron_write_enable(int status){
  * This function is used to check if 4 byte memory addressing can be enabled
  * The instruction passed is 0xB7.
  * 
- * @param status Status of the memory device
+ * @param[in] status Status of the memory device
  *
  * @see set_qspi_shakti32(), wait_for_tcf()
  *
@@ -417,8 +417,8 @@ int micron_enable_4byte_addressing(int status){
  * In order to write the volatile configuration register, the memory device is passed with instruction 0x81.
  * To enable XIP the value 0x93 has to be written into the volatile configuration register.
  *
- * @param status Status of the memory device
- * @param value The value to be written into the VECR register to enable XIP. Indicating XIP to operate in Quad Mode.
+ * @param[out] status Status of the memory device
+ * @param[in] value The value to be written into the VECR register to enable XIP. Indicating XIP to operate in Quad Mode.
  *
  * @see set_qspi_shakti8(), set_qspi_shakti32(), wait_for_tcf()
  *
