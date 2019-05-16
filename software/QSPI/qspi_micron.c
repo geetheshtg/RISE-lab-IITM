@@ -1,3 +1,7 @@
+/**
+ * @file qspi_micron.c
+ * This file checks the working of QUADSPI using XIP
+ */
 #include "qspi.h"
 
 // #define MEM_TYPE_N25Q256_ID 0x20BA1910
