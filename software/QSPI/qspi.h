@@ -1,3 +1,7 @@
+/** 
+ * @file qspi.h
+ * Header file for QUADSPI programs
+ */
 #ifndef QSPI_H
 #define QSPI_H
 
