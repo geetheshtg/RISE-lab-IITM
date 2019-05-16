@@ -4,6 +4,7 @@
 #include<stdlib.h>
 #include<stdint.h>
 
+//!Timeout value which will be used to check the completion of command execution.
 #define DEF_TIMEOUT 60
 
 /** 
@@ -25,13 +26,13 @@
 
 #define MEM_TYPE_N25Q256_ID 0x20BA1910
 
-#define READ_ID 0x9E		/**Read ID of memory device*/
-#define READ_SR 0x05		/**Read status register*/
-#define WR_EN 0x06		/**Write enable*/
-#define FOURBYTE_AD 0xB7	/**Enter 4 byte addressing mode*/
-#define WR_VCR 0x81		/**Write Volatile configuration register*/
-#define FAST_RD 0x0B		/**Fast read*/
-#define QDFAST_RD 0xEB		/**Quad I/O fast read*/
+#define READ_ID 0x9E		
+#define READ_SR 0x05		
+#define WR_EN 0x06		
+#define FOURBYTE_AD 0xB7	
+#define WR_VCR 0x81		
+#define FAST_RD 0x0B		
+#define QDFAST_RD 0xEB		
 
 //Memory Maps
 //!Memory location of Control register
@@ -194,19 +195,33 @@
 //!Alias for 0x3
 #define FOURBYTE  0x3 
 
-int* cr       =      (const int*) CR;	//!Control
-int* dcr      =      (const int*) DCR;	//!Device configuration
-int* sr       =      (const int*) SR;	//!status
-int* fcr      =      (const int*) FCR;	//!flag clear
-int* ccr      =      (const int*) CCR;	//!comminication configuration
-int* ar       =      (const int*) AR;	//!address
-int* abr      =      (const int*) ABR;	//!alternate bytes
-int* dr       =      (const int*) DR;	//!data
-int* dlr      =      (const int*) DLR;	//!data length
-int* psmkr    =      (const int*) PSMKR;//!polling status mask
-int* pir      =      (const int*) PIR;	//!polling interval
-int* lprt     =      (const int*) LPRT;	//!low power timeout
+//!Pointer to the memory location of Control register
+int* cr       =      (const int*) CR;	
+//!Pointer to the memory location of Device configuration register
+int* dcr      =      (const int*) DCR;	
+//!Pointer to the memory location of Status register
+int* sr       =      (const int*) SR;	
+//!Pointer to the memory location of Flag clear register
+int* fcr      =      (const int*) FCR;	
+//!Pointer to the memory location of Communication configuration register
+int* ccr      =      (const int*) CCR;	
+//!Pointer to the memory location of Address register
+int* ar       =      (const int*) AR;	
+//!Pointer to the memory location of Alternate bytes register
+int* abr      =      (const int*) ABR;	
+//!Pointer to the memory location of Data register
+int* dr       =      (const int*) DR;	
+//!Pointer to the memory location of Data length register
+int* dlr      =      (const int*) DLR;	
+//!Pointer to the memory location of Polling status mask register
+int* psmkr    =      (const int*) PSMKR;
+//!Pointer to the memory location of Polling interval register
+int* pir      =      (const int*) PIR;	
+//!Pointer to the memory location of Low power timeout register
+int* lprt     =      (const int*) LPRT;	
+//!Pointer to the starting memory location
 int* startmm  =      (const int*) STARTMM;
+//!Pointer to the ending memory location
 int* endmm    =      (const int*) ENDMM;
 
 /**
@@ -271,19 +286,28 @@ int get_qspi_shakti(int* addr)
  return *addr;
 }
 
+/**
+ * @brief Delay function
+ *
+ * This function uses a loop which does no particular operation and simply delays the program for the previous instruction to execute completely.
+ * It uses an unsigned integer variable @a time which gets incremented i the loop till it reaches the given time to be delayed.
+ *
+ * @param secs The amount of time by which the program should be delayed.
+ *
+ * @return Void 
+ */
 void waitfor(unsigned int secs) {
 	unsigned int time = 0;
 	while(time++ < secs);
 }
 
 /**
- * @brief Initializes various parameters needed by the board.
+ * @brief Initializes various parameters needed by the device on startup.
  *
- * This function only works when the board was successfully detected
- * by Soletta and a corresponding
- * pin multiplexer module was found.
- *
- * @see set_aspi_shakti32().
+ * This function enables all the interrupts by setting the interrupt bits in the Control register. It also sets the Flash emory size, Chip select high time and the clock mode in the Device configuration register.
+ * It also sets the Prescaler, FIFO threshold level and also enables the device from the Control register.
+ * 
+ * @see set_qspi_shakti32().
  *
  * @param fsize Flash memory size.
  * @param csht Chip select high time.
@@ -302,7 +326,8 @@ void qspi_init(int fsize, int csht, int prescaler, int enable_interrupts, int ft
 /**
  * @brief Clear all the flags from the status register.
  *
- * Thi function is used to disable all the flags which were enabled when different modes were set
+ * This function is used to disable all the flags which were enabled when different modes were set.
+ * This function simply enables the bits of the Flag clear register which will reset all the flags.
  *
  * @return Void.
  */
@@ -314,11 +339,14 @@ void reset_interrupt_flags(){
  * @brief Waits for a command to complete execution.
  *
  * This function is used to check if the memory device is feasible to complete an instruction.
+ * It uses a variable @a timeout which will initially be assigned to value @a DEF_TIMEOUT and it gets decremented inside a loop where the status of the device will be updated at every step and the updated status will be stored in @a status.
+ * In case, the request gets timed out i.e if @a timeout becomes 0 then the function 
  * 
- * @param *addr Address of the memory location 
- * @param val Value to be stored in the location
+ * @param *status Status is used just as a variable and it will get updated at each cycle of the loop. 
  *
- * @return Void.
+ * @see set_qspi_shakti32()
+ *
+ * @return 0 on success, -1 otherwise.
  */
 int wait_for_tcf(int status){
     int timeout = DEF_TIMEOUT; 
@@ -342,6 +370,7 @@ int wait_for_tcf(int status){
  * @brief To write enable by passing the instruction 0x06 to the memory device.
  *
  * This function is used to check if the memory device can be used to write data into it.
+ * This function sets the Communication configuration register in single write mode and waits for the completion of execution.
  * 
  * @param status Status of the memory device
  *
@@ -380,10 +409,13 @@ int micron_enable_4byte_addressing(int status){
 /**
  * @brief To enable XIP using Volatile configuration register.
  *
- * This function is used to write volatile configuration register with value 0x93 to enable XIP and the instruction passed to write the VCR is 0x81. 
+ * This function is used to enable XIP from the volatile configuration register.
  * 
+ * In order to write the volatile configuration register, the memory device is passed with instruction 0x81.
+ * To enable XIP the value 0x93 has to be written into the volatile configuration register.
+ *
  * @param status Status of the memory device
- * @param value The value to be written into the VECR register to enable XIP. Indicating XIP to operate in Quad Mode
+ * @param value The value to be written into the VECR register to enable XIP. Indicating XIP to operate in Quad Mode.
  *
  * @see set_qspi_shakti8(), set_qspi_shakti32(), wait_for_tcf()
  *
@@ -401,7 +433,7 @@ int micron_configure_xip_volatile(int status, int value){
     return ret;
 }
 
-int micron_disable_xip_volatile(int status, int value){
+/*int micron_disable_xip_volatile(int status, int value){
     printf("\tWrite Volatile Configuration Register to exit XIP\n");
     set_qspi_shakti32(cr,(CR_PRESCALER(0x3)|CR_TOIE|CR_TCIE|CR_TEIE|CR_SMIE|CR_FTIE|CR_ABORT|CR_EN));
     waitfor(30);
@@ -414,7 +446,19 @@ int micron_disable_xip_volatile(int status, int value){
     reset_interrupt_flags();
     return ret;
 }
+*/
 
+/**
+ * @brief Function to read the ID of memory device.
+ *
+ * This function sets the memory device to indirect read mode and it passes the instruction 0x9E which gives the ID of memory device. 
+ * This function also ensures the device to complete execution of a command.
+ * It will return 0 if device is detected and will proceed further execution, and will return -1 otherwise.
+ * 
+ * @see set_qspi_shakti32(), wait_for_tcf().
+ * 
+ * @return 0 on success, -1 otherwise.
+ */
 int micron_read_id_cmd(int status, int value){
     printf("\tRead ID Command to see if the Protocol is Proper\n");
     set_qspi_shakti32(dlr,4);
