@@ -11,10 +11,15 @@
 // #define QDFAST_RD 0xEB		/**Quad I/O fast read*/
 
 /**
- * @brief Function to discover the presence and working of memory device.
+ * @brief Function to ensure the working of memory device.
  *
- * This function passes the instruction 0x9E which reads the ID of memory device.
- *
+ * This function sets the memory device to indirect read mode and it passes the instruction 0x9E which gives the ID of memory device. 
+ * This function also ensures the device to complete execution of a command.
+ * The ID received from the memory device will then be checked with the original ID of the device.
+ * It will return 0 if device is detected and will proceed further execution, and will return 0 otherwise.
+ * 
+ * @see set_qspi_shakti32(), wait_for_tcf(), reset_interrupt_flags().
+ * 
  * @return 0 on success, -1 otherwise.
  */
 int flashIdentificationDevice(){
@@ -38,7 +43,7 @@ int flashIdentificationDevice(){
 /**
  * @brief To detect the presence of memory device.
  *
- * This function calls flashIdentificationDevice() and again returns the same value in main().
+ * This function calls flashIdentificationDevice() and again returns the same value in main(). This function is redundant as it returns the function value without any changes.
  * 
  * @see flashIdentificationDevice().
  *
