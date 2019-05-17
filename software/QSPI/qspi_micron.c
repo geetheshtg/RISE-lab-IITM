@@ -351,6 +351,6 @@ int main()
         printf("Data: %08x Address: %08x \n",*config_string, config_string);
         config_string++;
     }
-    uart_finish();
+//    uart_finish();
 	return 0;
 }
