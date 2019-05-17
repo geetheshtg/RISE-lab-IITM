@@ -271,7 +271,7 @@ int main()
 {
 	
     qspi_init(27,0,3,1,15);
-    uart_init();		//Function not defined anywhere, header file UART.h should be used
+    uart_init();		
     int ar_read,i,j;
     waitfor(100); //Time for Micron to start, maybe?
     if(flashMemInit()) //Because of STARTUPE2 primitive, the run fails for the first time it is programmed since three clock cycles are skipped. Run again
