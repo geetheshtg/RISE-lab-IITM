@@ -1,18 +1,18 @@
 /**
  * @file qspi_micron.c
  * This file checks the working of QUADSPI using XIP
+ * The ID of the N25Q256 memory device used is 0x20BA1910
  */
 #include "qspi.h"
 
-// #define MEM_TYPE_N25Q256_ID 0x20BA1910
-
+// Definitions of macros taken from qspi.h, written here for cross referencing
 // #define READ_ID 0x9E		/**Read ID of memory device*/
 // #define READ_SR 0x05		/**Read status register*/
 // #define WR_EN 0x06		/**Write enable*/
 // #define FOURBYTE_AD 0xB7	/**Enter 4 byte addressing mode*/
 // #define WR_VCR 0x81		/**Write Volatile configuration register*/
 // #define FAST_RD 0x0B		/**Fast read*/
-// #define QDFAST_RD 0xEB		/**Quad I/O fast read*/
+// #define QDFAST_RD 0xEB	/**Quad I/O fast read*/
 
 /**
  * @brief Function to ensure the working of memory device.
@@ -30,7 +30,8 @@ int flashIdentificationDevice(){
 	printf("\tReading the ID register and discovering the Flash Device\n");
 	set_qspi_shakti32(dlr,4);
     set_qspi_shakti32(ccr,(CCR_FMODE(CCR_FMODE_INDRD)|CCR_IMODE(SINGLE)|CCR_INSTRUCTION(READ_ID)|CCR_DMODE(SINGLE)));
-    int status = 0; // Useless Variable but still!!!!
+    //!Variable is passed as a parameter in wait_for_tcf() function. It carries no value, but it gets assigned with the address of status register.
+    int status = 0; 
     int ret = wait_for_tcf(status);
     int value = get_qspi_shakti(dr);
     reset_interrupt_flags();
@@ -53,14 +54,13 @@ int flashIdentificationDevice(){
  *
  * @return 0 if Device detected, -1 otherwise.
  */
-int flashMemInit(){   //Supposedly a set of routines to check if the memory/interface or whatever is proper
+int flashMemInit(){  
 	int ret = flashIdentificationDevice();
 	if(ret==-1){
 		printf("Flash Mem Init Failed -- Quitting Program, Diagnose");
 		return ret;
 	}
     return 0;
-	//to fill in code
 }
 
 /**
@@ -89,10 +89,6 @@ int flashReadStatusRegister(){
     	return value;
 }
 
-/**Function not used anywhere in the code*/
-int flashReadFlagRegister(){
-	return 0;
-}
 
 /**Function to enable single write mode*/
 /**Instruction passed - 0x06 - Write enable*/
@@ -179,10 +175,7 @@ int flashReadSingleSPI(int dummy_cycles, int read_address, int instruction, int 
     return value;
 }
 
-///Function called in main(), instruction and other parameters need to be passed
-///Function call from main() - flashReadQuadSPI(9,ar_read,0xEB,4,THREEBYTE);
-///Instruction passed - 0xEB - Quad I/O fast read
-///Will enable the flash memory in Quad SPI fast read mode
+
 /**
  * @brief To read data in Quad SPI mode.
  *
@@ -215,9 +208,6 @@ int flashReadQuadSPI(int dummy_cycles, int read_address, int instruction, int da
      return value;
  }
 
-///Function to enable XIP by writing volatile configuration register
-///Passes value 0x93 into the data register which enables Quad I/O mode with 8 dummy cycles in SDR mode
-///Instruction passed - 0x81 - Write volatile configuration register
 /**
  * @brief To write into volatile configuration register and enable XIP.
  *
